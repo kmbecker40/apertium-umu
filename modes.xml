@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+
+  <mode name="umu-twol" install="no">
+    <pipeline>
+      <program name="hfst-strings2fst -S"/>
+      <program name="hfst-compose-intersect">
+        <file name=".deps/umu.twol.hfst"/>
+      </program>
+      <program name="hfst-fst2strings"/>
+    </pipeline>
+  </mode>
+
+  <mode name="umu-morph" install="yes">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="umu.automorf.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+  <mode name="umu-lexd" install="no">
+    <pipeline>
+      <program name="hfst-lookup">
+        <file name=".deps/umu.LR.lexd.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="umu-gener" install="yes">
+    <pipeline>
+      <program name="lt-proc -g">
+        <file name="umu.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="umu-tagger" install="yes">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="umu.automorf.bin"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="umu.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="umu-disam" install="yes">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="umu.automorf.bin"/>
+      </program>
+      <program name="cg-conv -a"/>
+      <program name="vislcg3 --trace --grammar">
+        <file name="umu.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="umu-paradigm" install="yes">
+    <pipeline>
+      <program name="lt-paradigm -s">
+        <file name="umu.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+</modes>
+

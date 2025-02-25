@@ -1,0 +1,10 @@
+{
+    "analysis": {
+        "input": "analysis-input.txt",
+        "mode": "umu-disam"
+    },
+    "generation": {
+        "input": "generation-input.txt",
+        "mode": "umu-gener"
+    }
+}
