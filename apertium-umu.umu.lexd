@@ -3,8 +3,17 @@
 # Part of speech categories
 # <n>      # Noun
 # <v>      # Verb
+# <iv>     # Intransitive Verb
+# <tv>     # Transitive Verb
 # <adj>    # Adjective
 # <num>    # Numeral
+# <aa>     # Animate Noun
+# <nn>     # Inanimate Noun
+# <prn>    # Pronoun
+# <dem>    # Demonstrative
+# <vaux>   # Auxiliary Verb
+# <mod>    # Modal word
+# <det>    # Determiner
 
 # <sent>   # Sentence-ending punctuation
 # <guio>   # Hyphen
@@ -19,6 +28,41 @@
 # Number morphology
 # <pl>     # Plural
 # <sg>     # Singular
+
+# Grammatical Person
+# <pers>   # Personal
+# <p1>     # First Person
+# <p2>     # Second Person
+# <p3>     # Third Person
+
+# Subject Marking
+# <s_sg1>  # First person singular subject
+# <s_sg2>  # Second person singular subject
+# <s_sg3>  # Third person singular subject
+# <s_pl1>  # First person plural subject
+# <s_pl2>  # Second person plural subject
+# <s_pl3>  # Third person plural subject
+
+# Object Marking
+# <o_sg1>  # First person singular object
+# <o_sg2>  # Second person singular object
+# <o_sg3>  # Third person singular object
+# <o_pl1>  # First person plural object
+# <o_pl2>  # Second person plural object
+# <o_pl3>  # Third person plural object 
+
+# Possession
+# <px1sg>  # First person singular possessive
+# <px2sg>  # Second person singular possessive
+# <px3sg>  # Third person singular possessive
+# <px1pl>  # First person plural possessive
+# <px2pl>  # Second person plural possessive
+# <px3pl>  # Third person plural possessive
+
+# Miscellaneous Suffix Tags
+# <abs>    # Absence
+# <meat>   # Meat of
+# <loc>    # Locative
 
 # Other symbols
 # >        # Morpheme boundary
