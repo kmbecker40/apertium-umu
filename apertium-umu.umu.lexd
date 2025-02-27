@@ -74,9 +74,57 @@
 PATTERNS
 ## Example inflection pattern:
 # NounRoot RegNounInfl
-Number
-Punctuation
+Animate-Nouns
+Inanimate-Nouns
 
+PATTERN Animate-Nouns
+
+:Possessive(1)? Animate-N-Stems [<n>:] Possessive(2)? Plural?
+
+LEXICON Animate-N-Stems
+pámbiil:pámbiil             # "book"
+moonáhkeew:moonáhkeew       # "groundhog"
+pootaatíikan:pootaatíikan   # "horn"
+óohŭm:óohŭm                 # "grandmother"
+moxóomus:moxóomus           # "grandfather"
+mìhtkuw:mìhtkuw             # "tree"
+áhpapoon:áhpapoon           # "chair"
+
+LEXICON Plural
+<n><aa><pl>:>ak
+
+LEXICON Possessive(2)
+:nu> <n><aa><px1sg>:>um
+:ku> <n><aa><px2sg>:>um
+:wu> <n><aa><px3sg>:>um
+:wu> <n><aa><px3sg>:>al
+:nu> <n><aa><px1pl>:>
+:ku> <n><aa><px2pl>
+<n><aa><px3pl>
+
+PATTERN Inanimate-Nouns
+
+Inanimate-N-Stems [<n>:] Possessive? Plural?
+
+LEXICON Inanimate-N-Stems
+
+paxkshíikan:paxkshíikan     # "knife"
+pakíinjuw:pakíinjuw         # "plate"
+wííkwahm:wííkwahm           # "house"
+mbúy:mbúy                   # "water"
+áanay:áanay                 # "road"
+síipuw:síipuw               # "river"
+
+LEXICON Plural
+<n><nn><pl>:>al
+
+LEXICON Possessive
+<n><nn><px1sg>
+<n><nn><px2sg>
+<n><nn><px3sg>
+<n><nn><px1pl>
+<n><nn><px2pl>
+<n><nn><px3pl>
 
 ## Example inflection lexicon:
 # LEXICON RegNounInfl
