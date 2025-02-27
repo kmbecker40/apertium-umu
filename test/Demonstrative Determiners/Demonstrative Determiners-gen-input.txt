@@ -1,0 +1,13 @@
+^ya<prn><det><sg><aa>$
+^wa<prn><det><sg><aa>$
+^wan<prn><det><sg><aa>$
+^yook<prn><det><pl><aa>$
+^na<prn><det><sg><aa>$
+^nan<prn><det><sg><aa>$
+^niik<prn><det><pl><aa>$
+^yu<prn><det><sg><nn>$
+^yoon<prn><det><sg><nn>$
+^yool<prn><det><pl><nn>$
+^nu<prn><det><sg><nn>$
+^nun<prn><det><sg><nn>$
+^niil<prn><det><pl><nn>$
