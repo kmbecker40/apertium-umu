@@ -78,58 +78,51 @@ Animate-Nouns
 Inanimate-Nouns
 
 PATTERN Animate-Nouns
+:Animate-N-Infl(1)? Animate-N-Stems [<n><aa>:] Animate-N-Infl(2)? 
 
-:Possessive(1)? Animate-N-Stems [<n>:] Possessive(2)? Plural?
-
-LEXICON Animate-N-Stems
-pámbiil:pámbiil             # "book"
-moonáhkeew:moonáhkeew       # "groundhog"
-pootaatíikan:pootaatíikan   # "horn"
-óohŭm:óohŭm                 # "grandmother"
-moxóomus:moxóomus           # "grandfather"
-mìhtkuw:mìhtkuw             # "tree"
-áhpapoon:áhpapoon           # "chair"
-
-LEXICON Plural
-<n><aa><pl>:>ak
-
-LEXICON Possessive(2)
-:nu> <n><aa><px1sg>:>um
-:ku> <n><aa><px2sg>:>um
-:wu> <n><aa><px3sg>:>um
-:wu> <n><aa><px3sg>:>al
-:nu> <n><aa><px1pl>:>
-:ku> <n><aa><px2pl>
-<n><aa><px3pl>
 
 PATTERN Inanimate-Nouns
+:Inanimate-N-Infl(1)? Inanimate-N-Stems [<n><nn>:] Inanimate-N-Infl(2)?
 
-Inanimate-N-Stems [<n>:] Possessive? Plural?
 
-LEXICON Inanimate-N-Stems
+PATTERN Transitive-Verbs
 
-paxkshíikan:paxkshíikan     # "knife"
-pakíinjuw:pakíinjuw         # "plate"
-wííkwahm:wííkwahm           # "house"
-mbúy:mbúy                   # "water"
-áanay:áanay                 # "road"
-síipuw:síipuw               # "river"
 
-LEXICON Plural
-<n><nn><pl>:>al
+PATTERN Intransitive-Verbs
 
-LEXICON Possessive
-<n><nn><px1sg>
-<n><nn><px2sg>
-<n><nn><px3sg>
-<n><nn><px1pl>
-<n><nn><px2pl>
-<n><nn><px3pl>
 
-## Example inflection lexicon:
-# LEXICON RegNounInfl
-# <n><sg>:
-# <n><pl>:>s
+LEXICON Animate-N-Infl(2)
+:    <pl>:>ak
+:{N}{t}{U}> <px1sg>:>{u}{M}
+:k{t}{U}> <px2sg>:>{u}{M}
+:w{t}{U}> <px3sg>:>{u}{M}      
+:w{t}{U}> <px1pl>:>{u}{M}>una
+:{N}{t}{U}> <px2pl>:>{u}{M}>uwa
+:k{t}{U}> <px3pl>:>{u}{M}>uwaawal
+:{N}{t}{U}> <px1sg><pl>:>{u}{M}>ak
+:k{t}{U}> <px2sg><pl>:>{u}{M}>ak
+:w{t}{U}> <px3sg><pl>:>{u}{M}>al  
+
+
+LEXICON Inanimate-N-Infl(2)
+:    <pl>:>al
+:{N}{t}{U}> <px1sg>:>{u}{M}
+:k{t}{U}> <px2sg>:>{u}{M}
+:w{t}{U}> <px3sg>:>{u}{M}     
+:w{t}{U}> <px1pl>:>{u}{M}>una
+:{N}{t}{U}> <px2pl>:>{u}{M}>uwa
+:k{t}{U}> <px3pl>:>{u}{M}>uwaawal
+:{N}{t}{U}> <px1sg><pl>:>{u}{M}>al
+:k{t}{U}> <px2sg><pl>:>{u}{M}>al
+:w{t}{U}> <px3sg><pl>:>{u}{M}>uwa 
+
+
+# problems
+# 1 - we didn't touch the Verbs
+# 2 - -um optional ending on possessives. how.
+# 3 - the accents should be accepted in any form, check this.
+# 4 - stuff that used to analze isnt, so the forms arent the issue. check vowel definitions.
+
 
 
 ###############################################################################
@@ -139,6 +132,25 @@ LEXICON Possessive
 ## Example stem lexicon:
 # LEXICON NounRoot
 # house:house   # A noun
+
+LEXICON Animate-N-Stems
+pámbiil:pámbiil             # "book"
+moonáhkeew:moonáhkeew       # "groundhog"
+pootaatíikan:pootaatíikan   # "horn"
+óohŭm:óohŭm                 # "grandmother"
+moxóomus:moxóomus           # "grandfather"
+míhtkuw:míhtk{u}w           # "tree"
+áhpapóon:áhpapóon           # "chair"
+
+LEXICON Inanimate-N-Stems
+paxkshíikan:paxkshíikan     # "knife"
+pakíinjuw:pakíinjuw         # "plate"
+wííkwahm:wííkwahm           # "house"
+mbúy:mbúy                   # "water"
+áanay:áanay                 # "road"
+síipuw:síipuw               # "river"
+
+
 
 
 PATTERN Number
