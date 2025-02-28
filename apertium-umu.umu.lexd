@@ -123,6 +123,9 @@ LEXICON Inanimate-N-Infl(2)
 # 3 - the accents should be accepted in any form, check this.
 # 4 - stuff that used to analze isnt, so the forms arent the issue. check vowel definitions.
 
+# transducer analyzing "grandmother" correctly, taking accents too but not for "trees" or "chairs."
+# probably problem with spelling
+
 
 
 ###############################################################################
@@ -134,21 +137,21 @@ LEXICON Inanimate-N-Infl(2)
 # house:house   # A noun
 
 LEXICON Animate-N-Stems
-pámbiil:pámbiil             # "book"
-moonáhkeew:moonáhkeew       # "groundhog"
-pootaatíikan:pootaatíikan   # "horn"
-óohŭm:óohŭm                 # "grandmother"
-moxóomus:moxóomus           # "grandfather"
-míhtkuw:míhtk{u}w           # "tree"
-áhpapóon:áhpapóon           # "chair"
+pámbiil:p{a}mb{i}{i}l             # "book"
+moonáhkeew:m{o}{o}n{a}hk{e}{e}w       # "groundhog"
+pootaatíikan:p{o}{o}t{a}{a}t{i}{i}k{a}n   # "horn"
+óohŭm:{o}{o}h{u}m                 # "grandmother"
+moxóomus:m{o}x{o}{o}m{u}s           # "grandfather"
+míhtkuw:m{i}htk{u}w                    # "tree"
+áhpapoon:{a}hp{a}p{o}{o}n           # "chair"
 
 LEXICON Inanimate-N-Stems
-paxkshíikan:paxkshíikan     # "knife"
-pakíinjuw:pakíinjuw         # "plate"
-wííkwahm:wííkwahm           # "house"
-mbúy:mbúy                   # "water"
-áanay:áanay                 # "road"
-síipuw:síipuw               # "river"
+paxkshíikan:p{a}xksh{i}{i}k{a}n     # "knife"
+pakíinjuw:p{a}k{i}{i}nj{u}w         # "plate"
+wííkwahm:w{i}{i}kw{a}hm           # "house"
+mbúy:mb{u}y                           # "water"
+áanay:{a}{a}n{a}y                 # "road"
+síipuw:s{i}{i}p{u}w               # "river"
 
 
 

@@ -2,20 +2,16 @@ Alphabet
 A À Á B C D E È É F G H I Ì Í J K L M N O Ò Ó P R S T U Ŭ Ù Ú V W X Y Z
 a à á b c d e è é f g h i ì í j k l m n o ò ó p r s t u ŭ ù ú v w x y z
 %{A%}:a %>:0  
-%{u%}:u %{u%}:0
+%{u%}:u %{u%}:ú %{u%}:ù %{u%}:ŭ %{u%}:0
 %{U%}:u %{U%}:a %{U%}:0
 %{N%}:n %{N%}:m
 %{t%}:t %{t%}:d %{t%}:0
 %{M%}:m %{M%}:0
-
 %{a%}:á %{a%}:a %{a%}:à
 %{e%}:é %{e%}:e %{e%}:è
 %{i%}:í %{i%}:i %{i%}:ì
 %{o%}:ó %{o%}:o %{o%}:ò
-%{u%}:ú %{u%}:u %{u%}:ù %{ŭ%}:u
-
-
-
+%>:0
 ;
 
 Sets
