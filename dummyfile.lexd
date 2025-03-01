@@ -177,8 +177,6 @@ LEXICON Transitive-V-Infl(2)
 # transducer analyzing "grandmother" correctly, taking accents too but not for "trees" or "chairs."
 # probably problem with spelling
 
-# all tests run but stopping at locative. No match gold. 
-
 
 
 ###############################################################################
@@ -197,8 +195,6 @@ pootaatíikan:p{o}{o}t{a}{a}t{i}{i}k{a}n   # "horn"
 moxóomus:m{o}x{o}{o}m{u}s           # "grandfather"
 míhtkuw:m{i}htk{u}w                    # "tree"
 áhpapoon:{a}hp{a}p{o}{o}n         # "chair"
-Noah:Noah                          # "Noah"
-Pahtamawaas:Pahtamawaas        # "God"
 
 LEXICON Inanimate-N-Stems
 paxkshíikan:p{a}xksh{i}{i}k{a}n     # "knife"

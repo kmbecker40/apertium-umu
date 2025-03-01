@@ -1,2 +1,2 @@
-^wíinee<v><iv><nn><s_3sg>$
-^páasii<v><iv><nn><s_3sg>$
+^wíinee<v><iv><nn><s_sg>$
+^páasii<v><iv><nn><s_sg>$

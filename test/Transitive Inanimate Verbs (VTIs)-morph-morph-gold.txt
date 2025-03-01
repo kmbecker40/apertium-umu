@@ -1,5 +1,5 @@
 [TC3bPxyAK4ZE]
-^néemun/neem<v><tv><nn><s_3sg><o_sg>$ [/option]
+^néemun/néem<v><tv><nn><s_3sg><o_sg>$ [/option]
 [/TC3bPxyAK4ZE]
 [5bn0b442wmCs]
 ^numíichiin/míichii<v><tv><nn><s_3sg><o_sg>$ [/option]
