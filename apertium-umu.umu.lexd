@@ -80,16 +80,14 @@ Inanimate-Nouns
 PATTERN Animate-Nouns
 :Animate-N-Infl(1)? Animate-N-Stems [<n><aa>:] Animate-N-Infl(2)? 
 
-
 PATTERN Inanimate-Nouns
 :Inanimate-N-Infl(1)? Inanimate-N-Stems [<n><nn>:] Inanimate-N-Infl(2)?
 
+PATTERN Intransitive-Verbs
+:Intransitive-V-Infl(1)? Intransitive-V-Stems [<v><iv>:] Intransitive-V-Infl(2)?
 
 PATTERN Transitive-Verbs
-
-
-PATTERN Intransitive-Verbs
-
+:Transitive-V-Infl(1)? Transitive-V-Stems [<v><tv>:] Transitive-V-Infl(2)?
 
 LEXICON Animate-N-Infl(2)
 :    <pl>:>ak
@@ -117,10 +115,38 @@ LEXICON Inanimate-N-Infl(2)
 :w{t}{U}> <px3sg><pl>:>{u}{M}>uwa 
 
 
+LEXICON Intransitive-V-Infl(2)
+:    <nn><s_sg>:>w
+:    <nn><s_pl>:>wal
+:n{u}> <aa><s_1sg>:>{M}
+:k{u}> <aa><s_2sg>:>{M}
+:   <aa><s_3sg>:>{w}     
+:{n}{k}{u}> <aa><s_1pl>:>{o}>hn{a}
+:k{u}> <aa><s_2pl>:>{o}>hmw{a}
+:   <aa><s_3pl>:>{o}{o}>k
+:   <aa><s_3pl>:>{w}{a}>k
+
+
+LEXICON Transitive-V-Infl(2)
+:n{u}> <nn><s_1sg><o_sg>:>{u}n
+:k{u}> <nn><s_2sg><o_sg>:>{u}n
+:w{u}> <nn><s_3sg><o_sg>:>{u}n    
+:{n}{k}{u}> <nn><s_1pl><o_sg>:>{u}>n{e}{e}n
+:k{u}> <nn><s_2pl><o_sg>:>{u}>n{e}{e}w{a}
+:w{u}> <nn><s_3pl><o_sg>:>{u}>n{e}{e}w{a}
+
+:n{u}> <nn><s_1sg><o_pl>:>{u}n>{a}l
+:k{u}> <nn><s_2sg><o_pl>:>{u}n>{a}l:   <aa><s_3sg>:>{w}    
+:w{u}> <nn><s_3sg><o_pl>:>{u}n>{a}l  
+:{n}{k}{u}> <nn><s_1pl><o_pl>:>{u}>n{e}{e}n
+:k{u}> <nn><s_2pl><o_pl>:>{u}>n{e}{e}w{a}
+:w{u}> <nn><s_3pl><o_pl>:>{u}>n{e}{e}w{a}
+
+# TODO: Transitive Animate Verbs
+# TODO: rescrape morph tests
+
 # problems
-# 1 - we didn't touch the Verbs
-# 3 - the accents should be accepted in any form, check this.
-# 4 - stuff that used to analze isnt, so the forms arent the issue. check vowel definitions.
+# 4 - stuff that used to analyze isnt, so the forms aren't the issue. check vowel definitions.
 
 # transducer analyzing "grandmother" correctly, taking accents too but not for "trees" or "chairs."
 # probably problem with spelling
@@ -142,7 +168,7 @@ pootaatíikan:p{o}{o}t{a}{a}t{i}{i}k{a}n   # "horn"
 óohŭm:{o}{o}h{u}m                 # "grandmother"
 moxóomus:m{o}x{o}{o}m{u}s           # "grandfather"
 míhtkuw:m{i}htk{u}w                    # "tree"
-áhpapoon:{a}hp{a}p{o}{o}n           # "chair"
+áhpapoon:{a}hp{a}p{o}{o}n         # "chair"
 
 LEXICON Inanimate-N-Stems
 paxkshíikan:p{a}xksh{i}{i}k{a}n     # "knife"
@@ -152,7 +178,16 @@ mbúy:mb{u}y                           # "water"
 áanay:{a}{a}n{a}y                 # "road"
 síipuw:s{i}{i}p{u}w               # "river"
 
+LEXICON Intransitive-V-Stems
+wíinee:w{i}{i}n{e}{e}           # "snow"
+páasii:p{a}{a}s{i}{i}           # "swell"
+kawíi:k{a}w{i}{i}               # "sleep"
+alóhkee:al{o}hk{e}{e}           # "work"
 
+LEXICON Transitive-V-Stems
+néem:n{e}{e}m                   # "see"
+míichii:m{i}{i}ch{i}{i}         # "eat"
+ataal:{a}t{a}{a}l               # "want"
 
 
 PATTERN Number
