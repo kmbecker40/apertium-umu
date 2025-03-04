@@ -190,34 +190,34 @@ LEXICON Transitive-V-Infl(2)
 # house:house   # A noun
 
 LEXICON Animate-N-Stems
-pámbiil:p{a}mb{i}{i}l             # "book"
-moonáhkeew:m{o}{o}n{a}hk{e}{e}w       # "groundhog"
-pootaatíikan:p{o}{o}t{a}{a}t{i}{i}k{a}n   # "horn"
-óohŭm:{o}{o}h{u}m                 # "grandmother"
-moxóomus:m{o}x{o}{o}m{u}s           # "grandfather"
-míhtkuw:m{i}htk{u}w                    # "tree"
-áhpapoon:{a}hp{a}p{o}{o}n         # "chair"
+pámbiil:pambiil             # "book"
+moonáhkeew:moonahkeew       # "groundhog"
+pootaatíikan:pootaatiikan   # "horn"
+óohŭm:oohum                 # "grandmother"
+moxóomus:moxoomus           # "grandfather"
+míhtkuw:mihtkuw                    # "tree"
+áhpapoon:ahpapoon         # "chair"
 Noah:Noah                          # "Noah"
 Pahtamawaas:Pahtamawaas        # "God"
 
 LEXICON Inanimate-N-Stems
-paxkshíikan:p{a}xksh{i}{i}k{a}n     # "knife"
-pakíinjuw:p{a}k{i}{i}nj{u}w         # "plate"
-wííkwahm:w{i}{i}kw{a}hm           # "house"
-mbúy:mb{u}y                           # "water"
-áanay:{a}{a}n{a}y                 # "road"
-síipuw:s{i}{i}p{u}w               # "river"
+paxkshíikan:paxkshiikan     # "knife"
+pakíinjuw:pakiinjuw         # "plate"
+wííkwahm:wiikwahm           # "house"
+mbúy:mbuy                          # "water"
+áanay:aanay                 # "road"
+síipuw:siipuw               # "river"
 
 LEXICON Intransitive-V-Stems
-wíinee:w{i}{i}n{e}{e}           # "snow"
-páasii:p{a}{a}s{i}{i}           # "swell"
-kawíi:k{a}w{i}{i}               # "sleep"
-alóhkee:al{o}hk{e}{e}           # "work"
+wíinee:wiinee         # "snow"
+páasii:paasii          # "swell"
+kawíi:kawii              # "sleep"
+alóhkee:alohkee           # "work"
 
 LEXICON Transitive-V-Stems
-néem:n{e}{e}m                   # "see"
-míichii:m{i}{i}ch{i}{i}         # "eat"
-ataal:{a}t{a}{a}l               # "want"
+néem:neem                  # "see"
+míichii:miichii        # "eat"
+ataal:ataal               # "want"
 
 
 PATTERN Number
