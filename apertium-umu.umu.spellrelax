@@ -8,4 +8,7 @@
 	! [ ?* [ á (->) a ] ?* ]
 	.o. [ ?* [ ̆ (->) 0 ] ?* ]
 
+	! Accept input with and without diacritics
+	.o. [ ?* [ a (->) [á | à | ă ] ] ?* ]
+	.o. [ ?* [ e (->) [é | è | ĕ ] ] ?* ]
 ]
