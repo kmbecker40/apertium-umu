@@ -93,28 +93,46 @@ PATTERN Transitive-Verbs
 
 LEXICON Animate-N-Infl(2)
 :    <pl>:>ak
-:{N}{t}{U}> <px1sg>:>{u}{M}
-:k{t}{U}> <px2sg>:>{u}{M}
-:w{t}{U}> <px3sg>:>{u}{M}      
-:w{t}{U}> <px1pl>:>{u}{M}>una
-:{N}{t}{U}> <px2pl>:>{u}{M}>uwa
-:k{t}{U}> <px3pl>:>{u}{M}>uwaawal
-:{N}{t}{U}> <px1sg><pl>:>{u}{M}>ak
-:k{t}{U}> <px2sg><pl>:>{u}{M}>ak
-:w{t}{U}> <px3sg><pl>:>{u}{M}>al  
+:{N}{t}{U}> <px1sg>:>um
+:{N}{t}{U}> <px1sg>:
+:k{t}{U}> <px2sg>:>um
+:k{t}{U}> <px2sg>:
+:w{t}{U}> <px3sg>:>um     
+:w{t}{U}> <px3sg>:   
+:w{t}{U}> <px1pl>:>um>una
+:w{t}{U}> <px1pl>:>una
+:{N}{t}{U}> <px2pl>:>um>uwa
+:{N}{t}{U}> <px2pl>:>uwa
+:k{t}{U}> <px3pl>:>um>uwaawal
+:k{t}{U}> <px3pl>:>uwaawal
+:{N}{t}{U}> <px1sg><pl>:>um>ak
+:{N}{t}{U}> <px1sg><pl>:>ak
+:k{t}{U}> <px2sg><pl>:>um>ak
+:k{t}{U}> <px2sg><pl>:>ak
+:w{t}{U}> <px3sg><pl>:um>al
+:w{t}{U}> <px3sg><pl>:>al    
 
 
 LEXICON Inanimate-N-Infl(2)
 :    <pl>:>al
-:{N}{t}{U}> <px1sg>:>{u}{M}
-:k{t}{U}> <px2sg>:>{u}{M}
-:w{t}{U}> <px3sg>:>{u}{M}     
-:w{t}{U}> <px1pl>:>{u}{M}>una
-:{N}{t}{U}> <px2pl>:>{u}{M}>uwa
-:k{t}{U}> <px3pl>:>{u}{M}>uwaawal
-:{N}{t}{U}> <px1sg><pl>:>{u}{M}>al
-:k{t}{U}> <px2sg><pl>:>{u}{M}>al
-:w{t}{U}> <px3sg><pl>:>{u}{M}>uwa 
+:{N}{t}{U}> <px1sg>:>um
+:{N}{t}{U}> <px1sg>:
+:k{t}{U}> <px2sg>:>um
+:k{t}{U}> <px2sg>:
+:w{t}{U}> <px3sg>:>um   
+:w{t}{U}> <px3sg>:>   
+:w{t}{U}> <px1pl>:>um>una
+:w{t}{U}> <px1pl>:>una
+:{N}{t}{U}> <px2pl>:>um>uwa
+:{N}{t}{U}> <px2pl>:>uwa
+:k{t}{U}> <px3pl>:>um>uwaawal
+:k{t}{U}> <px3pl>:>uwaawal
+:{N}{t}{U}> <px1sg><pl>:>um>al
+:{N}{t}{U}> <px1sg><pl>:>al
+:k{t}{U}> <px2sg><pl>:>um>al
+:k{t}{U}> <px2sg><pl>:>al
+:w{t}{U}> <px3sg><pl>:>um>uwa 
+:w{t}{U}> <px3sg><pl>:>uwa 
 
 
 LEXICON Intransitive-V-Infl(2)
@@ -124,13 +142,13 @@ LEXICON Intransitive-V-Infl(2)
 :    <nn><s_pl>:>wal
 
 # Intransitive Animate Verbs
-:n{u}> <aa><s_1sg>:>{M}
-:k{u}> <aa><s_2sg>:>{M}
+:n{u}> <aa><s_1sg>:>{m}
+:k{u}> <aa><s_2sg>:>{m}
 :   <aa><s_3sg>:>{w}     
-:{n}{k}{u}> <aa><s_1pl>:>{o}>hn{a}
-:k{u}> <aa><s_2pl>:>{o}>hmw{a}
-:   <aa><s_3pl>:>{o}{o}>k
-:   <aa><s_3pl>:>{w}{a}>k
+:{n}{k}{u}> <aa><s_1pl>:>ohna
+:k{u}> <aa><s_2pl>:>ohmwa
+:   <aa><s_3pl>:>ook
+:   <aa><s_3pl>:>{w}a>k
 
 
 LEXICON Transitive-V-Infl(2)
@@ -139,36 +157,36 @@ LEXICON Transitive-V-Infl(2)
 :n{u}> <nn><s_1sg><o_sg>:>{u}n
 :k{u}> <nn><s_2sg><o_sg>:>{u}n
 :w{u}> <nn><s_3sg><o_sg>:>{u}n    
-:{n}{k}{u}> <nn><s_1pl><o_sg>:>{u}>n{e}{e}n
-:k{u}> <nn><s_2pl><o_sg>:>{u}>n{e}{e}w{a}
-:w{u}> <nn><s_3pl><o_sg>:>{u}>n{e}{e}w{a}
+:{n}{k}{u}> <nn><s_1pl><o_sg>:>{u}>neen
+:k{u}> <nn><s_2pl><o_sg>:>{u}>neewa
+:w{u}> <nn><s_3pl><o_sg>:>{u}>neewa
 
 # Transitive Inanimate Verbs w/ Plural Object
-:n{u}> <nn><s_1sg><o_pl>:>{u}n>{a}l
-:k{u}> <nn><s_2sg><o_pl>:>{u}n>{a}l   
-:w{u}> <nn><s_3sg><o_pl>:>{u}n>{a}l  
-:{n}{k}{u}> <nn><s_1pl><o_pl>:>{u}>n{e}{e}n
-:k{u}> <nn><s_2pl><o_pl>:>{u}>n{e}{e}w{a}
-:w{u}> <nn><s_3pl><o_pl>:>{u}>n{e}{e}w{a}
+:n{u}> <nn><s_1sg><o_pl>:>{u}n>al
+:k{u}> <nn><s_2sg><o_pl>:>{u}n>al   
+:w{u}> <nn><s_3sg><o_pl>:>{u}n>al  
+:{n}{k}{u}> <nn><s_1pl><o_pl>:>{u}>neen
+:k{u}> <nn><s_2pl><o_pl>:>{u}>neewa
+:w{u}> <nn><s_3pl><o_pl>:>{u}>neewa
 
 # Transitive Animate Verbs w/ Singular Object
-:n{u}> <aa><s_1sg><o_3sg>:>{a}{a}w
-:n{u}> <aa><s_1sg><o_3sg>:>{a}
-:k{u}> <aa><s_2sg><o_3sg>:>{a}{a}w  
-:k{u}> <aa><s_2sg><o_3sg>:>{a}
-:w{u}> <aa><s_3sg><o_3sg>:>{a}{a}w{a}l
-:{n}{k}{u}> <aa><s_1pl><o_3sg>:>{a}{a}w{u}n{a}
-:k{u}> <aa><s_2pl><o_3sg>:>{a}{a}w{a}
-:w{u}> <aa><s_3pl><o_3sg>:>{a}{a}w{a}{a}w{a}l
-:w{u}> <aa><s_3pl><o_3sg>:>{a}{a}w{a}l
+:n{u}> <aa><s_1sg><o_3sg>:>aaw
+:n{u}> <aa><s_1sg><o_3sg>:>a
+:k{u}> <aa><s_2sg><o_3sg>:>aaw  
+:k{u}> <aa><s_2sg><o_3sg>:>a
+:w{u}> <aa><s_3sg><o_3sg>:>aawal
+:{n}{k}{u}> <aa><s_1pl><o_3sg>:>aawuna
+:k{u}> <aa><s_2pl><o_3sg>:>aawa
+:w{u}> <aa><s_3pl><o_3sg>:>aawaawal
+:w{u}> <aa><s_3pl><o_3sg>:>aawal
 
 # Transitive Animate Verbs w/ Plural Object
-:n{u}> <aa><s_1sg><o_3pl>:>{a}{a}w{a}k
-:k{u}> <aa><s_2sg><o_3pl>:>{a}{a}w{a}k 
-:w{u}> <aa><s_3sg><o_3pl>:>{a}{a}w{a}l
-:{n}{k}{u}> <aa><s_1pl><o_3pl>:>{a}{a}w{u}n{a}
-:k{u}> <aa><s_2pl><o_3pl>:>{a}{a}w{a}
-:w{u}> <aa><s_3pl><o_3pl>:>{a}{a}w{a}{a}w{a}l
+:n{u}> <aa><s_1sg><o_3pl>:>aawak
+:k{u}> <aa><s_2sg><o_3pl>:>aawak 
+:w{u}> <aa><s_3sg><o_3pl>:>aawal
+:{n}{k}{u}> <aa><s_1pl><o_3pl>:>aawuna
+:k{u}> <aa><s_2pl><o_3pl>:>aawa
+:w{u}> <aa><s_3pl><o_3pl>:>aawaawal
 
 
 # problems
