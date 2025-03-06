@@ -93,45 +93,45 @@ PATTERN Transitive-Verbs
 
 LEXICON Animate-N-Infl(2)
 :    <pl>:>ak
-:{N}{t}{U}> <px1sg>:>um
+:{N}{t}{U}> <px1sg>:>um #Dir/LR
 :{N}{t}{U}> <px1sg>:
-:k{t}{U}> <px2sg>:>um
+:k{t}{U}> <px2sg>:>um #Dir/LR
 :k{t}{U}> <px2sg>:
-:w{t}{U}> <px3sg>:>um     
+:w{t}{U}> <px3sg>:>um #Dir/LR    
 :w{t}{U}> <px3sg>:   
-:w{t}{U}> <px1pl>:>um>una
-:w{t}{U}> <px1pl>:>una
-:{N}{t}{U}> <px2pl>:>um>uwa
+:n{t}{U}> <px1pl>:>um>una #Dir/LR
+:n{t}{U}> <px1pl>:>una
+:{N}{t}{U}> <px2pl>:>um>uwa #Dir/LR
 :{N}{t}{U}> <px2pl>:>uwa
-:k{t}{U}> <px3pl>:>um>uwaawal
+:k{t}{U}> <px3pl>:>um>uwaawal #Dir/LR
 :k{t}{U}> <px3pl>:>uwaawal
-:{N}{t}{U}> <px1sg><pl>:>um>ak
+:{N}{t}{U}> <px1sg><pl>:>um>ak #Dir/LR
 :{N}{t}{U}> <px1sg><pl>:>ak
-:k{t}{U}> <px2sg><pl>:>um>ak
+:k{t}{U}> <px2sg><pl>:>um>ak #Dir/LR
 :k{t}{U}> <px2sg><pl>:>ak
-:w{t}{U}> <px3sg><pl>:um>al
+:w{t}{U}> <px3sg><pl>:um>al #Dir/LR
 :w{t}{U}> <px3sg><pl>:>al    
 
 
 LEXICON Inanimate-N-Infl(2)
 :    <pl>:>al
-:{N}{t}{U}> <px1sg>:>um
+:{N}{t}{U}> <px1sg>:>um #Dir/LR
 :{N}{t}{U}> <px1sg>:
-:k{t}{U}> <px2sg>:>um
+:k{t}{U}> <px2sg>:>um #Dir/LR
 :k{t}{U}> <px2sg>:
-:w{t}{U}> <px3sg>:>um   
+:w{t}{U}> <px3sg>:>um #Dir/LR
 :w{t}{U}> <px3sg>:>   
-:w{t}{U}> <px1pl>:>um>una
+:w{t}{U}> <px1pl>:>um>una #Dir/LR
 :w{t}{U}> <px1pl>:>una
-:{N}{t}{U}> <px2pl>:>um>uwa
+:{N}{t}{U}> <px2pl>:>um>uwa #Dir/LR
 :{N}{t}{U}> <px2pl>:>uwa
-:k{t}{U}> <px3pl>:>um>uwaawal
+:k{t}{U}> <px3pl>:>um>uwaawal #Dir/LR
 :k{t}{U}> <px3pl>:>uwaawal
-:{N}{t}{U}> <px1sg><pl>:>um>al
+:{N}{t}{U}> <px1sg><pl>:>um>al #Dir/LR
 :{N}{t}{U}> <px1sg><pl>:>al
-:k{t}{U}> <px2sg><pl>:>um>al
+:k{t}{U}> <px2sg><pl>:>um>al #Dir/LR
 :k{t}{U}> <px2sg><pl>:>al
-:w{t}{U}> <px3sg><pl>:>um>uwa 
+:w{t}{U}> <px3sg><pl>:>um>uwa #Dir/LR
 :w{t}{U}> <px3sg><pl>:>uwa 
 
 
