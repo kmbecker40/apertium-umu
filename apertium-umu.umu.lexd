@@ -229,11 +229,6 @@ LEXICON Transitive-V-Infl(2)
 
 
 # problems
-# 4 - stuff that used to analyze isnt, so the forms aren't the issue. check vowel definitions.
-
-# transducer analyzing "grandmother" correctly, taking accents too but not for "trees" or "chairs."
-# probably problem with spelling
-
 # all tests run but stopping at locative. No match gold. 
 
 
@@ -247,7 +242,7 @@ LEXICON Transitive-V-Infl(2)
 # house:house   # A noun
 
 LEXICON Animate-N-Stems
-pámbiil:pambiil             # "book"
+pámbiil:p{a}mbiil             # "book"
 moonáhkeew:moonahkeew       # "groundhog"
 pootaatíikan:pootaatiikan   # "horn"
 óohŭm:oohum                 # "grandmother"

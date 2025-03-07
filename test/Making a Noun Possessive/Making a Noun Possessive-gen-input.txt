@@ -1,6 +1,6 @@
 ^míhtukw<n><aa><px2sg>$
 ^míhtukw<n><aa><px2sg><pl>$
-^mìhtkuw<n><aa><px11pl><pl>$
-^mìhtkuw<n><aa><px12pl><pl>$
+^míhtukw<n><aa><px11pl><pl>$
+^míhtukw<n><aa><px12pl><pl>$
 ^áhpapoon<n><nn><px3pl><pl>$
 ^óohŭm<n><aa><px3sg><pl>$
