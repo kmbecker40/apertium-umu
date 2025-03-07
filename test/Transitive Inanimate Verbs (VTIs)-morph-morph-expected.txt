@@ -1,4 +1,4 @@
-[5bn0b442wmCs#0] ^numíichiin/míichii<v><tv><nn><s_1sg><o_sg>$
+[5bn0b442wmCs#0] ^numíichiin/*numíichiin$
 [/5bn0b442wmCs]
-[TC3bPxyAK4ZE#0] ^néemun/néem<v><tv><nn><s_3sg><o_sg>/néem<v><tv><nn><s_1sg><o_sg>/néem<v><tv><nn><s_2sg><o_sg>$
+[TC3bPxyAK4ZE#0] ^néemun/*néemun$
 [/TC3bPxyAK4ZE]

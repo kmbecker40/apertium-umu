@@ -1,0 +1,101 @@
+[-kY-tRtl-Rho#0] "<uw>"
+	"*uw"
+
+<STREAMCMD:FLUSH>
+[/-kY-tRtl-Rho]
+[7xShTOAOCn0E#0] "<waak>"
+	"*waak"
+
+<STREAMCMD:FLUSH>
+[/7xShTOAOCn0E]
+[BrzN81ee95wZ#0] "<wtulaawal>"
+	"*wtulaawal"
+
+<STREAMCMD:FLUSH>
+[/BrzN81ee95wZ]
+[NYqiJVDrc6hS#0] "<wa>"
+	"*wa"
+
+<STREAMCMD:FLUSH>
+[/NYqiJVDrc6hS]
+[Om-49xL_4AOJ#0] "<ngumee>"
+	"*ngumee"
+
+<STREAMCMD:FLUSH>
+[/Om-49xL_4AOJ]
+[TSuGA6U85Gsb#0] "<ha>"
+	"*ha"
+
+<STREAMCMD:FLUSH>
+[/TSuGA6U85Gsb]
+[V4BDcFfLZf41#0] "<Noah>"
+	"Noah" n aa
+
+<STREAMCMD:FLUSH>
+[/V4BDcFfLZf41]
+[aILgpUFpW8Jl#0] "<Nal>"
+	"*Nal"
+
+<STREAMCMD:FLUSH>
+[/aILgpUFpW8Jl]
+[bdR9ck3kB8Hh#0] "<mah>"
+	"*mah"
+
+<STREAMCMD:FLUSH>
+[/bdR9ck3kB8Hh]
+[gUMYQRBwH7N2#0] "<uch>"
+	"*uch"
+
+<STREAMCMD:FLUSH>
+[/gUMYQRBwH7N2]
+[gqZphsqa9ObM#0] "<weemi>"
+	"*weemi"
+̆
+
+<STREAMCMD:FLUSH>
+[/gqZphsqa9ObM]
+[i3FO6szdQ0j9#0] "<njihnal>"
+	"*njihnal"
+
+<STREAMCMD:FLUSH>
+[/i3FO6szdQ0j9]
+[ijkcuzDMuFeR#0] "<eet>"
+	"*eet"
+
+<STREAMCMD:FLUSH>
+[/ijkcuzDMuFeR]
+[omyMxl7Gv2CM#0] "<taa>"
+	"*taa"
+
+<STREAMCMD:FLUSH>
+[/omyMxl7Gv2CM]
+[rApkBRCaAHOX#0] "<ang>"
+	"*ang"
+
+<STREAMCMD:FLUSH>
+[/rApkBRCaAHOX]
+[uApl0k8NrZKu#0] "<nal>"
+	"*nal"
+
+<STREAMCMD:FLUSH>
+[/uApl0k8NrZKu]
+[xQo0ThH9q165#0] "<nguk>"
+	"*nguk"
+
+<STREAMCMD:FLUSH>
+[/xQo0ThH9q165]
+[xjLn28ZQiMLc#0] "<Pahtamawaas>"
+	"Pahtamawaas" n aa
+
+<STREAMCMD:FLUSH>
+[/xjLn28ZQiMLc]
+[zauAGqwmUZso#0] "<kway>"
+	"*kway"
+
+<STREAMCMD:FLUSH>
+[/zauAGqwmUZso]
+[ztB7QcFxnDh-#0] "<nzhiis>"
+	"*nzhiis"
+
+<STREAMCMD:FLUSH>
+[/ztB7QcFxnDh-]

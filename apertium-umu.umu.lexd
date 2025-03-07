@@ -77,26 +77,35 @@ PATTERNS
 # NounRoot RegNounInfl
 Animate-Nouns
 Inanimate-Nouns
-Intransitive-Verbs
-Transitive-Verbs
+Intransitive-Animate-Verbs
+Intransitive-Inanimate-Verbs
+Transitive-Animate-Verbs
+PATTERN Transitive-Inanimate-Verbs
 
 PATTERN Animate-Nouns
-:Animate-N-Infl(1)? Animate-N-Stems [<n><aa>:] Animate-N-Infl(2)? 
+:Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2)? 
 
 PATTERN Inanimate-Nouns
-:Inanimate-N-Infl(1)? Inanimate-N-Stems [<n><nn>:] Inanimate-N-Infl(2)?
+:Inanimate-N-Infl(1) Inanimate-N-Stems [<n><nn>:] Inanimate-N-Infl(2)?
 
-PATTERN Intransitive-Verbs
-:Intransitive-V-Infl(1)? Intransitive-V-Stems [<v><iv>:] Intransitive-V-Infl(2)?
+PATTERN Intransitive-Animate-Verbs
+:Intransitive-Animate-V-Infl(1) Intransitive-Animate-V-Stems [<v><iv><aa>:] Intransitive-Animate-V-Infl(2)
 
-PATTERN Transitive-Verbs
-:Transitive-V-Infl(1)? Transitive-V-Stems [<v><tv>:] Transitive-V-Infl(2)?
+PATTERN Intransitive-Inanimate-Verbs
+:Intransitive-Inanimate-V-Infl(1) Intransitive-Inanimate-V-Stems [<v><iv><nn>:] Intransitive-Inanimate-V-Infl(2)
+
+PATTERN Transitive-Animate-Verbs
+:Transitive-Animate-V-Infl(1)? Transitive-Animate-V-Stems [<v><tv><aa>:] Transitive-Animate-V-Infl(2)
+
+PATTERN Transitive-Inanimate-Verbs
+:Transitive-Inanimate-V-Infl(1)? Transitive-Inanimate-V-Stems [<v><tv><nn>:] Transitive-Inanimate-V-Infl(2)
 
 LEXICON Animate-N-Infl(2)
 
 # Plural Animate Nouns
 :    <pl>:>ak
 
+# TODO: consider just using the ? instead of Dir/LR
 # Singular Possessor, Singular Possessed Quantity
 :{N}{t}{U}> <px1sg>:>um #Dir/LR
 :{N}{t}{U}> <px1sg>:
@@ -174,62 +183,67 @@ LEXICON Inanimate-N-Infl(2)
 :w{t}{U}> <px3pl>:>um>uwaawal #Dir/LR
 :w{t}{U}> <px3pl>:>uwaawal
 
-LEXICON Intransitive-V-Infl(2)
+LEXICON Intransitive-Inanimate-V-Infl(2)
 
 # Intransitive Inanimate Verbs
-:    <nn><s_sg>:>w
-:    <nn><s_pl>:>wal
+:    <s_sg>:>w
+:    <s_pl>:>wal
+
+LEXICON Intransitive-Animate-V-Infl(2)
 
 # Intransitive Animate Verbs
-:n{u}> <aa><s_1sg>:>{m}
-:k{u}> <aa><s_2sg>:>{m}
-:   <aa><s_3sg>:>{w}     
-:{n}{k}{u}> <aa><s_1pl>:>ohna
-:k{u}> <aa><s_2pl>:>ohmwa
-:   <aa><s_3pl>:>ook
-:   <aa><s_3pl>:>{w}a>k
+:n{u}> <s_1sg>:>{m}
+:k{u}> <s_2sg>:>{m}
+:   <s_3sg>:>{w}     
+:{n}{k}{u}> <s_1pl>:>ohna
+:k{u}> <s_2pl>:>ohmwa
+:   <s_3pl>:>ook
+:   <s_3pl>:>{w}a>k
 
 
-LEXICON Transitive-V-Infl(2)
+LEXICON Transitive-Inanimate-V-Infl(2)
 
 # Transitive Inanimate Verbs w/ Singular Object
-:n{u}> <nn><s_1sg><o_sg>:>{u}n
-:k{u}> <nn><s_2sg><o_sg>:>{u}n
-:w{u}> <nn><s_3sg><o_sg>:>{u}n    
-:{n}{k}{u}> <nn><s_1pl><o_sg>:>{u}>neen
-:k{u}> <nn><s_2pl><o_sg>:>{u}>neewa
-:w{u}> <nn><s_3pl><o_sg>:>{u}>neewa
+:n{u}> <s_1sg><o_sg>:>{u}n
+:k{u}> <s_2sg><o_sg>:>{u}n
+:w{u}> <s_3sg><o_sg>:>{u}n    
+:{n}{k}{u}> <s_1pl><o_sg>:>{u}>neen
+:k{u}> <s_2pl><o_sg>:>{u}>neewa
+:w{u}> <s_3pl><o_sg>:>{u}>neewa
 
 # Transitive Inanimate Verbs w/ Plural Object
-:n{u}> <nn><s_1sg><o_pl>:>{u}n>al
-:k{u}> <nn><s_2sg><o_pl>:>{u}n>al   
-:w{u}> <nn><s_3sg><o_pl>:>{u}n>al  
-:{n}{k}{u}> <nn><s_1pl><o_pl>:>{u}>neen
-:k{u}> <nn><s_2pl><o_pl>:>{u}>neewa
-:w{u}> <nn><s_3pl><o_pl>:>{u}>neewa
+:n{u}> <s_1sg><o_pl>:>{u}n>al
+:k{u}> <s_2sg><o_pl>:>{u}n>al   
+:w{u}> <s_3sg><o_pl>:>{u}n>al  
+:{n}{k}{u}> <s_1pl><o_pl>:>{u}>neen
+:k{u}> <s_2pl><o_pl>:>{u}>neewa
+:w{u}> <s_3pl><o_pl>:>{u}>neewa
+
+LEXICON Transitive-Animate-V-Infl(2)
 
 # Transitive Animate Verbs w/ Singular Object
-:n{u}> <aa><s_1sg><o_3sg>:>aaw
-:n{u}> <aa><s_1sg><o_3sg>:>a
-:k{u}> <aa><s_2sg><o_3sg>:>aaw  
-:k{u}> <aa><s_2sg><o_3sg>:>a
-:w{u}> <aa><s_3sg><o_3sg>:>aawal
-:{n}{k}{u}> <aa><s_1pl><o_3sg>:>aawuna
-:k{u}> <aa><s_2pl><o_3sg>:>aawa
-:w{u}> <aa><s_3pl><o_3sg>:>aawaawal
-:w{u}> <aa><s_3pl><o_3sg>:>aawal
+:n{u}> <s_1sg><o_3sg>:>aaw
+:n{u}> <s_1sg><o_3sg>:>a
+:k{u}> <s_2sg><o_3sg>:>aaw  
+:k{u}> <s_2sg><o_3sg>:>a
+:w{u}> <s_3sg><o_3sg>:>aawal
+:{n}{k}{u}> <s_1pl><o_3sg>:>aawuna
+:k{u}> <s_2pl><o_3sg>:>aawa
+:w{u}> <s_3pl><o_3sg>:>aawaawal
+:w{u}> <s_3pl><o_3sg>:>aawal
 
 # Transitive Animate Verbs w/ Plural Object
-:n{u}> <aa><s_1sg><o_3pl>:>aawak
-:k{u}> <aa><s_2sg><o_3pl>:>aawak 
-:w{u}> <aa><s_3sg><o_3pl>:>aawal
-:{n}{k}{u}> <aa><s_1pl><o_3pl>:>aawuna
-:k{u}> <aa><s_2pl><o_3pl>:>aawa
-:w{u}> <aa><s_3pl><o_3pl>:>aawaawal
+:n{u}> <s_1sg><o_3pl>:>aawak
+:k{u}> <s_2sg><o_3pl>:>aawak 
+:w{u}> <s_3sg><o_3pl>:>aawal
+:{n}{k}{u}> <s_1pl><o_3pl>:>aawuna
+:k{u}> <s_2pl><o_3pl>:>aawa
+:w{u}> <s_3pl><o_3pl>:>aawaawal
 
 
 # problems
 # all tests run but stopping at locative. No match gold. 
+# curly brackets on vowels on the RIGHT side of the colon
 
 
 
@@ -260,17 +274,23 @@ mbúy:mbuy                          # "water"
 áanay:aanay                 # "road"
 síipuw:siipuw               # "river"
 
-LEXICON Intransitive-V-Stems
+LEXICON Intransitive-Inanimate-V-Stems
 wíinee:wiinee         # "snow"
 páasii:paasii          # "swell"
+
+LEXICON Intransitive-Animate-V-Stems
 kawíi:kawii              # "sleep"
 alóhkee:alohkee           # "work"
 
-LEXICON Transitive-V-Stems
+LEXICON Transitive-Inanimate-V-Stems
 néem:neem                  # "see"
 míichii:miichii        # "eat"
 ataal:ataal               # "want"
 
+LEXICON Transitive-Animate-V-Stems
+néem:neem                  # "see"
+míichii:miichii        # "eat"
+ataal:ataal               # "want"
 
 PATTERN Number
 Numeral [<num>:]
