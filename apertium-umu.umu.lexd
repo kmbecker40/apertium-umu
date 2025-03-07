@@ -55,7 +55,8 @@
 # <px1sg>  # First person singular possessive
 # <px2sg>  # Second person singular possessive
 # <px3sg>  # Third person singular possessive
-# <px1pl>  # First person plural possessive
+# <px11pl>  # First person plural possessive (exclusive)
+# <px12pl>  # First person plural possessive (inclusive)
 # <px2pl>  # Second person plural possessive
 # <px3pl>  # Third person plural possessive
 
@@ -92,19 +93,29 @@ PATTERN Transitive-Verbs
 :Transitive-V-Infl(1)? Transitive-V-Stems [<v><tv>:] Transitive-V-Infl(2)?
 
 LEXICON Animate-N-Infl(2)
+
+# Plural Animate Nouns
 :    <pl>:>ak
+
+# Singular Possessor, Singular Possessed Quantity
 :{N}{t}{U}> <px1sg>:>um #Dir/LR
 :{N}{t}{U}> <px1sg>:
 :k{t}{U}> <px2sg>:>um #Dir/LR
 :k{t}{U}> <px2sg>:
 :w{t}{U}> <px3sg>:>um #Dir/LR    
-:w{t}{U}> <px3sg>:   
-:n{t}{U}> <px1pl>:>um>una #Dir/LR
-:n{t}{U}> <px1pl>:>una
+:w{t}{U}> <px3sg>:  
+
+# Plural Possessor, Singular Possessed Quantity
+:n{t}{U}> <px11pl>:>um>una #Dir/LR
+:n{t}{U}> <px11pl>:>una
+:k{t}{U}> <px12pl>:>um>una #Dir/LR
+:k{t}{U}> <px12pl>:>una
 :{N}{t}{U}> <px2pl>:>um>uwa #Dir/LR
 :{N}{t}{U}> <px2pl>:>uwa
 :k{t}{U}> <px3pl>:>um>uwaawal #Dir/LR
 :k{t}{U}> <px3pl>:>uwaawal
+
+# Singular Possessor, Plural Possessed Quantity
 :{N}{t}{U}> <px1sg><pl>:>um>ak #Dir/LR
 :{N}{t}{U}> <px1sg><pl>:>ak
 :k{t}{U}> <px2sg><pl>:>um>ak #Dir/LR
@@ -112,21 +123,40 @@ LEXICON Animate-N-Infl(2)
 :w{t}{U}> <px3sg><pl>:um>al #Dir/LR
 :w{t}{U}> <px3sg><pl>:>al    
 
+# Plural Possessor, Plural Possessed Quantity
+:{N}{t}{U}> <px11pl><pl>:>um>una #Dir/LR
+:{N}{t}{U}> <px11pl><pl>:>una
+:k{t}{U}> <px12pl><pl>:>um>una #Dir/LR
+:k{t}{U}> <px12pl><pl>:>una
+:{N}{t}{U}> <px2pl><pl>:>um>uwa #Dir/LR
+:{N}{t}{U}> <px2pl><pl>:>uwa
+:k{t}{U}> <px3pl><pl>:>um>uwaawal #Dir/LR
+:k{t}{U}> <px3pl><pl>:>uwaawal
 
 LEXICON Inanimate-N-Infl(2)
+
+# Plural Inanimate Nouns
 :    <pl>:>al
+
+# Singular Possessor, Singular Possessed Quantity
 :{N}{t}{U}> <px1sg>:>um #Dir/LR
 :{N}{t}{U}> <px1sg>:
 :k{t}{U}> <px2sg>:>um #Dir/LR
 :k{t}{U}> <px2sg>:
 :w{t}{U}> <px3sg>:>um #Dir/LR
-:w{t}{U}> <px3sg>:>   
-:w{t}{U}> <px1pl>:>um>una #Dir/LR
-:w{t}{U}> <px1pl>:>una
-:{N}{t}{U}> <px2pl>:>um>uwa #Dir/LR
-:{N}{t}{U}> <px2pl>:>uwa
-:k{t}{U}> <px3pl>:>um>uwaawal #Dir/LR
-:k{t}{U}> <px3pl>:>uwaawal
+:w{t}{U}> <px3sg>:> 
+
+# Plural Possessor, Singular Possessed Quantity
+:{N}{t}{U}> <px11pl>:>um>una #Dir/LR
+:{N}{t}{U}> <px11pl>:>una
+:{N}{t}{U}> <px12pl>:>um>una #Dir/LR
+:{N}{t}{U}> <px12pl>:>una
+:k{t}{U}> <px2pl>:>um>uwa #Dir/LR
+:k{t}{U}> <px2pl>:>uwa
+:w{t}{U}> <px3pl>:>um>uwaawal #Dir/LR
+:w{t}{U}> <px3pl>:>uwaawal
+
+# Singular Possessor, Plural Possessed Quantity
 :{N}{t}{U}> <px1sg><pl>:>um>al #Dir/LR
 :{N}{t}{U}> <px1sg><pl>:>al
 :k{t}{U}> <px2sg><pl>:>um>al #Dir/LR
@@ -134,6 +164,15 @@ LEXICON Inanimate-N-Infl(2)
 :w{t}{U}> <px3sg><pl>:>um>uwa #Dir/LR
 :w{t}{U}> <px3sg><pl>:>uwa 
 
+# Plural Possessor, Plural Possessed Quantity
+:{N}{t}{U}> <px11pl>:>um>una #Dir/LR
+:{N}{t}{U}> <px11pl>:>una
+:{N}{t}{U}> <px12pl>:>um>una #Dir/LR
+:{N}{t}{U}> <px12pl>:>una
+:k{t}{U}> <px2pl>:>um>uwa #Dir/LR
+:k{t}{U}> <px2pl>:>uwa
+:w{t}{U}> <px3pl>:>um>uwaawal #Dir/LR
+:w{t}{U}> <px3pl>:>uwaawal
 
 LEXICON Intransitive-V-Infl(2)
 
