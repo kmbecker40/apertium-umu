@@ -256,41 +256,49 @@ LEXICON Transitive-Animate-V-Infl(2)
 # house:house   # A noun
 
 LEXICON Animate-N-Stems
-pámbiil:p{a}mbiil             # "book"
-moonáhkeew:moonahkeew       # "groundhog"
-pootaatíikan:pootaatiikan   # "horn"
-óohŭm:oohum                 # "grandmother"
-moxóomus:moxoomus           # "grandfather"
-míhtukw:miht{u}kw                    # "tree"
-áhpapoon:ahpapoon         # "chair"
+pámbiil:p{a}mb{i}il             # "book"
+moonáhkeew:moon{a}hk{e}ew       # "groundhog"
+pootaatíikan:pootaat{i}ikan   # "horn"
+óohŭm:{o}oh{u}m                 # "grandmother"
+moxóomus:mox{o}omus           # "grandfather"
+míhtukw:m{i}ht{u}kw                    # "tree"
 Noah:Noah                          # "Noah"
-Pahtamawaas:Pahtamawaas        # "God"
+Pahtamawaas:Pahtamawaas         # "God"
+oxkwéesus:oxkw{e}esus            # "girl"
+pehpáxkwuleesh:pehp{a}xkw{u}l{e}esh     # "flower"
+kóon:k{o}on               # "snow"
+níhkash:n{i}hkash             # "fingernail"
 
-LEXICON Inanimate-N-Stems
-paxkshíikan:paxkshiikan     # "knife"
-pakíinjuw:pakiinjuw         # "plate"
-wííkwahm:wiikwahm           # "house"
-mbúy:mbuy                          # "water"
-áanay:aanay                 # "road"
-síipuw:siipuw               # "river"
+LEXICON Inanimate-N-Stems # how to do curly brackets for these??
+paxkshíikan:paxksh{i}ikan     # "knife"
+pakíinjuw:p{a}k{i}inj{u}{w}         # "plate"
+wííkwahm:w{i}{i}kw{a}hm           # "house"
+mbúy:mb{u}{y}                         # "water"
+áanay:{a}an{a}{y}                 # "road"
+síipuw:s{i}ip{u}{w}               # "river"
+wtéehiim:wt{e}eh{i}im                  # "strawberry"
+áhpapoon:{a}hpap{o}on           # "chair"
+máhksun:m{a}hks{u}n                 # "shoe"
+máhkahkw:m{a}hk{a}hkw               # "pumpkin"
 
 LEXICON Intransitive-Inanimate-V-Stems
-wíinee:wiinee         # "snow"
-páasii:paasii          # "swell"
+wíinee:w{i}in{e}e         # "snow"
+páasii:p{a}asii          # "swell"
+# what about starting consonants that contract with prefixes?
 
 LEXICON Intransitive-Animate-V-Stems
-kawíi:kawii              # "sleep"
-alóhkee:alohkee           # "work"
+kawíi:k{a}w{i}i              # "sleep"
+alóhkee:al{o}hkee           # "work"
 
 LEXICON Transitive-Inanimate-V-Stems
-néem:neem                  # "see"
-míichii:miichii        # "eat"
-ataal:ataal               # "want"
+néem:n{e}em                  # "see"
+míichii:m{i}ich{i}{i}        # "eat"
+katáatam:kat{a}atam            # "want"
 
 LEXICON Transitive-Animate-V-Stems
-néem:neem                  # "see"
-míichii:miichii        # "eat"
-ataal:ataal               # "want"
+néem:n{e}em                  # "see"
+míichii:m{i}ich{i}{i}        # "eat"
+katáaleew:kat{a}al{e}{e}{w}          # "want someone"
 
 PATTERN Number
 Numeral [<num>:]

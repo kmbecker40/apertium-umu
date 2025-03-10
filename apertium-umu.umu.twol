@@ -1,11 +1,12 @@
 Alphabet
-A À Á B C D E È É F G H I Ì Í J K L M N O Ò Ó P R S T U Ŭ Ù Ú V W X Y Z
-a à á b c d e è é f g h i ì í j k l m n o ò ó p r s t u ŭ ù ú v w x y z
+A À Á B C D E È É F G H I Ì Í Ĭ J K L M N O Ò Ó P R S T U Ŭ Ù Ú V W X Y Z
+a à á b c d e è é f g h i ì í ĭ j k l m n o ò ó p r s t u ŭ ù ú v w x y z
 
-%{a%}:a %{a%}:0  
-%{i%}:i %{i%}:0
-%{o%}:o %{o%}:0
-%{u%}:u %{u%}:0
+%{a%}:a %{a%}:á %{a%}:à %{a%}:0  
+%{e%}:e %{e%}:é %{e%}:è %{e%}:0
+%{i%}:i %{i%}:í %{i%}:ì %{i%}:ĭ %{i%}:0
+%{o%}:o %{o%}:ó %{o%}:ò %{o%}:0
+%{u%}:u %{u%}:ú %{u%}:ù %{u%}:ŭ %{u%}:0
 
 %{U%}:u %{U%}:a %{U%}:0
 %{t%}:t %{t%}:d %{t%}:0
@@ -15,7 +16,7 @@ a à á b c d e è é f g h i ì í j k l m n o ò ó p r s t u ŭ ù ú v w x y
 %{k%}:k %{k%}:0
 %{m%}:m %{m%}:0
 %{w%}:w %{w%}:0
-
+%{y%}:y %{y%}:0
 
 %>:0
 ;
