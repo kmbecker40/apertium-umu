@@ -1,2 +1,2 @@
-^moxóomus<n><aa> $
-^moxóomus<n><aa><abs>$
+^moxóomus<n><aa><px1sg>$
+^moxóomus<n><aa><px1sg><abs>$

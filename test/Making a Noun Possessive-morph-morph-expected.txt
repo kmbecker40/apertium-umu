@@ -1,4 +1,4 @@
-[FL84gMRqqsVN#0] ^óohŭmal/*óohŭmal$ "^his/*his$ ^grandmother/*grandmother$(^s/*s$)"
+[FL84gMRqqsVN#0] ^óohŭmal/óohŭm<n><aa><px3sg><pl>$ "^his/*his$ ^grandmother/*grandmother$(^s/*s$)"
 [/FL84gMRqqsVN]
 [PUZ377b7vOaJ#0] ^kŭmìhtkwumúna/míhtukw<n><aa><px12pl>/míhtukw<n><aa><px12pl><pl>$ "^our/*our$ ^trees/*trees$" (^inclusive/*inclusive$)
 [/PUZ377b7vOaJ]
@@ -8,5 +8,5 @@
 [/VKDI55_uFOF4]
 [jB0q6Lrhgk_K#0] ^kŭmíhtkwum/míhtukw<n><aa><px2sg>$ "^your/*your$ ^tree/*tree$"
 [/jB0q6Lrhgk_K]
-[rwqInIVyc5SY#0] ^wtahpapóonuwa/*wtahpapóonuwa$ "^their/*their$ ^chairs/*chairs$"
+[rwqInIVyc5SY#0] ^wtahpapóonuwa/áhpapoon<n><nn><px3sg><pl>$ "^their/*their$ ^chairs/*chairs$"
 [/rwqInIVyc5SY]

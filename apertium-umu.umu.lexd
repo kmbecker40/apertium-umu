@@ -83,10 +83,10 @@ Transitive-Animate-Verbs
 PATTERN Transitive-Inanimate-Verbs
 
 PATTERN Animate-Nouns
-:Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2)? 
+:Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2)?  Meat-Infl? Absence-Infl?  Locative-Infl?
 
 PATTERN Inanimate-Nouns
-:Inanimate-N-Infl(1) Inanimate-N-Stems [<n><nn>:] Inanimate-N-Infl(2)?
+:Inanimate-N-Infl(1) Inanimate-N-Stems [<n><nn>:] Inanimate-N-Infl(2)? Locative-Infl?
 
 PATTERN Intransitive-Animate-Verbs
 :Intransitive-Animate-V-Infl(1) Intransitive-Animate-V-Stems [<v><iv><aa>:] Intransitive-Animate-V-Infl(2)
@@ -95,10 +95,10 @@ PATTERN Intransitive-Inanimate-Verbs
 :Intransitive-Inanimate-V-Infl(1) Intransitive-Inanimate-V-Stems [<v><iv><nn>:] Intransitive-Inanimate-V-Infl(2)
 
 PATTERN Transitive-Animate-Verbs
-:Transitive-Animate-V-Infl(1)? Transitive-Animate-V-Stems [<v><tv><aa>:] Transitive-Animate-V-Infl(2)
+:Transitive-Animate-V-Infl(1) Transitive-Animate-V-Stems [<v><tv><aa>:] Transitive-Animate-V-Infl(2)
 
 PATTERN Transitive-Inanimate-Verbs
-:Transitive-Inanimate-V-Infl(1)? Transitive-Inanimate-V-Stems [<v><tv><nn>:] Transitive-Inanimate-V-Infl(2)
+:Transitive-Inanimate-V-Infl(1) Transitive-Inanimate-V-Stems [<v><tv><nn>:] Transitive-Inanimate-V-Infl(2)
 
 LEXICON Animate-N-Infl(2)
 
@@ -121,16 +121,16 @@ LEXICON Animate-N-Infl(2)
 :k{t}{U}> <px12pl>:>una
 :{N}{t}{U}> <px2pl>:>um>uwa #Dir/LR
 :{N}{t}{U}> <px2pl>:>uwa
-:k{t}{U}> <px3pl>:>um>uwaawal #Dir/LR
-:k{t}{U}> <px3pl>:>uwaawal
+:{k}{t}{U}> <px3pl>:>um>uwaawal #Dir/LR
+:{k}{t}{U}> <px3pl>:>uwaawal
 
 # Singular Possessor, Plural Possessed Quantity
 :{N}{t}{U}> <px1sg><pl>:>um>ak #Dir/LR
 :{N}{t}{U}> <px1sg><pl>:>ak
 :k{t}{U}> <px2sg><pl>:>um>ak #Dir/LR
 :k{t}{U}> <px2sg><pl>:>ak
-:w{t}{U}> <px3sg><pl>:um>al #Dir/LR
-:w{t}{U}> <px3sg><pl>:>al    
+:{w}{t}{U}> <px3sg><pl>:um>al #Dir/LR
+:{w}{t}{U}> <px3sg><pl>:>al    
 
 # Plural Possessor, Plural Possessed Quantity
 :{N}{t}{U}> <px11pl><pl>:>um>una #Dir/LR
@@ -139,8 +139,8 @@ LEXICON Animate-N-Infl(2)
 :k{t}{U}> <px12pl><pl>:>una
 :{N}{t}{U}> <px2pl><pl>:>um>uwa #Dir/LR
 :{N}{t}{U}> <px2pl><pl>:>uwa
-:k{t}{U}> <px3pl><pl>:>um>uwaawal #Dir/LR
-:k{t}{U}> <px3pl><pl>:>uwaawal
+:{k}{t}{U}> <px3pl><pl>:>um>uwaawal #Dir/LR
+:{k}{t}{U}> <px3pl><pl>:>uwaawal
 
 LEXICON Inanimate-N-Infl(2)
 
@@ -182,6 +182,18 @@ LEXICON Inanimate-N-Infl(2)
 :k{t}{U}> <px2pl>:>uwa
 :w{t}{U}> <px3pl>:>um>uwaawal #Dir/LR
 :w{t}{U}> <px3pl>:>uwaawal
+
+LEXICON Locative-Infl
+<loc>:>ung
+<loc>:>eeng
+<loc>:>iing
+<loc>:>oong
+
+LEXICON Absence-Infl
+<abs>:>{a}ya
+
+LEXICON Meat-Infl
+<meat>:>eewakw
 
 LEXICON Intransitive-Inanimate-V-Infl(2)
 
@@ -260,7 +272,7 @@ pámbiil:p{a}mb{i}il             # "book"
 moonáhkeew:moon{a}hk{e}ew       # "groundhog"
 pootaatíikan:pootaat{i}ikan   # "horn"
 óohŭm:{o}oh{u}m                 # "grandmother"
-moxóomus:mox{o}omus           # "grandfather"
+moxóomus:mox{o}om{u}s           # "grandfather"
 míhtukw:m{i}ht{u}kw                    # "tree"
 Noah:Noah                          # "Noah"
 Pahtamawaas:Pahtamawaas         # "God"
@@ -268,6 +280,9 @@ oxkwéesus:oxkw{e}esus            # "girl"
 pehpáxkwuleesh:pehp{a}xkw{u}l{e}esh     # "flower"
 kóon:k{o}on               # "snow"
 níhkash:n{i}hkash             # "fingernail"
+kóowuy:k{o}o{w}{u}y                  # "cow"
+kóoshkoosh:k{o}oshkoosh          # "pig"
+atóh:at{o}h                      # "deer"
 
 LEXICON Inanimate-N-Stems # how to do curly brackets for these??
 paxkshíikan:paxksh{i}ikan     # "knife"
