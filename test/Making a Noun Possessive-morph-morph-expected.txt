@@ -1,12 +1,12 @@
-[FL84gMRqqsVN#0] ^óohŭmal/óohŭm<n><aa><px3sg><pl>$ "^his/*his$ ^grandmother/*grandmother$(^s/*s$)"
-[/FL84gMRqqsVN]
-[PUZ377b7vOaJ#0] ^kŭmìhtkwumúna/míhtukw<n><aa><px12pl>/míhtukw<n><aa><px12pl><pl>$ "^our/*our$ ^trees/*trees$" (^inclusive/*inclusive$)
-[/PUZ377b7vOaJ]
-[RinfIzIL0GKf#0] ^kŭmíhtkwumak/míhtukw<n><aa><px2sg><pl>$ "^your/*your$ ^trees/*trees$"
-[/RinfIzIL0GKf]
-[VKDI55_uFOF4#0] ^nŭmìhtkwumúna/míhtukw<n><aa><px11pl>/míhtukw<n><aa><px11pl><pl>$ "^our/*our$ ^trees/*trees$" (^exclusive/*exclusive$)
-[/VKDI55_uFOF4]
-[jB0q6Lrhgk_K#0] ^kŭmíhtkwum/míhtukw<n><aa><px2sg>$ "^your/*your$ ^tree/*tree$"
-[/jB0q6Lrhgk_K]
-[rwqInIVyc5SY#0] ^wtahpapóonuwa/áhpapoon<n><nn><px3sg><pl>$ "^their/*their$ ^chairs/*chairs$"
-[/rwqInIVyc5SY]
+[1RacJyb95pbY#0] ^kŭmíhtkwum/míhtukw<n><aa><px2sg>$
+[/1RacJyb95pbY]
+[7II7wTPS7fUS#0] ^wtahpapóonuwa/áhpapoon<n><nn><px3sg><pl>$
+[/7II7wTPS7fUS]
+[Af1xiLnQGkSe#0] ^kŭmìhtkwumúna/míhtukw<n><aa><px12pl>/míhtukw<n><aa><px12pl><pl>$
+[/Af1xiLnQGkSe]
+[IhGS_9X8whqJ#0] ^óohŭmal/óohŭm<n><aa><px3sg><pl>$
+[/IhGS_9X8whqJ]
+[Yzd9Xlxmb7MN#0] ^kŭmíhtkwumak/míhtukw<n><aa><px2sg><pl>$
+[/Yzd9Xlxmb7MN]
+[d2YHFm5VHwi7#0] ^nŭmìhtkwumúna/míhtukw<n><aa><px11pl>/míhtukw<n><aa><px11pl><pl>$
+[/d2YHFm5VHwi7]

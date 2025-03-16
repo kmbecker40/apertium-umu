@@ -82,8 +82,13 @@ Intransitive-Inanimate-Verbs
 Transitive-Animate-Verbs
 PATTERN Transitive-Inanimate-Verbs
 
+#"(nu)-(pa) contracts to (mbà-)"
+#%{N%}:m <=> : 
+#%{t%}:b <=> : 
+#%{U%}:à <=> : 
+
 PATTERN Animate-Nouns
-:Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2)?  Meat-Infl? Absence-Infl?  Locative-Infl?
+:Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2) Meat-Infl? Absence-Infl?  Locative-Infl?
 
 PATTERN Inanimate-Nouns
 :Inanimate-N-Infl(1) Inanimate-N-Stems [<n><nn>:] Inanimate-N-Infl(2)? Locative-Infl?
@@ -107,11 +112,11 @@ LEXICON Animate-N-Infl(2)
 
 # TODO: consider just using the ? instead of Dir/LR
 # Singular Possessor, Singular Possessed Quantity
-:{N}{t}{U}> <px1sg>:>um #Dir/LR
+:{N}{t}{U}> <px1sg>:>um 
 :{N}{t}{U}> <px1sg>:
-:k{t}{U}> <px2sg>:>um #Dir/LR
+:k{t}{U}> <px2sg>:>um 
 :k{t}{U}> <px2sg>:
-:w{t}{U}> <px3sg>:>um #Dir/LR    
+:w{t}{U}> <px3sg>:>um    
 :w{t}{U}> <px3sg>:  
 
 # Plural Possessor, Singular Possessed Quantity
@@ -254,8 +259,9 @@ LEXICON Transitive-Animate-V-Infl(2)
 
 
 # problems
-# all tests run but stopping at locative. No match gold. 
 # curly brackets on vowels on the RIGHT side of the colon
+# all things with prefixes don't know that they must be possessed!!
+# determiners???
 
 
 
@@ -314,6 +320,11 @@ LEXICON Transitive-Animate-V-Stems
 néem:n{e}em                  # "see"
 míichii:m{i}ich{i}{i}        # "eat"
 katáaleew:kat{a}al{e}{e}{w}          # "want someone"
+
+# LEXICON Demonstrative-Pronouns
+
+# LEXICON Demonstrative-Determiners
+
 
 PATTERN Number
 Numeral [<num>:]
