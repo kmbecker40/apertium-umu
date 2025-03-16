@@ -10,6 +10,7 @@ a à á b c d e è é f g h i ì í ĭ j k l m n o ò ó p r s t u ŭ ù ú v w 
 
 %{U%}:u %{U%}:a %{U%}:à %{U%}:ŭ %{U%}:0
 %{t%}:t %{t%}:d %{t%}:b %{t%}:0
+%{P%}:p %{P%}:b
 
 %{N%}:n %{N%}:m
 %{n%}:n %{n%}:0
@@ -26,12 +27,19 @@ Sets
 Vowel = A À Á E È É I Ì Í O Ò Ó U Ŭ Ù Ú 
         a à á e è é i ì í o ò ó u ŭ ù ú ;
 
+LetterP = P p ;
+
 Rules
 
 "Remove suffix vowel with vowel-ending stem"
 i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
 
-
+"(nu)-(pa) contracts to (mbà-)"
+%{N%}:m <=> : %>:m LetterP _ .#. ;
+%{t%}:0 <=> : %>:0 LetterP _ .#. ;
+%{P%}:b <=> : LetterP %>:b _ .#. ;
+%{U%}:0 <=> : LetterP %>:0 _ .#. ;
+%{a%}:à <=> : LetterP %>:à _ .#. ;
 
 ! Resources:
 ! https://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Enter_twol

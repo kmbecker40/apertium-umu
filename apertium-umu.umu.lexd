@@ -83,12 +83,12 @@ Transitive-Animate-Verbs
 PATTERN Transitive-Inanimate-Verbs
 
 #"(nu)-(pa) contracts to (mbà-)"
-#%{N%}:m <=> : 
+#%{N%}:m <=> : %>:m LetterP _ .#. ;
 #%{t%}:b <=> : 
 #%{U%}:à <=> : 
 
 PATTERN Animate-Nouns
-:Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2) Meat-Infl? Absence-Infl?  Locative-Infl?
+:Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2)? Meat-Infl? Absence-Infl?  Locative-Infl?
 
 PATTERN Inanimate-Nouns
 :Inanimate-N-Infl(1) Inanimate-N-Stems [<n><nn>:] Inanimate-N-Infl(2)? Locative-Infl?
@@ -176,7 +176,7 @@ LEXICON Inanimate-N-Infl(2)
 :k{t}{U}> <px2sg><pl>:>um>al #Dir/LR
 :k{t}{U}> <px2sg><pl>:>al
 :w{t}{U}> <px3sg><pl>:>um>uwa #Dir/LR
-:w{t}{U}> <px3sg><pl>:>uwa 
+:w{t}{U}> <px3sg%{y%}:y %{y%}:0><pl>:>uwa 
 
 # Plural Possessor, Plural Possessed Quantity
 :{N}{t}{U}> <px11pl>:>um>una #Dir/LR
@@ -279,7 +279,7 @@ LEXICON Transitive-Animate-V-Infl(2)
 # house:house   # A noun
 
 LEXICON Animate-N-Stems
-pámbiil:p{a}mb{i}il             # "book"
+pámbiil:{P}{a}mb{i}il             # "book"
 moonáhkeew:moon{a}hk{e}ew       # "groundhog"
 pootaatíikan:pootaat{i}ikan   # "horn"
 óohŭm:{o}oh{u}m                 # "grandmother"
