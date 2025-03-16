@@ -263,6 +263,11 @@ LEXICON Transitive-Animate-V-Infl(2)
 # all things with prefixes don't know that they must be possessed!!
 # determiners???
 
+# Questions
+# What are the ? and Dir/LR doing? Do we need both?
+# What corpus.txt
+# spellrelax vs curly brackets
+# How to do twol rules and for what (not really any patterns, contractions?)
 
 
 ###############################################################################
