@@ -27,12 +27,25 @@ Sets
 Vowel = A À Á E È É I Ì Í O Ò Ó U Ŭ Ù Ú 
         a à á e è é i ì í o ò ó u ŭ ù ú ;
 
-LetterP = P p ;
-
 Rules
 
 "Remove suffix vowel with vowel-ending stem"
 i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
+
+Rules to make (nu)-(pa) contract to (mbà-)
+"N is realized as m when the possessive prefix nu precedes pa"
+%{N%}:m <=> _ :0* pa: ;
+"P is realized as b when the possessive prefix nu precedes pa"
+%{P%}:b <=> %{N%}: :0* _ ;
+"a is realized as à when the possessive prefix nu precedes pa"
+%{a%}:à <=> %{N%}: %{P%}: :0* _ ;
+
+Rules to make (ku)-(pa) contract to (kpà-)
+"a is realized as à when the possessive prefix ku precedes pa"
+%{a%}:à <=> k: :0* %{P%}: :0* _ ;
+
+Rules to make (wu)-(pa) contract to (pà-)
+%{a%}:à <=> w: {U}: %{P%}: _ ;
 
 
 ! Resources:
