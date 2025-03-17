@@ -80,15 +80,6 @@ Inanimate-Nouns
 Intransitive-Animate-Verbs
 Intransitive-Inanimate-Verbs
 Transitive-Animate-Verbs
-PATTERN Transitive-Inanimate-Verbs
-
-#"(nu)-(pa) contracts to (mbà-)"
-#%{N%}:m <=> : %>:m LetterP _ .#. ;
-#%{t%}:0 <=> : %>:0 LetterP _ .#. ;
-#%{P%}:b <=> : LetterP %>:b _ .#. ;
-#%{U%}:0 <=> : LetterP %>:0 _ .#. ;
-#%{a%}:à <=> : LetterP %>:à _ .#. ;
-
 
 PATTERN Animate-Nouns
 :Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2)? Meat-Infl? Absence-Infl?  Locative-Infl?
