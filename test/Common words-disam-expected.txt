@@ -30,6 +30,9 @@
 [/TSuGA6U85Gsb]
 [V4BDcFfLZf41#0] "<Noah>"
 	"Noah" n aa
+	"Noah" n aa px3sg
+	"Noah" n aa px1sg
+	"Noah" n aa px2sg
 
 <STREAMCMD:FLUSH>
 [/V4BDcFfLZf41]
@@ -86,6 +89,9 @@
 [/xQo0ThH9q165]
 [xjLn28ZQiMLc#0] "<Pahtamawaas>"
 	"Pahtamawaas" n aa
+	"Pahtamawaas" n aa px3sg
+	"Pahtamawaas" n aa px1sg
+	"Pahtamawaas" n aa px2sg
 
 <STREAMCMD:FLUSH>
 [/xjLn28ZQiMLc]

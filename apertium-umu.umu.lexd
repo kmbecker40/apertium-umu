@@ -84,8 +84,11 @@ PATTERN Transitive-Inanimate-Verbs
 
 #"(nu)-(pa) contracts to (mbà-)"
 #%{N%}:m <=> : %>:m LetterP _ .#. ;
-#%{t%}:b <=> : 
-#%{U%}:à <=> : 
+#%{t%}:0 <=> : %>:0 LetterP _ .#. ;
+#%{P%}:b <=> : LetterP %>:b _ .#. ;
+#%{U%}:0 <=> : LetterP %>:0 _ .#. ;
+#%{a%}:à <=> : LetterP %>:à _ .#. ;
+
 
 PATTERN Animate-Nouns
 :Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2)? Meat-Infl? Absence-Infl?  Locative-Infl?
@@ -112,11 +115,11 @@ LEXICON Animate-N-Infl(2)
 
 # TODO: consider just using the ? instead of Dir/LR
 # Singular Possessor, Singular Possessed Quantity
-:{N}{t}{U}> <px1sg>:>um 
+:{N}{t}{U}> <px1sg>:>um #Dir/LR
 :{N}{t}{U}> <px1sg>:
-:k{t}{U}> <px2sg>:>um 
+:k{t}{U}> <px2sg>:>um #Dir/LR
 :k{t}{U}> <px2sg>:
-:w{t}{U}> <px3sg>:>um    
+:w{t}{U}> <px3sg>:>um #Dir/LR
 :w{t}{U}> <px3sg>:  
 
 # Plural Possessor, Singular Possessed Quantity
