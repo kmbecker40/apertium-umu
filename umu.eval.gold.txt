@@ -1,33 +1,58 @@
 "<Laawate>"
 	"*Laawate"
+	Page 130 
+	stem: láawate "long ago"
+	POS: particle <pc>
 "<weemi>"
 	"*weemi"
 ̆ 
 "<aweeniik>"
 	"*aweeniik"
+	Page 44
+	stem: awéen "person"
+		This is the plural 
+	POS: pronoun <pr>
 "<moxa>"
 	"*moxa"
 "<mataawsuwak>"
 	"*mataawsuwak"
 . 
+	Page 160
+	stem: matáawsuw "lead a bad life, be a sinner"
+		This is plural
+	POS: VAI
 "<Shukela>"
 	"*Shukela"
 "<mayaawsuw>"
 	"*mayaawsuw"
+	Page 546
+	stem: mayaawiixun "be in order"
+		Used here as a verb for obey?
 "<lunuw>"
 	"*lunuw"
+	Page 527
+	stem: lunuw "male, adult man"
 "<kwulsutawáawal>"
 	"*kwulsutawáawal"
+	Page 108
+	stem: kulustaweew "listen to"
+		3rd person singular
 "<Pahtamawaasal>"
 	"Pahtamawaas" n aa px3sg pl
 .  
 "<Nii>"
 	"*Nii"
+	Page 195 
+	stem: Nii "I,me"
+	POS: <pr>
 "<numoxoomus>"
 	"moxóomus" n aa
 	"moxóomus" n aa px1sg
 "<waak>"
 	"*waak"
+	Page 326 
+	stem: waak "and"
+	POS: particle <pc>
 "<noohum>"
 	"óohŭm" n aa
 	"óohŭm" n aa px1sg
@@ -35,6 +60,9 @@
 	"*kxanuwak"
 "<nxah>"
 	"*nxah"
+	Page 206
+	stem: nxah "three"
+	POS: particle <pc>
 "<amiimunzal>"
 	"*amiimunzal"
 . 
