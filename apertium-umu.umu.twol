@@ -45,6 +45,7 @@ Rules to make (ku)-(pa) contract to (kpà-)
 %{a%}:à <=> k: :0* %{P%}: :0* _ ;
 
 Rules to make (wu)-(pa) contract to (pà-)
+"a is realized as à when the possessive prefix wu precedes pa"
 %{a%}:à <=> w: {U}: %{P%}: _ ;
 
 
