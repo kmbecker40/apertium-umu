@@ -25,28 +25,28 @@ a à á b c d e è é f g h i ì í ĭ j k l m n o ò ó p r s t u ŭ ù ú v w 
 Sets
 
 Vowel = A À Á E È É I Ì Í O Ò Ó U Ŭ Ù Ú 
-        a à á e è é i ì í o ò ó u ŭ ù ú ;
+        %{a%} a à á e è é i ì í o ò ó u ŭ ù ú ;
 
 Rules
 
-"Remove suffix vowel with vowel-ending stem"
-i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
-
-Rules to make (nu)-(pa) contract to (mbà-)
+! Rules to make (nu)-(pa) contract to (mbà-)
 "N is realized as m when the possessive prefix nu precedes pa"
-%{N%}:m <=> _ :0* pa: ;
+%{N%}:m <=> _ :0* p: Vowel: ;
 "P is realized as b when the possessive prefix nu precedes pa"
-%{P%}:b <=> %{N%}: :0* _ ;
+p:b <=> %{N%}: :0* _ Vowel: ;
 "a is realized as à when the possessive prefix nu precedes pa"
-%{a%}:à <=> %{N%}: %{P%}: :0* _ ;
+%{a%}:à <=> %{N%}: %{t%}: %{U%}: %>: p: _ ;
+        k: %{t%}: %{U%}: %>: p: _ ; 
+        w: %{U%}: %>: p: _ ;
 
-Rules to make (ku)-(pa) contract to (kpà-)
-"a is realized as à when the possessive prefix ku precedes pa"
-%{a%}:à <=> k: :0* %{P%}: :0* _ ;
+! Additional rule to make (ku)-(pa) contract to (kpà-) and (wu)-(pa) contract to (pà-)
+"u is not realized when the possessive prefix ku or wu precedes pa"
+%{U%}:0 <=> w: _ %>: p: Vowel: ;
+        k: %{t%}: _ %>: p: Vowel: ;
+        %{N%}: %{t%}: _ %>: p: Vowel: ;
+"t not realized"
+%{t%}:0 <=> _ %{U%}: %>: \Vowel: ;
 
-Rules to make (wu)-(pa) contract to (pà-)
-"a is realized as à when the possessive prefix wu precedes pa"
-%{a%}:à <=> w: {U}: %{P%}: _ ;
 
 
 ! Resources:

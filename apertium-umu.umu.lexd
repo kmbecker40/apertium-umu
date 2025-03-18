@@ -273,52 +273,52 @@ LEXICON Transitive-Animate-V-Infl(2)
 # house:house   # A noun
 
 LEXICON Animate-N-Stems
-pámbiil:{P}{a}mb{i}il             # "book"
-moonáhkeew:moon{a}hk{e}ew       # "groundhog"
+pámbiil:pambiil             # "book"
+moonáhkeew:moonahkeew       # "groundhog"
 pootaatíikan:pootaat{i}ikan   # "horn"
-óohŭm:{o}oh{u}m                 # "grandmother"
-moxóomus:mox{o}om{u}s           # "grandfather"
-míhtukw:m{i}ht{u}kw                    # "tree"
+óohŭm:oohum                 # "grandmother"
+moxóomus:moxoomus           # "grandfather"
+míhtukw:mihtukw                    # "tree"
 Noah:Noah                          # "Noah"
 Pahtamawaas:Pahtamawaas         # "God"
-oxkwéesus:oxkw{e}esus            # "girl"
-pehpáxkwuleesh:pehp{a}xkw{u}l{e}esh     # "flower"
-kóon:k{o}on               # "snow"
-níhkash:n{i}hkash             # "fingernail"
-kóowuy:k{o}o{w}{u}y                  # "cow"
-kóoshkoosh:k{o}oshkoosh          # "pig"
-atóh:at{o}h                      # "deer"
+oxkwéesus:oxkweesus            # "girl"
+pehpáxkwuleesh:pehpaxkwuleesh     # "flower"
+kóon:koon               # "snow"
+níhkash:nihkash             # "fingernail"
+kóowuy:koowuy                  # "cow"
+kóoshkoosh:kooshkoosh          # "pig"
+atóh:atoh                      # "deer"
 
 LEXICON Inanimate-N-Stems # how to do curly brackets for these??
-paxkshíikan:paxksh{i}ikan     # "knife"
-pakíinjuw:p{a}k{i}inj{u}{w}         # "plate"
-wííkwahm:w{i}{i}kw{a}hm           # "house"
-mbúy:mb{u}{y}                         # "water"
-áanay:{a}an{a}{y}                 # "road"
-síipuw:s{i}ip{u}{w}               # "river"
-wtéehiim:wt{e}eh{i}im                  # "strawberry"
-áhpapoon:{a}hpap{o}on           # "chair"
-máhksun:m{a}hks{u}n                 # "shoe"
-máhkahkw:m{a}hk{a}hkw               # "pumpkin"
+paxkshíikan:paxkshiikan     # "knife"
+pakíinjuw:pakiinju{w}         # "plate"
+wííkwahm:wiikwahm           # "house"
+mbúy:mbu{y}                         # "water"
+áanay:aana{y}                 # "road"
+síipuw:siipu{w}               # "river"
+wtéehiim:wteehiim                  # "strawberry"
+áhpapoon:ahpapoon           # "chair"
+máhksun:mahksun                 # "shoe"
+máhkahkw:mahkahkw               # "pumpkin"
 
 LEXICON Intransitive-Inanimate-V-Stems
-wíinee:w{i}in{e}e         # "snow"
-páasii:p{a}asii          # "swell"
+wíinee:wiinee         # "snow"
+páasii:paasii          # "swell"
 # what about starting consonants that contract with prefixes?
 
 LEXICON Intransitive-Animate-V-Stems
-kawíi:k{a}w{i}i              # "sleep"
-alóhkee:al{o}hkee           # "work"
+kawíi:kawii              # "sleep"
+alóhkee:alohkee           # "work"
 
 LEXICON Transitive-Inanimate-V-Stems
-néem:n{e}em                  # "see"
-míichii:m{i}ich{i}{i}        # "eat"
-katáatam:kat{a}atam            # "want"
+néem:neem                  # "see"
+míichii:miichii       # "eat"
+katáatam:kataatam            # "want"
 
 LEXICON Transitive-Animate-V-Stems
-néem:n{e}em                  # "see"
-míichii:m{i}ich{i}{i}        # "eat"
-katáaleew:kat{a}al{e}{e}{w}          # "want someone"
+néem:neem                  # "see"
+míichii:miichii       # "eat"
+katáaleew:kataalee{w}          # "want someone"
 
 # LEXICON Demonstrative-Pronouns
 
