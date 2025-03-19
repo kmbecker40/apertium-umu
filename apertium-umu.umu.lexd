@@ -6,6 +6,7 @@
 # <iv>     # Intransitive Verb
 # <tv>     # Transitive Verb
 # <adj>    # Adjective
+# <adv>    # Adverb
 # <num>    # Numeral
 # <aa>     # Animate Noun
 # <nn>     # Inanimate Noun
@@ -14,6 +15,10 @@
 # <vaux>   # Auxiliary Verb
 # <mod>    # Modal word
 # <det>    # Determiner
+# <cnjcoo> # Coordinating conjunction
+# <cnjsub> # Subordinating conjunction
+# <ref>    # Reflexive
+
 
 # <sent>   # Sentence-ending punctuation
 # <guio>   # Hyphen
