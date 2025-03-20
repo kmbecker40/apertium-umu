@@ -1,12 +1,12 @@
-[1RacJyb95pbY#0] ^kŭmíhtkwum/míhtukw<n><aa><px2sg>$
+[1RacJyb95pbY#0] ^kŭmíhtkwum/*kŭmíhtkwum$
 [/1RacJyb95pbY]
 [7II7wTPS7fUS#0] ^wtahpapóonuwa/*wtahpapóonuwa$
 [/7II7wTPS7fUS]
-[Af1xiLnQGkSe#0] ^kŭmìhtkwumúna/míhtukw<n><aa><px12pl>/míhtukw<n><aa><px12pl><pl>$
+[Af1xiLnQGkSe#0] ^kŭmìhtkwumúna/*kŭmìhtkwumúna$
 [/Af1xiLnQGkSe]
-[IhGS_9X8whqJ#0] ^óohŭmal/óohŭm<n><aa><px3sg><pl>$
+[IhGS_9X8whqJ#0] ^óohŭmal/*óohŭmal$
 [/IhGS_9X8whqJ]
-[Yzd9Xlxmb7MN#0] ^kŭmíhtkwumak/míhtukw<n><aa><px2sg><pl>$
+[Yzd9Xlxmb7MN#0] ^kŭmíhtkwumak/*kŭmíhtkwumak$
 [/Yzd9Xlxmb7MN]
-[d2YHFm5VHwi7#0] ^nŭmìhtkwumúna/míhtukw<n><aa><px11pl>/míhtukw<n><aa><px11pl><pl>$
+[d2YHFm5VHwi7#0] ^nŭmìhtkwumúna/*nŭmìhtkwumúna$
 [/d2YHFm5VHwi7]

@@ -87,10 +87,10 @@ Intransitive-Inanimate-Verbs
 Transitive-Animate-Verbs
 
 PATTERN Animate-Nouns
-:Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2)? Meat-Infl? Absence-Infl?  Locative-Infl?
+:Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2) Meat-Infl? Absence-Infl?  Locative-Infl?
 
 PATTERN Inanimate-Nouns
-:Inanimate-N-Infl(1) Inanimate-N-Stems [<n><nn>:] Inanimate-N-Infl(2)? Locative-Infl?
+:Inanimate-N-Infl(1) Inanimate-N-Stems [<n><nn>:] Inanimate-N-Infl(2) Locative-Infl?
 
 PATTERN Intransitive-Animate-Verbs
 :Intransitive-Animate-V-Infl(1) Intransitive-Animate-V-Stems [<v><iv><aa>:] Intransitive-Animate-V-Infl(2)
@@ -133,8 +133,8 @@ LEXICON Animate-N-Infl(2)
 :{N}{t}{U}> <px1sg><pl>:>ak
 :k{t}{U}> <px2sg><pl>:>um>ak #Dir/LR
 :k{t}{U}> <px2sg><pl>:>ak
-:{w}{t}{U}> <px3sg><pl>:um>al #Dir/LR
-:{w}{t}{U}> <px3sg><pl>:>al    
+:w{t}{U}> <px3sg><pl>:um>al #Dir/LR
+:w{t}{U}> <px3sg><pl>:>al    
 
 # Plural Possessor, Plural Possessed Quantity
 :{N}{t}{U}> <px11pl><pl>:>um>una #Dir/LR

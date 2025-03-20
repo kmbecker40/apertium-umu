@@ -35,7 +35,7 @@ Rules
 "P is realized as b when the possessive prefix nu precedes pa"
 p:b <=> %{N%}: :0* _ Vowel: ;
 "a is realized as à when the possessive prefix nu precedes pa"
-%{a%}:à <=> %{N%}: %{t%}: %{U%}: %>: p: _ ;
+a:à <=> %{N%}: %{t%}: %{U%}: %>: p: _ ;
         k: %{t%}: %{U%}: %>: p: _ ; 
         w: %{U%}: %>: p: _ ;
 
@@ -47,6 +47,18 @@ p:b <=> %{N%}: :0* _ Vowel: ;
 "t not realized"
 %{t%}:0 <=> _ %{U%}: %>: \Vowel: ;
 
+! Tree rule
+"N is realized as n when the possessive prefix nu precedes mi"
+%{N%}:n <=> _ :0* %>: m: Vowel: ;
+"w not realized when (wu) + (mi)"
+w:0 <=> _ u: %>: m: Vowel: ;
+"u not realized when (wu) + (mi)"
+%{U%}:0 <=> w: _ %>: m: Vowel: ;
+"i is realized as ì when the possessive prefix precedes mi"
+i:ì <=> %{N%}: %{t%}: %{U%}: %>: m: _ ;
+        k: %{t%}: %{U%}: %>: m: _ ;
+!"u is not realized when possessive noun takes on -um suffix"
+!u:0 <=> 
 
 
 ! Resources:

@@ -1,6 +1,6 @@
 [17VEkFr7ZKYn#0] ^mahkáhkwal/máhkahkw<n><nn><pl>$
 [/17VEkFr7ZKYn]
-[3pdBQfmGidG4#0] ^pehpaxkwŭléeshak/pehpáxkwuleesh<n><aa><pl>/pehpáxkwuleesh<n><aa><px1sg><pl>/pehpáxkwuleesh<n><aa><px2sg><pl>$
+[3pdBQfmGidG4#0] ^pehpaxkwŭléeshak/pehpáxkwuleesh<n><aa><pl>$
 [/3pdBQfmGidG4]
 [4aAQCAomW1cE#0] ^mahksúnal/máhksun<n><nn><pl>$
 [/4aAQCAomW1cE]
@@ -8,11 +8,11 @@
 [/MFnTmGG5HkzM]
 [M_JjBuTu55Gt#0] ^pakíinjŭwal/pakíinjuw<n><nn><pl>$
 [/M_JjBuTu55Gt]
-[NfQD4W-C8HCS#0] ^pootaatíikanak/pootaatíikan<n><aa><pl>/pootaatíikan<n><aa><px1sg><pl>/pootaatíikan<n><aa><px2sg><pl>$
+[NfQD4W-C8HCS#0] ^pootaatíikanak/pootaatíikan<n><aa><pl>$
 [/NfQD4W-C8HCS]
-[R5vZQeEtvqN_#0] ^moonahkéewak/moonáhkeew<n><aa><pl>/moonáhkeew<n><aa><px1sg><pl>/moonáhkeew<n><aa><px2sg><pl>$
+[R5vZQeEtvqN_#0] ^moonahkéewak/moonáhkeew<n><aa><pl>$
 [/R5vZQeEtvqN_]
-[Ut-gDRU0RrTR#0] ^pambíilak/pámbiil<n><aa><pl>/pámbiil<n><aa><px1sg><pl>/pámbiil<n><aa><px2sg><pl>$
+[Ut-gDRU0RrTR#0] ^pambíilak/pámbiil<n><aa><pl>$
 [/Ut-gDRU0RrTR]
 [hejon5dADlyN#0] ^paxkshíikanal/paxkshíikan<n><nn><pl>$
 [/hejon5dADlyN]

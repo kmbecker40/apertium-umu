@@ -1,12 +1,12 @@
-[BU8ZL8YLlQRJ#0] ^kooshkooshéewakw/kóoshkoosh<n><aa><meat>/kóoshkoosh<n><aa><px3sg><meat>/kóoshkoosh<n><aa><px1sg><meat>/kóoshkoosh<n><aa><px2sg><meat>$
+[BU8ZL8YLlQRJ#0] ^kooshkooshéewakw/*kooshkooshéewakw$
 [/BU8ZL8YLlQRJ]
-[FIIlOUQPgBtM#0] ^kóowuy/kóowuy<n><aa>/kóowuy<n><aa><px3sg>/kóowuy<n><aa><px1sg>/kóowuy<n><aa><px2sg>$
+[FIIlOUQPgBtM#0] ^kóowuy/*kóowuy$
 [/FIIlOUQPgBtM]
-[NAsRw9G7JcJo#0] ^atóh/atóh<n><aa>/atóh<n><aa><px3sg>/atóh<n><aa><px1sg>/atóh<n><aa><px2sg>$
+[NAsRw9G7JcJo#0] ^atóh/*atóh$
 [/NAsRw9G7JcJo]
-[eSGzBzNZ4WYE#0] ^kooyéewakw/kóowuy<n><aa><meat>/kóowuy<n><aa><px3sg><meat>/kóowuy<n><aa><px1sg><meat>/kóowuy<n><aa><px2sg><meat>$
+[eSGzBzNZ4WYE#0] ^kooyéewakw/*kooyéewakw$
 [/eSGzBzNZ4WYE]
-[sH0Ucxusyj4S#0] ^atohéewakw/atóh<n><aa><meat>/atóh<n><aa><px3sg><meat>/atóh<n><aa><px1sg><meat>/atóh<n><aa><px2sg><meat>$
+[sH0Ucxusyj4S#0] ^atohéewakw/*atohéewakw$
 [/sH0Ucxusyj4S]
-[zTHi0PmQ-auW#0] ^kóoshkoosh/kóoshkoosh<n><aa>/kóoshkoosh<n><aa><px3sg>/kóoshkoosh<n><aa><px1sg>/kóoshkoosh<n><aa><px2sg>$
+[zTHi0PmQ-auW#0] ^kóoshkoosh/*kóoshkoosh$
 [/zTHi0PmQ-auW]
