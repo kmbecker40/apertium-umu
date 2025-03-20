@@ -6,7 +6,7 @@ a à á b c d e è é f g h i ì í ĭ j k l m n o ò ó p r s t u ŭ ù ú v w 
 %{e%}:e %{e%}:é %{e%}:è %{e%}:0
 %{i%}:i %{i%}:í %{i%}:ì %{i%}:ĭ %{i%}:0
 %{o%}:o %{o%}:ó %{o%}:ò %{o%}:0
-%{u%}:u %{u%}:ú %{u%}:ù %{u%}:ŭ %{u%}:0
+%{u%}:u %{u%}:0
 
 %{U%}:u %{U%}:a %{U%}:à %{U%}:ŭ %{U%}:0
 %{t%}:t %{t%}:d %{t%}:b %{t%}:0
@@ -27,13 +27,18 @@ Sets
 Vowel = A À Á E È É I Ì Í O Ò Ó U Ŭ Ù Ú 
         %{a%} a à á e è é i ì í o ò ó u ŭ ù ú ;
 
+Consonant = B C D F G H J K L M N P R S T V W X Y Z
+            b c d f g h j k l m n p r s t v w x y z ;
+
 Rules
 
 ! Rules to make (nu)-(pa) contract to (mbà-)
 "N is realized as m when the possessive prefix nu precedes pa"
 %{N%}:m <=> _ :0* p: Vowel: ;
+
 "P is realized as b when the possessive prefix nu precedes pa"
 p:b <=> %{N%}: :0* _ Vowel: ;
+
 "a is realized as à when the possessive prefix nu precedes pa"
 a:à <=> %{N%}: %{t%}: %{U%}: %>: p: _ ;
         k: %{t%}: %{U%}: %>: p: _ ; 
@@ -41,24 +46,34 @@ a:à <=> %{N%}: %{t%}: %{U%}: %>: p: _ ;
 
 ! Additional rule to make (ku)-(pa) contract to (kpà-) and (wu)-(pa) contract to (pà-)
 "u is not realized when the possessive prefix ku or wu precedes pa"
-%{U%}:0 <=> w: _ %>: p: Vowel: ;
+%{U%}:0 <=> w: _ %>: [ p: | m: ] Vowel: ;
         k: %{t%}: _ %>: p: Vowel: ;
         %{N%}: %{t%}: _ %>: p: Vowel: ;
+
 "t not realized"
 %{t%}:0 <=> _ %{U%}: %>: \Vowel: ;
 
 ! Tree rule
 "N is realized as n when the possessive prefix nu precedes mi"
-%{N%}:n <=> _ :0* %>: m: Vowel: ;
+%{N%}:n <=> _ %{t%}: %{U%}: %>: m: Vowel: ;
+
 "w not realized when (wu) + (mi)"
 w:0 <=> _ u: %>: m: Vowel: ;
-"u not realized when (wu) + (mi)"
-%{U%}:0 <=> w: _ %>: m: Vowel: ;
-"i is realized as ì when the possessive prefix precedes mi"
-i:ì <=> %{N%}: %{t%}: %{U%}: %>: m: _ ;
-        k: %{t%}: %{U%}: %>: m: _ ;
-!"u is not realized when possessive noun takes on -um suffix"
-!u:0 <=> 
+
+"u goes to ŭ when (ku) or (nu) + (mi)"
+%{U%}:ŭ <=> k: %{t%}: _ %>: m: Vowel: ;
+        %{N%}: %{t%}: _ %>: m: Vowel: ;
+
+!"i is realized as ì when the possessive prefix precedes mi"
+!i:í <=> %{N%}: %{t%}: %{U%}: %>: m: _ ;
+!       k: %{t%}: %{U%}: %>: m: _ ;
+
+"u is not realized if there is any number of consonants followed by a morpheme boundary followed by a vowel"
+%{u%}:0 <=> _ :Consonant+ %>: :Vowel ;
+
+
+! Pair Tests
+!@ {N}:n {t}:0 {U}:ŭ >:0 m:m i:i h:h t:t {u}:0 k:k w:w 
 
 
 ! Resources:

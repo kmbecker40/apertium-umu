@@ -2,6 +2,8 @@
 
 # Part of speech categories
 # <n>      # Noun
+# <np>     # Proper Noun
+# <ant>    # Anthroponym (First Names)
 # <v>      # Verb
 # <iv>     # Intransitive Verb
 # <tv>     # Transitive Verb
@@ -85,9 +87,12 @@ Inanimate-Nouns
 Intransitive-Animate-Verbs
 Intransitive-Inanimate-Verbs
 Transitive-Animate-Verbs
+Number
+Punctuation
 
 PATTERN Animate-Nouns
-:Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2) Meat-Infl? Absence-Infl?  Locative-Infl?
+:Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2) Absence-Infl?  Locative-Infl?
+:Animate-N-Infl(1) Proper-Nouns(1) [<np>:] Proper-Nouns(2) Animate-N-Infl(2) Absence-Infl?  Locative-Infl?
 
 PATTERN Inanimate-Nouns
 :Inanimate-N-Infl(1) Inanimate-N-Stems [<n><nn>:] Inanimate-N-Infl(2) Locative-Infl?
@@ -106,12 +111,15 @@ PATTERN Transitive-Inanimate-Verbs
 
 LEXICON Animate-N-Infl(2)
 
+# Non-Plural Animate Nouns
+:        :
+
 # Plural Animate Nouns
 :    <pl>:>ak
 
 # TODO: consider just using the ? instead of Dir/LR
 # Singular Possessor, Singular Possessed Quantity
-:{N}{t}{U}> <px1sg>:>um #Dir/LR
+:{N}{t}{U}> <px1sg><full>:>um 
 :{N}{t}{U}> <px1sg>:
 :k{t}{U}> <px2sg>:>um #Dir/LR
 :k{t}{U}> <px2sg>:
@@ -147,6 +155,9 @@ LEXICON Animate-N-Infl(2)
 :{k}{t}{U}> <px3pl><pl>:>uwaawal
 
 LEXICON Inanimate-N-Infl(2)
+
+# Non-Plural Inanimate Nouns
+:        :
 
 # Plural Inanimate Nouns
 :    <pl>:>al
@@ -195,9 +206,6 @@ LEXICON Locative-Infl
 
 LEXICON Absence-Infl
 <abs>:>{a}ya
-
-LEXICON Meat-Infl
-<meat>:>eewakw
 
 LEXICON Intransitive-Inanimate-V-Infl(2)
 
@@ -283,9 +291,7 @@ moonáhkeew:moonahkeew       # "groundhog"
 pootaatíikan:pootaat{i}ikan   # "horn"
 óohŭm:oohum                 # "grandmother"
 moxóomus:moxoomus           # "grandfather"
-míhtukw:mihtukw                    # "tree"
-Noah:Noah                          # "Noah"
-Pahtamawaas:Pahtamawaas         # "God"
+míhtukw:miht{u}kw                    # "tree"
 oxkwéesus:oxkweesus            # "girl"
 pehpáxkwuleesh:pehpaxkwuleesh     # "flower"
 kóon:koon               # "snow"
@@ -329,6 +335,9 @@ katáaleew:kataalee{w}          # "want someone"
 
 # LEXICON Demonstrative-Determiners
 
+LEXICON Proper-Nouns(2)
+Noah:Noah <ant>:                      # "Noah"
+Pahtamawaas:Pahtamawaas <ant>:        # "God"
 
 PATTERN Number
 Numeral [<num>:]
