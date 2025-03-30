@@ -22,7 +22,6 @@
 # <ref>    # Reflexive
 # <emph>   # Emphatic
 
-
 # <sent>   # Sentence-ending punctuation
 # <guio>   # Hyphen
 # <cm>     # Comma
@@ -90,6 +89,12 @@ Intransitive-Inanimate-Verbs
 Transitive-Animate-Verbs
 Number
 Punctuation
+Adjectives
+Pronouns
+Adverbs
+Coordinating-Conjunctions
+Subordinating-Conjunctions
+Emphatics
 
 PATTERN Animate-Nouns
 :Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2) Absence-Infl?  Locative-Infl?
@@ -109,6 +114,9 @@ PATTERN Transitive-Animate-Verbs
 
 PATTERN Transitive-Inanimate-Verbs
 :Transitive-Inanimate-V-Infl(1) Transitive-Inanimate-V-Stems [<v><tv><nn>:] Transitive-Inanimate-V-Infl(2)
+
+PATTERN Pronouns
+Pronoun-Stems [<prn>:] Pronoun-Infl
 
 LEXICON Animate-N-Infl(2)
 
@@ -265,6 +273,11 @@ LEXICON Transitive-Animate-V-Infl(2)
 :k{u}> <s_2pl><o_3pl>:>aawa
 :w{u}> <s_3pl><o_3pl>:>aawaawal
 
+LEXICON Pronoun-Infl
+<prn>:
+<prn><pl>:>iik
+<prn><obv>:>iil
+<prn><pl><obv>:>iil
 
 # problems
 # curly brackets on vowels on the RIGHT side of the colon
@@ -295,11 +308,18 @@ moxóomus:moxoomus           # "grandfather"
 míhtukw:miht{u}kw                    # "tree"
 oxkwéesus:oxkweesus            # "girl"
 pehpáxkwuleesh:pehpaxkwuleesh     # "flower"
-kóon:koon               # "snow"
-níhkash:nihkash             # "fingernail"
+kóon:koon                      # "snow"
+níhkash:nihkash                # "fingernail"
 kóowuy:koowuy                  # "cow"
 kóoshkoosh:kooshkoosh          # "pig"
 atóh:atoh                      # "deer"
+nzhíis:nzhíis                  # "uncle"
+lunuw:lunuw                    # "man"
+nguk:nguk                      # "mother"
+amiimunz:amiimunz              # "child"
+amóxool:amoxool                # "boat"
+
+# ISSUE: WHAT TO DO WITH MANDATORY POSSESSIVES?
 
 LEXICON Inanimate-N-Stems # how to do curly brackets for these??
 paxkshíikan:paxkshiikan     # "knife"
@@ -312,6 +332,12 @@ wtéehiim:wteehiim                  # "strawberry"
 áhpapoon:ahpapoon           # "chair"
 máhksun:mahksun                 # "shoe"
 máhkahkw:mahkahkw               # "pumpkin"
+kpahoon:kpahoon                 # "door"
+wchápihk:wchápihk               # "medicine"
+mataawsuwáakan:mataawsuwaakan   # "sin"
+ahkuy:ahkuy                     # "earth"
+kóot:kootum                     # "coat"
+túndeew:tundeew                 # "fire"
 
 LEXICON Intransitive-Inanimate-V-Stems
 wíinee:wiinee         # "snow"
@@ -321,16 +347,62 @@ páasii:paasii          # "swell"
 LEXICON Intransitive-Animate-V-Stems
 kawíi:kawii              # "sleep"
 alóhkee:alohkee           # "work"
+mataasuw:mataasuw         # "lead a wicked life"
+shiinzuw:shiinzuw          # "be named"
+kulooneew:kulooneew         # "lie"
+wulaawsuw:wulaawsuw         # "be holy"
+manoongsuw:manoongsuw       # "be angry"
+ehkwi-pumaawsuw:ehkwi-pumaawsuw # "die"
+manihleew:manihleew         # "die"
+liitéeheew:liiteeheew       # "think"
 
 LEXICON Transitive-Inanimate-V-Stems
 néem:neem                  # "see"
 míichii:miichii       # "eat"
 katáatam:kataatam            # "want"
+pundam:pundam               # "hear"
 
 LEXICON Transitive-Animate-V-Stems
 néem:neem                  # "see"
 míichii:miichii       # "eat"
 katáaleew:kataalee{w}          # "want someone"
+kpaham:kpaham           # "see"
+kumootkeew:kumootkeew   # "steal"
+ahwaaleew:ahwaaleew     # "love"
+ngaleew:ngaleew         # "leave behind"
+tumusheew:tumusheew     # "cut"
+
+LEXICON Adjective-Stems
+weemi:weemi         # "all"
+
+PATTERN Adjectives 
+Adjective-Stems [<adj>:]
+
+LEXICON Pronoun-Stems
+aween:aween         # "person"
+kweekw:kweekw       # "thing"
+ktakan:ktakan       # "the other"
+
+LEXICON Adverb-Stems
+laawate:laawate     # "long ago"
+moxa:moxa           # "very"
+nal:nal             # "then"
+shaa:shaa           # "immediately" NEEDS A TWOL RULE
+alaami:alaami       # "inside" PREPOSITION
+mehch:mehch         # "now"
+
+PATTERN Adverbs
+Adverb-Stems [<adv>:]
+
+LEXICON Coordinating-Conjunctions
+waak:waak<cnjcoo>    # "and"
+
+LEXICON Subordinating-Conjunctions
+shukw:shukw<cnjsub> # "but"
+
+LEXICON Emphatics
+ang:ang             # Emphatic
+ha:ha               # Emphatic
 
 # LEXICON Demonstrative-Pronouns
 
@@ -339,6 +411,7 @@ katáaleew:kataalee{w}          # "want someone"
 LEXICON Proper-Nouns(2)
 Noah:Noah <ant>:                      # "Noah"
 Pahtamawaas:Pahtamawaas <ant>:        # "God"
+Jesus:Jesus <ant>:                    # "Jesus"
 
 PATTERN Number
 Numeral [<num>:]
