@@ -32,6 +32,9 @@ Consonant = B C D F G H J K L M N P R S T V W X Y Z
 
 Rules
 
+! Rules to shift accent for plurals
+á:a & i:í <=> :0* %> _ :0* _ a %{k%} ;
+
 ! Rules to make (nu)-(pa) contract to (mbà-)
 "N is realized as m when the possessive prefix nu precedes pa"
 %{N%}:m <=> _ :0* p: Vowel: ;
