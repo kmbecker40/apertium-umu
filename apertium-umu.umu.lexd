@@ -349,7 +349,7 @@ páasii:paasii          # "swell"
 LEXICON Intransitive-Animate-V-Stems
 kawíi:kawii              # "sleep"
 alóhkee:alohkee           # "work"
-mataasu:mataasu         # "lead a wicked life"
+mataawsu:mataawsu         # "lead a wicked life"
 shiinzuw:shiinzuw          # "be named"
 kulooneew:kulooneew         # "lie"
 wulaawsuw:wulaawsuw         # "be holy"
@@ -391,6 +391,7 @@ nal:nal             # "then"
 shaa:shaa           # "immediately" NEEDS A TWOL RULE
 alaami:alaami       # "inside" PREPOSITION
 mehch:mehch         # "now"
+ngumee:ngumee       # "always"
 
 PATTERN Adverbs
 Adverb-Stems [<adv>:]
