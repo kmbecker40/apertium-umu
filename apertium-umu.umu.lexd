@@ -89,12 +89,14 @@ Intransitive-Inanimate-Verbs
 Transitive-Animate-Verbs
 Number
 Punctuation
-Adjectives
+#Adjectives
 Pronouns
 Adverbs
 Coord-Conj
-Sub-Conj
+#Sub-Conj
 Emphatics
+Modal-Words
+Determiner
 
 PATTERN Animate-Nouns
 :Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2) Absence-Infl?  Locative-Infl?
@@ -347,7 +349,7 @@ páasii:paasii          # "swell"
 LEXICON Intransitive-Animate-V-Stems
 kawíi:kawii              # "sleep"
 alóhkee:alohkee           # "work"
-mataasuw:mataasuw         # "lead a wicked life"
+mataasu:mataasu         # "lead a wicked life"
 shiinzuw:shiinzuw          # "be named"
 kulooneew:kulooneew         # "lie"
 wulaawsuw:wulaawsuw         # "be holy"
@@ -372,11 +374,10 @@ ahwaaleew:ahwaaleew     # "love"
 ngaleew:ngaleew         # "leave behind"
 tumusheew:tumusheew     # "cut"
 
-LEXICON Adjective-Stems
-weemi:weemi         # "all"
+#LEXICON Adjective-Stems
 
-PATTERN Adjectives 
-Adjective-Stems [<adj>:]
+#PATTERN Adjectives 
+#Adjective-Stems [<adj>:]
 
 LEXICON Pronoun-Stems
 aween:aween         # "person"
@@ -396,15 +397,15 @@ Adverb-Stems [<adv>:]
 
 LEXICON Coordinating-Conjunctions
 waak:waak    # "and"
+shukw:shukw # "but"
 
 PATTERN Coord-Conj
 Coordinating-Conjunctions [<cnjcoo>:]
 
-LEXICON Subordinating-Conjunctions
-shukw:shukw # "but"
+#LEXICON Subordinating-Conjunctions
 
-PATTERN Sub-Conj
-Subordinating-Conjunctions [<subcoo>:]
+#PATTERN Sub-Conj
+#Subordinating-Conjunctions [<subcoo>:]
 
 LEXICON Emphatic-Stems
 ang:ang             # Emphatic
@@ -413,9 +414,19 @@ ha:ha               # Emphatic
 PATTERN Emphatics
 Emphatic-Stems [<emph>:]
 
+LEXICON Modals
+uch:uch             # "will"; future modal word
+
+PATTERN Modal-Words
+Modals [<mod>:]
+
 # LEXICON Demonstrative-Pronouns
 
-# LEXICON Demonstrative-Determiners
+LEXICON Determiners
+weemĭ:weemi         # "all"
+
+PATTERN Determiner
+Determiners [<det>:]
 
 LEXICON Proper-Nouns(2)
 Noah:Noah <ant>:                      # "Noah"
