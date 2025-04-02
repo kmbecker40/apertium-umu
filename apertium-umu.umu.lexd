@@ -395,10 +395,16 @@ PATTERN Adverbs
 Adverb-Stems [<adv>:]
 
 LEXICON Coordinating-Conjunctions
-waak:waak<cnjcoo>    # "and"
+waak:waak    # "and"
+
+PATTERN Coord-Conj
+Coordinating-Conjunctions [<cnjcoo>:]
 
 LEXICON Subordinating-Conjunctions
 shukw:shukw<cnjsub> # "but"
+
+PATTERN Sub-Conj
+Subordinating-Conjunctions [<subcoo>:]
 
 LEXICON Emphatics
 ang:ang             # Emphatic
