@@ -333,7 +333,7 @@ wtéehiim:wteehiim                  # "strawberry"
 máhksun:mahksun                 # "shoe"
 máhkahkw:mahkahkw               # "pumpkin"
 kpahoon:kpahoon                 # "door"
-wchápihk:wchápihk               # "medicine"
+wchápihk:wchapihk               # "medicine"
 mataawsuwáakan:mataawsuwaakan   # "sin"
 ahkuy:ahkuy                     # "earth"
 kóot:kootum                     # "coat"
@@ -406,9 +406,12 @@ shukw:shukw # "but"
 PATTERN Sub-Conj
 Subordinating-Conjunctions [<subcoo>:]
 
-LEXICON Emphatics
+LEXICON Emphatic-Stems
 ang:ang             # Emphatic
 ha:ha               # Emphatic
+
+PATTERN Emphatics
+Emphatic-Stems [<emph>:]
 
 # LEXICON Demonstrative-Pronouns
 
