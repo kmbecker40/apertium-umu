@@ -92,8 +92,8 @@ Punctuation
 Adjectives
 Pronouns
 Adverbs
-Coordinating-Conjunctions
-Subordinating-Conjunctions
+Coord-Conj
+Sub-Conj
 Emphatics
 
 PATTERN Animate-Nouns
@@ -401,7 +401,7 @@ PATTERN Coord-Conj
 Coordinating-Conjunctions [<cnjcoo>:]
 
 LEXICON Subordinating-Conjunctions
-shukw:shukw<cnjsub> # "but"
+shukw:shukw # "but"
 
 PATTERN Sub-Conj
 Subordinating-Conjunctions [<subcoo>:]
