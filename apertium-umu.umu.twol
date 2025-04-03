@@ -36,7 +36,7 @@ Rules
 
 ! Rules to shift accent for plurals
 !á:a & i:í <=> :0* %> _ :0* _ a %{k%} ;
-á
+!á
 
 ! Rules to make (nu)-(pa) contract to (mbà-)
 "N is realized as m when the possessive prefix nu precedes pa"
