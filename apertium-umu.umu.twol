@@ -19,7 +19,7 @@ a à á b c d e è é f g h i ì í ĭ j k l m n o ò ó p r s t u ŭ ù ú v w
 %{w%}:w %{w%}:0
 %{y%}:y %{y%}:0
 
-%{'%}:́
+%{'%}:0 %{'%}:́
 
 %>:0
 ;
@@ -35,8 +35,10 @@ Consonant = B C D F G H J K L M N P R S T V W X Y Z
 Rules
 
 ! Rules to shift accent for plurals
-!á:a & i:í <=> :0* %> _ :0* _ a %{k%} ;
-!á
+"Accent is placed in the penultimate vowel"
+%{'%}:́  <=> _ [ :Vowel* :Consonant+ :Vowel+ :Consonant* ]/[ :0 ]* .#. ;
+
+! Rule to add 'w' to end of 'shaa' when followed by word that starts with vowel
 
 ! Rules to make (nu)-(pa) contract to (mbà-)
 "N is realized as m when the possessive prefix nu precedes pa"

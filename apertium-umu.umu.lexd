@@ -303,8 +303,8 @@ LEXICON Pronoun-Infl
 # house:house   # A noun
 
 LEXICON Animate-N-Stems
-pámbiil:pambiil             # "book"
-moonáhkeew:moona{'}hkeew       # "groundhog"
+pámbiil:pa{'}mbi{'}il             # "book"
+moonáhkeew:moona{'}hke{'}ew       # "groundhog"
 pootaatíikan:pootaat{i}ikan   # "horn"
 óohŭm:oohum                 # "grandmother"
 moxóomus:moxoomus           # "grandfather"
@@ -323,7 +323,7 @@ amóxool:amoxool                # "boat"
 # ISSUE: WHAT TO DO WITH MANDATORY POSSESSIVES?
 
 LEXICON Inanimate-N-Stems # how to do curly brackets for these??
-paxkshíikan:paxkshiikan     # "kńplate"
+paxkshíikan:paxkshiikan     # "plate"
 wííkwahm:wiikwahm           # "house"
 mbúy:mbu{y}                         # "water"
 áanay:aana{y}                 # "road"
@@ -354,7 +354,8 @@ wulaawsuw:wulaawsuw         # "be holy"
 manoongsuw:manoongsuw       # "be angry"
 ehkwi-pumaawsuw:ehkwi-pumaawsuw # "die"
 manihleew:manihleew         # "die"
-liitéeheew:liiteeheew       # "think"́
+liitéeheew:liiteeheew       # "think"
+uw:uw                 # "say"
 
 LEXICON Transitive-Inanimate-V-Stems
 néem:neem                  # "see"
@@ -453,6 +454,7 @@ LEXICON Proper-Nouns(2)
 Noah:Noah <ant>:                      # "Noah"
 Pahtamawaas:Pahtamawaas <ant>:        # "God"
 Jesus:Jesus <ant>:                    # "Jesus"
+Christ:Christ <ant>:                   # "Christ"
 
 PATTERN Number
 Numeral [<num>:]
