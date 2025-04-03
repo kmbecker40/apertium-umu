@@ -97,6 +97,7 @@ Coord-Conj
 Emphatics
 Modal-Words
 Determiner
+Demonstratives
 
 PATTERN Animate-Nouns
 :Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2) Absence-Infl?  Locative-Infl?
@@ -123,7 +124,7 @@ Pronoun-Stems [<prn>:] Pronoun-Infl
 LEXICON Animate-N-Infl(2)
 
 # Non-Plural Animate Nouns
-:        :
+:     <sg>:
 
 # Plural Animate Nouns
 :    <pl>:>ak
@@ -168,7 +169,7 @@ LEXICON Animate-N-Infl(2)
 LEXICON Inanimate-N-Infl(2)
 
 # Non-Plural Inanimate Nouns
-:        :
+:    <sg>:
 
 # Plural Inanimate Nouns
 :    <pl>:>al
@@ -303,7 +304,7 @@ LEXICON Pronoun-Infl
 
 LEXICON Animate-N-Stems
 pámbiil:pambiil             # "book"
-moonáhkeew:moonahkeew       # "groundhog"
+moonáhkeew:moona{'}hkeew       # "groundhog"
 pootaatíikan:pootaat{i}ikan   # "horn"
 óohŭm:oohum                 # "grandmother"
 moxóomus:moxoomus           # "grandfather"
@@ -315,17 +316,14 @@ níhkash:nihkash                # "fingernail"
 kóowuy:koowuy                  # "cow"
 kóoshkoosh:kooshkoosh          # "pig"
 atóh:atoh                      # "deer"
-nzhíis:nzhiis                  # "uncle"
-lunuw:lunuw                    # "man"
-nguk:nguk                      # "mother"
+nzhíis:nzhiis                ́ # "mother"
 amiimunz:amiimunz              # "child"
 amóxool:amoxool                # "boat"
 
 # ISSUE: WHAT TO DO WITH MANDATORY POSSESSIVES?
 
 LEXICON Inanimate-N-Stems # how to do curly brackets for these??
-paxkshíikan:paxkshiikan     # "knife"
-pakíinjuw:pakiinju{w}         # "plate"
+paxkshíikan:paxkshiikan     # "kńplate"
 wííkwahm:wiikwahm           # "house"
 mbúy:mbu{y}                         # "water"
 áanay:aana{y}                 # "road"
@@ -356,7 +354,7 @@ wulaawsuw:wulaawsuw         # "be holy"
 manoongsuw:manoongsuw       # "be angry"
 ehkwi-pumaawsuw:ehkwi-pumaawsuw # "die"
 manihleew:manihleew         # "die"
-liitéeheew:liiteeheew       # "think"
+liitéeheew:liiteeheew       # "think"́
 
 LEXICON Transitive-Inanimate-V-Stems
 néem:neem                  # "see"
@@ -422,7 +420,28 @@ uch:uch             # "will"; future modal word
 PATTERN Modal-Words
 Modals [<mod>:]
 
-# LEXICON Demonstrative-Pronouns
+LEXICON Animate-Demonstratives(2)
+ya:ya <sg>:           # "this"
+wa:wa <sg>:           # "this"
+wan:wan <sg>:          # "this"
+yook:yook <pl>:     # "these"
+na:na <sg>:         # "that"
+nan:nan <sg>:       # "that"
+niik:niik <pl>:     # "those"
+
+LEXICON Inanimate-Demonstratives(2)
+yu:yu <sg>:      # "this"
+yoon:yoon <sg>:   # "this"
+yool:yool <pl>:     # "these"
+nu:nu <sg>:   # "that"
+nun:nun <sg>:   # "that"
+niil:niil <pl>:     # "those"
+
+PATTERN Demonstratives
+Animate-Demonstratives(1) [<det><dem><aa>:] Animate-Demonstratives(2)
+Inanimate-Demonstratives(1) [<det><dem><nn>:] Inanimate-Demonstratives(2)
+Animate-Demonstratives(1) [<prn><dem><aa>:] Animate-Demonstratives(2)
+Inanimate-Demonstratives(1) [<prn><dem><nn>:] Inanimate-Demonstratives(2)
 
 LEXICON Determiners
 weemĭ:weemi         # "all"
