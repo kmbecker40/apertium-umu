@@ -166,6 +166,9 @@ LEXICON Animate-N-Infl(2)
 :{k}{t}{U}> <px3pl><pl>:>um>uwaawal #Dir/LR
 :{k}{t}{U}> <px3pl><pl>:>uwaawal
 
+# Obviatives
+:   <o_3sg>:>al
+
 LEXICON Inanimate-N-Infl(2)
 
 # Non-Plural Inanimate Nouns
@@ -277,10 +280,10 @@ LEXICON Transitive-Animate-V-Infl(2)
 :w{u}> <s_3pl><o_3pl>:>aawaawal
 
 LEXICON Pronoun-Infl
-<prn>:
-<prn><pl>:>iik
-<prn><obv>:>iil
-<prn><pl><obv>:>iil
+
+<pl>:>iik
+<obv>:>iil
+<pl><obv>:>iil
 
 # problems
 # curly brackets on vowels on the RIGHT side of the colon
@@ -319,6 +322,8 @@ atóh:atoh                      # "deer"
 nzhíis:nzhiis                  # "mother"
 amiimunz:amiimunz              # "child"
 amóxool:amoxool                # "boat"
+ngúk:nguk                      # "my mother" (OBLIGATORY POSSESSIVE)
+meexalapóotiis:meexalapóotiis  # "spider"
 
 # ISSUE: WHAT TO DO WITH MANDATORY POSSESSIVES?
 
@@ -392,6 +397,8 @@ shaa:shaa           # "immediately" NEEDS A TWOL RULE
 alaami:alaami       # "inside" PREPOSITION
 mehch:mehch         # "now"
 ngumee:ngumee       # "always"
+njihnal:njihnal     # "more"
+kway:kway           # "now"
 
 PATTERN Adverbs
 Adverb-Stems [<adv>:]
