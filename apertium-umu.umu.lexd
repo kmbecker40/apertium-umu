@@ -227,6 +227,8 @@ LEXICON Intransitive-Inanimate-V-Infl(2)
 # Intransitive Inanimate Verbs
 :    <s_sg>:>w
 :    <s_pl>:>wal
+:   <s_sg>: # consonant endings NEED TWOL RULE
+:   <s_pl>:>ool # consonant endings
 
 LEXICON Intransitive-Animate-V-Infl(2)
 
@@ -343,10 +345,12 @@ mataawsuwáakan:mataawsuwaakan   # "sin"
 ahkuy:ahkuy                     # "earth"
 kóot:koot                     # "coat"
 túndeew:tundeew                 # "fire"
+níil:niil                   # "my head"
 
 LEXICON Intransitive-Inanimate-V-Stems
 wíinee:wiinee         # "snow"
 páasii:paasii          # "swell"
+wŭlút:wulut            # "be nice, good"
 # what about starting consonants that contract with prefixes?
 
 LEXICON Intransitive-Animate-V-Stems
@@ -378,6 +382,7 @@ ahwaaleew:ahwaaleew     # "love"
 ngaleew:ngaleew         # "leave behind"
 tumusheew:tumusheew     # "cut"
 leew:leew               # "tell"
+wiinamámeew:wiinamameew     # "hurt, be sore in"
 
 #LEXICON Adjective-Stems
 
@@ -443,7 +448,7 @@ yoon:yoon <sg>:   # "this"
 yool:yool <pl>:     # "these"
 nu:nu <sg>:   # "that"
 nun:nun <sg>:   # "that"
-niil:niil <pl>:     # "those"
+níil:níil <pl>:     # "those"
 
 PATTERN Demonstratives
 Animate-Demonstratives(1) [<det><dem><aa>:] Animate-Demonstratives(2)
