@@ -11,6 +11,22 @@ SECTION
 # If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
 # SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
 
+# This rule distinguishes between the demonstrative determiner and pronoun forms of "wan". 
+# "wan" means this, and is chosen as a demonstrative determiner when preceding a noun. 
+REMOVE (prn) IF (1 (n)) ;
+REMOVE (det) IF (NOT 1 (n)) ;
+
+# This rule distinguishes between the noun and determiner translations of "níil."
+# "níil" can mean "my head" or "those."
+# If "níil" is followed by an inanimate plural noun, then choose the determiner.
+REMOVE (n) IF (1 (n nn pl)) ;
+
+# This rule distingushes between the question marker and emphatic forms of "há."
+# If there is a question mark at the end of the sentence, then choose question marker.
+REMOVE (emph) IF (1* ("?")) ;
+
+
+
 # Resources:
 # http://visl.sdu.dk/cg3.html
 # http://groups.google.com/group/constraint-grammar

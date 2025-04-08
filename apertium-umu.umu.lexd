@@ -422,7 +422,7 @@ Coordinating-Conjunctions [<cnjcoo>:]
 
 LEXICON Emphatic-Stems
 ang:ang             # Emphatic
-ha:ha               # Emphatic
+há:ha               # Emphatic
 
 PATTERN Emphatics
 Emphatic-Stems [<emph>:]
