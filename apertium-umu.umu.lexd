@@ -236,8 +236,9 @@ LEXICON Intransitive-Animate-V-Infl(2)
 :n{u}> <s_1sg>:>{m}
 :k{u}> <s_2sg>:>{m}
 :   <s_3sg>:>{w}     
-:{n}{k}{u}> <s_1pl>:>ohna
-:k{u}> <s_2pl>:>ohmwa
+:{n}{u}> <s_11pl>:>{o}hna
+:{k}{u}> <s_12pl>:>{o}hna
+:k{u}> <s_2pl>:>{o}hmwa
 :   <s_3pl>:>ook
 :   <s_3pl>:>{w}a>k
 
@@ -248,7 +249,8 @@ LEXICON Transitive-Inanimate-V-Infl(2)
 :n{u}> <s_1sg><o_sg>:>{u}n
 :k{u}> <s_2sg><o_sg>:>{u}n
 :w{u}> <s_3sg><o_sg>:>{u}n    
-:{n}{k}{u}> <s_1pl><o_sg>:>{u}>neen
+:{n}{u}> <s_11pl><o_sg>:>{u}>neen
+:{k}{u}> <s_12pl><o_sg>:>{u}>neen
 :k{u}> <s_2pl><o_sg>:>{u}>neewa
 :w{u}> <s_3pl><o_sg>:>{u}>neewa
 
@@ -256,7 +258,8 @@ LEXICON Transitive-Inanimate-V-Infl(2)
 :n{u}> <s_1sg><o_pl>:>{u}n>al
 :k{u}> <s_2sg><o_pl>:>{u}n>al   
 :w{u}> <s_3sg><o_pl>:>{u}n>al  
-:{n}{k}{u}> <s_1pl><o_pl>:>{u}>neen
+:{n}{u}> <s_11pl><o_pl>:>{u}>neen
+:{k}{u}> <s_12pl><o_pl>:>{u}>neen
 :k{u}> <s_2pl><o_pl>:>{u}>neewa
 :w{u}> <s_3pl><o_pl>:>{u}>neewa
 
@@ -268,7 +271,8 @@ LEXICON Transitive-Animate-V-Infl(2)
 :k{u}> <s_2sg><o_3sg>:>aaw  
 :k{u}> <s_2sg><o_3sg>:>a
 :w{u}> <s_3sg><o_3sg>:>aawal
-:{n}{k}{u}> <s_1pl><o_3sg>:>aawuna
+:{n}{u}> <s_11pl><o_3sg>:>aawuna
+:{k}{u}> <s_12pl><o_3sg>:>aawuna
 :k{u}> <s_2pl><o_3sg>:>aawa
 :w{u}> <s_3pl><o_3sg>:>aawaawal
 :w{u}> <s_3pl><o_3sg>:>aawal
@@ -277,7 +281,8 @@ LEXICON Transitive-Animate-V-Infl(2)
 :n{u}> <s_1sg><o_3pl>:>aawak
 :k{u}> <s_2sg><o_3pl>:>aawak 
 :w{u}> <s_3sg><o_3pl>:>aawal
-:{n}{k}{u}> <s_1pl><o_3pl>:>aawuna
+:{n}{u}> <s_11pl><o_3pl>:>aawuna
+:{k}{u}> <s_12pl><o_3pl>:>aawuna
 :k{u}> <s_2pl><o_3pl>:>aawa
 :w{u}> <s_3pl><o_3pl>:>aawaawal
 
@@ -426,6 +431,7 @@ há:ha               # Emphatic
 
 PATTERN Emphatics
 Emphatic-Stems [<emph>:]
+[há<qst>:ha]
 
 LEXICON Modals
 uch:uch             # "will"; future modal word

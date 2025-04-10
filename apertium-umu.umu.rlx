@@ -18,13 +18,16 @@ REMOVE (det) IF (NOT 1 (n)) ;
 
 # This rule distinguishes between the noun and determiner translations of "níil."
 # "níil" can mean "my head" or "those."
-# If "níil" is followed by an inanimate plural noun, then choose the determiner.
+# If "níil" is followed by an inanimate plural noun, then it is not a noun.
 REMOVE (n) IF (1 (n nn pl)) ;
+# not a pronoun if followed by plural verb
+REMOVE (prn) IF (NOT 1 (v tv nn s_3pl)) (0 ("níil")); 
+REMOVE (prn) IF (NOT 1 (v iv nn s_3pl)) (0 ("níil"));
 
 # This rule distingushes between the question marker and emphatic forms of "há."
 # If there is a question mark at the end of the sentence, then choose question marker.
 REMOVE (emph) IF (1* ("?")) ;
-
+REMOVE (qst) IF (NOT 1* ("?")) ;
 
 
 # Resources:
