@@ -265,6 +265,8 @@ LEXICON Transitive-Inanimate-V-Infl(2)
 
 LEXICON Transitive-Animate-V-Infl(2)
 
+# WE HAVE NOT ACCOUNTED FOR FIRST AND SECOND PERSON OBJECTS
+
 # Transitive Animate Verbs w/ Singular Object
 :n{u}> <s_1sg><o_3sg>:>aaw
 :n{u}> <s_1sg><o_3sg>:>a
@@ -376,6 +378,7 @@ néem:neem                  # "see"
 míichii:miichii       # "eat"
 katáatam:kataatam            # "want"
 pundam:pundam               # "hear"
+kpáham:kpaham               # "shut, close"
 
 LEXICON Transitive-Animate-V-Stems
 néem:neem                  # "see"
@@ -409,13 +412,14 @@ mehch:mehch         # "now"
 ngumee:ngumee       # "always"
 njihnal:njihnal     # "more"
 kway:kway           # "now"
+máash:maash         # "like, as if"
 
 PATTERN Adverbs
 Adverb-Stems [<adv>:]
 
 LEXICON Coordinating-Conjunctions
 waak:waak    # "and"
-shukw:shukw # "but"
+vkw:shukw # "but"
 
 PATTERN Coord-Conj
 Coordinating-Conjunctions [<cnjcoo>:]
