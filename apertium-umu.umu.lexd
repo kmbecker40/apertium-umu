@@ -419,7 +419,7 @@ Adverb-Stems [<adv>:]
 
 LEXICON Coordinating-Conjunctions
 waak:waak    # "and"
-vkw:shukw # "but"
+shukw:shukw # "but"
 
 PATTERN Coord-Conj
 Coordinating-Conjunctions [<cnjcoo>:]
