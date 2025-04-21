@@ -48,9 +48,9 @@ Rules
 p:b <=> %{N%}: :0* _ Vowel: ;
 
 "a is realized as à when the possessive prefix nu precedes pa"
-a:à <=> %{N%}: %{t%}: %{U%}: %>: p: _ ;
-        k: %{t%}: %{U%}: %>: p: _ ; 
-        w: %{U%}: %>: p: _ ;
+%{'%}:̀  <=> [%{N%}: | k: | w: ] %{t%}: %{U%}: %>: p: a: _ ;
+                except
+                 _ [ :Vowel* :Consonant+ :Vowel+ :Consonant* ]/[ :0 ]* .#. ;
 
 ! Additional rule to make (ku)-(pa) contract to (kpà-) and (wu)-(pa) contract to (pà-)
 "u is not realized when the possessive prefix ku or wu precedes pa"

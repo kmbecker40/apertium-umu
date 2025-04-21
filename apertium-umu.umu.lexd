@@ -57,6 +57,7 @@
 # <o_1pl>  # First person plural object
 # <o_2pl>  # Second person plural object
 # <o_3pl>  # Third person plural object 
+# <o_3>    # obviative
 
 # Possession
 # <px1sg>  # First person singular possessive
@@ -167,7 +168,7 @@ LEXICON Animate-N-Infl(2)
 :{k}{t}{U}> <px3pl><pl>:>uwaawal
 
 # Obviatives
-:   <o_3sg>:>al
+:   <o_3>:>al
 
 LEXICON Inanimate-N-Infl(2)
 
@@ -384,7 +385,6 @@ LEXICON Transitive-Animate-V-Stems
 néem:neem                  # "see"
 míichii:miichii       # "eat"
 katáaleew:kataalee{w}          # "want someone"
-kpaham:kpaham           # "see"
 kumootkeew:kumootkeew   # "steal"
 ahwaaleew:ahwaaleew     # "love"
 ngaleew:ngaleew         # "leave behind"
