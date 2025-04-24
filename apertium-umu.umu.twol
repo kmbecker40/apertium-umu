@@ -9,7 +9,7 @@ a à á b c d e è é f g h i ì í ĭ j k l m n o ò ó p r s t u ŭ ù ú v w
 %{u%}:u %{u%}:0
 
 %{U%}:u %{U%}:a %{U%}:à %{U%}:ŭ %{U%}:0
-%{t%}:t %{t%}:d %{t%}:b %{t%}:0
+%{t%}:t %{t%}:d %{t%}:0
 %{P%}:p %{P%}:b
 
 %{N%}:n %{N%}:m
@@ -57,16 +57,22 @@ p:b <=> %{N%}: :0* _ Vowel: ;
 %{U%}:0 <=> w: _ %>: [ p: | m: ] Vowel: ;
         k: %{t%}: _ %>: p: Vowel: ;
         %{N%}: %{t%}: _ %>: p: Vowel: ;
+        _ %>: Vowel: ;
 
-"t not realized"
-%{t%}:0 <=> _ %{U%}: %>: \Vowel: ;
+"t realized when followed by -ah"
+!%{t%}:0 <=> _ %{U%}: %>: \Vowel: ;
+%{t%}:Cy <=> Cx: _ %{U%}: %>: a: h: ;
+                where Cx in ( %{N%}   k  w )
+                      Cy in ( d       t  t ) ;
 
 ! Tree rule
-"N is realized as n when the possessive prefix nu precedes mi"
-%{N%}:n <=> _ %{t%}: %{U%}: %>: m: Vowel: ;
+!"N is realized as n when the possessive prefix nu precedes mi"
+!%{N%}:n <=> _ %{t%}: %{U%}: %>: m: Vowel: ;
 
 "w not realized when (wu) + (mi)"
 w:0 <=> _ u: %>: m: Vowel: ;
+        except
+             _ %{t%}: %{U%}: %>: a: h: ;   
 
 "u goes to ŭ when (ku) or (nu) + (mi)"
 %{U%}:ŭ <=> k: %{t%}: _ %>: m: Vowel: ;
@@ -78,6 +84,7 @@ w:0 <=> _ u: %>: m: Vowel: ;
 
 "u is not realized if there is any number of consonants followed by a morpheme boundary followed by a vowel"
 %{u%}:0 <=> _ :Consonant+ %>: :Vowel ;
+
 
 
 ! Pair Tests

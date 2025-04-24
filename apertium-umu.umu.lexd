@@ -221,7 +221,7 @@ LEXICON Locative-Infl
 <loc>:>oong
 
 LEXICON Absence-Infl
-<abs>:>{a}ya
+<abs>:>áya
 
 LEXICON Intransitive-Inanimate-V-Infl(2)
 
@@ -320,7 +320,7 @@ pámbiil:pa{'}mbi{'}il             # "book"
 moonáhkeew:moona{'}hke{'}ew       # "groundhog"
 pootaatíikan:pootaat{i}ikan   # "horn"
 óohŭm:oohum                 # "grandmother"
-moxóomus:moxoomus           # "grandfather"
+moxóomus:moxoom{u}s           # "grandfather"
 míhtukw:miht{u}kw                    # "tree"
 oxkwéesus:oxkweesus            # "girl"
 pehpáxkwuleesh:pehpaxkwuleesh     # "flower"
@@ -329,7 +329,7 @@ níhkash:nihkash                # "fingernail"
 kóowuy:koowuy                  # "cow"
 kóoshkoosh:kooshkoosh          # "pig"
 atóh:atoh                      # "deer"
-nzhíis:nzhiis                  # "mother"
+nzhíis:nzhiis                  # "uncle"
 amiimunz:amiimunz              # "child"
 amóxool:amoxool                # "boat"
 ngúk:nguk                      # "my mother" (OBLIGATORY POSSESSIVE)
