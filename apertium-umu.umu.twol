@@ -54,7 +54,7 @@ p:b <=> %{N%}: :0* _ Vowel: ;
 
 ! Additional rule to make (ku)-(pa) contract to (kpà-) and (wu)-(pa) contract to (pà-)
 "u is not realized when the possessive prefix ku or wu precedes pa"
-%{U%}:0 <=> w: _ %>: [ p: | m: ] Vowel: ;
+%{U%}:0 <=> w: ( %{t%}: ) _ %>: [ p: | m: ] Vowel: ;
         k: %{t%}: _ %>: p: Vowel: ;
         %{N%}: %{t%}: _ %>: p: Vowel: ;
         _ %>: Vowel: ;
@@ -63,14 +63,15 @@ p:b <=> %{N%}: :0* _ Vowel: ;
 !%{t%}:0 <=> _ %{U%}: %>: \Vowel: ;
 %{t%}:Cy <=> Cx: _ %{U%}: %>: a: h: ;
                 where Cx in ( %{N%}   k  w )
-                      Cy in ( d       t  t ) ;
+                      Cy in ( d       t  t ) 
+                matched ;
 
 ! Tree rule
 !"N is realized as n when the possessive prefix nu precedes mi"
 !%{N%}:n <=> _ %{t%}: %{U%}: %>: m: Vowel: ;
 
 "w not realized when (wu) + (mi)"
-w:0 <=> _ u: %>: m: Vowel: ;
+w:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: m: Vowel: ;
         except
              _ %{t%}: %{U%}: %>: a: h: ;   
 
