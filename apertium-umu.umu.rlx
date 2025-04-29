@@ -29,6 +29,8 @@ REMOVE (prn) IF (NOT 1 (v iv nn s_3pl)) (0 ("níil"));
 REMOVE (emph) IF (1* ("?")) ;
 REMOVE (qst) IF (NOT 1* ("?")) ;
 
+# https://wikis.swarthmore.edu/ling073/Munsee_and_English/AmbiguityResolution
+
 
 # Resources:
 # http://visl.sdu.dk/cg3.html
