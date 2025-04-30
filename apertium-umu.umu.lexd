@@ -363,6 +363,7 @@ níil:niil                   # "my head"
 paxkshíikan:paxkshiikan     # "knife"
 náxk:náxk                   # "hand"
 asún:asun                   # "rock"
+hulŭniixsuwáakan:hulŭniixsuwáakan   # "Munsee"
 
 LEXICON Intransitive-Inanimate-V-Stems
 wíinee:wiinee         # "snow"
@@ -371,6 +372,7 @@ wŭlút:wulut            # "be nice, good"
 áhteew:ahteew          # "be there"
 máxkeew:máxkeew        # "be red"
 lúngteew:lungteew      # "melt"
+kshúteew:kshúteew      # "be hot"
 # what about starting consonants that contract with prefixes?
 
 LEXICON Intransitive-Animate-V-Stems
@@ -393,6 +395,8 @@ shungíixiin:shungiixiin     # "lie down"
 níimaaw:niimaaw         # "bring lunch"
 ndúpuw:ndupuw           # "cook"
 naxkóohŭmeew:naxkóohŭmeew       # "sing"
+sŭluskóonzheew:sŭluskóonzheew   # "have many children"
+tŭmushíikeew:tŭmushíikeew       # "cut the grass"
 
 LEXICON Transitive-Inanimate-V-Stems
 néem:neem                  # "see"
@@ -400,6 +404,9 @@ míichii:miichii       # "eat"
 katáatam:kataatam            # "want"
 pundam:pundam               # "hear"
 kpáham:kpaham               # "shut, close"
+péetoow:péetoow             # "bring"
+tawúnum:tawúnum             # "open"
+kwutúmun:kwutumun           # "feel for"
 
 LEXICON Transitive-Animate-V-Stems
 néem:neem                  # "see"
@@ -438,6 +445,10 @@ njihnal:njihnal     # "more"
 kway:kway           # "now"
 máash:maash         # "like, as if"
 msúchee:msúchee     # "hardly, at all"
+kehla:kehla         # "really"
+aashtee:aashtee     # "instead, next, then"
+piht:piht           # "maybe"
+peech:peech         # "here"
 
 PATTERN Adverbs
 Adverb-Stems [<adv>:]
@@ -457,6 +468,7 @@ Coordinating-Conjunctions [<cnjcoo>:]
 LEXICON Emphatic-Stems
 ang:ang             # Emphatic
 há:ha               # Emphatic
+kwaachund:kwaachund # "goodness!"
 
 PATTERN Emphatics
 Emphatic-Stems [<emph>:]
