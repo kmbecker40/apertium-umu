@@ -90,7 +90,7 @@ Intransitive-Inanimate-Verbs
 Transitive-Animate-Verbs
 Number
 Punctuation
-#Adjectives
+Adjectives
 Pronouns
 Adverbs
 Coord-Conj
@@ -334,6 +334,12 @@ amiimunz:amiimunz              # "child"
 amóxool:amoxool                # "boat"
 ngúk:nguk                      # "my mother" (OBLIGATORY POSSESSIVE)
 meexalapóotiis:meexalapóotiis  # "spider"
+néenaxkw:néenaxkw              # "ball"
+máxkw:maxkw                    # "bear"
+óhpun:ohpun                    # "potato"
+mwáakaneew:mwaakaneew          # "dog"
+kíishooxkw:kíishooxkw          # "sun"
+niipáahum:niipáahum            # "moon"
 
 # ISSUE: WHAT TO DO WITH MANDATORY POSSESSIVES?
 
@@ -354,11 +360,17 @@ ahkuy:ahkuy                     # "earth"
 kóot:koot                     # "coat"
 túndeew:tundeew                 # "fire"
 níil:niil                   # "my head"
+paxkshíikan:paxkshiikan     # "knife"
+náxk:náxk                   # "hand"
+asún:asun                   # "rock"
 
 LEXICON Intransitive-Inanimate-V-Stems
 wíinee:wiinee         # "snow"
 páasii:paasii          # "swell"
 wŭlút:wulut            # "be nice, good"
+áhteew:ahteew          # "be there"
+máxkeew:máxkeew        # "be red"
+lúngteew:lungteew      # "melt"
 # what about starting consonants that contract with prefixes?
 
 LEXICON Intransitive-Animate-V-Stems
@@ -375,7 +387,12 @@ liitéeheew:liiteeheew       # "think"
 uw:uw                 # "say"
 alúmsuw:alumsuw              # "leave, go off"
 lpákw:lpakw              # "cry"
-
+apúw:apúw               # "be there"
+máxksuw:máxksuw         # "be red"
+shungíixiin:shungiixiin     # "lie down"
+níimaaw:niimaaw         # "bring lunch"
+ndúpuw:ndupuw           # "cook"
+naxkóohŭmeew:naxkóohŭmeew       # "sing"
 
 LEXICON Transitive-Inanimate-V-Stems
 néem:neem                  # "see"
@@ -395,10 +412,14 @@ tumusheew:tumusheew     # "cut"
 leew:leew               # "tell"
 wiinamámeew:wiinamameew     # "hurt, be sore in"
 
-#LEXICON Adjective-Stems
+LEXICON Adjective-Stems
+waapii:waapii           # "white"
+wiisaawii:wiisaawii     # "yellow"
+maxkii:maxkii           # "red"
+nzukii:nzukii           # "black"
 
-#PATTERN Adjectives 
-#Adjective-Stems [<adj>:]
+PATTERN Adjectives 
+Adjective-Stems [<adj>:]
 
 LEXICON Pronoun-Stems
 aween:aween         # "person"
@@ -416,6 +437,7 @@ ngumee:ngumee       # "always"
 njihnal:njihnal     # "more"
 kway:kway           # "now"
 máash:maash         # "like, as if"
+msúchee:msúchee     # "hardly, at all"
 
 PATTERN Adverbs
 Adverb-Stems [<adv>:]
@@ -480,6 +502,8 @@ Noah:Noah <ant>:                      # "Noah"
 Pahtamawaas:Pahtamawaas <ant>:        # "God"
 Jesus:Jesus <ant>:                    # "Jesus"
 Christ:Christ <ant>:                   # "Christ"
+Máaliish:Máaliish <ant>:              # "Molly"
+Méeliish:Méeliish <ant>:              # "Mary"
 
 PATTERN Number
 Numeral [<num>:]
@@ -487,6 +511,11 @@ Numeral [<num>:]
 LEXICON Numeral
 /([0123456789])+/
 /([0123456789])+[.,]([0123456789])+/
+ngwut:ngwut         # "one"
+níisha:niisha       # "two"
+nxáh:nxah           # "three"
+néewa:neewa         # "four"
+náalan:náalan       # "five"
 
 LEXICON Punctuation
 
