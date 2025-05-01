@@ -21,6 +21,7 @@
 # <cnjsub> # Subordinating conjunction
 # <ref>    # Reflexive
 # <emph>   # Emphatic
+# <ij>     # Interjection
 
 # <sent>   # Sentence-ending punctuation
 # <guio>   # Hyphen
@@ -99,6 +100,7 @@ Emphatics
 Modal-Words
 Determiner
 Demonstratives
+Interjections
 
 PATTERN Animate-Nouns
 :Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2) Absence-Infl?  Locative-Infl?
@@ -202,7 +204,7 @@ LEXICON Inanimate-N-Infl(2)
 :k{t}{U}> <px2sg><pl>:>um>al #Dir/LR
 :k{t}{U}> <px2sg><pl>:>al
 :w{t}{U}> <px3sg><pl>:>um>uwa #Dir/LR
-:w{t}{U}> <px3sg%{y%}:y %{y%}:0><pl>:>uwa 
+:w{t}{U}> <px3sg><pl>:>uwa 
 
 # Plural Possessor, Plural Possessed Quantity
 :{N}{t}{U}> <px11pl>:>um>una #Dir/LR
@@ -407,6 +409,7 @@ kpáham:kpaham               # "shut, close"
 péetoow:péetoow             # "bring"
 tawúnum:tawúnum             # "open"
 kwutúmun:kwutumun           # "feel for"
+kŭlústam:kulustam           # "listen"
 
 LEXICON Transitive-Animate-V-Stems
 néem:neem                  # "see"
@@ -418,12 +421,16 @@ ngaleew:ngaleew         # "leave behind"
 tumusheew:tumusheew     # "cut"
 leew:leew               # "tell"
 wiinamámeew:wiinamameew     # "hurt, be sore in"
+wunjíimeew:wunjíimeew   # "call, summon"
+wŭlustáweew:wulustaweew     # "believe"
+takwapŭwáleew:takwapuwaleew # "marry"
 
 LEXICON Adjective-Stems
 waapii:waapii           # "white"
 wiisaawii:wiisaawii     # "yellow"
 maxkii:maxkii           # "red"
 nzukii:nzukii           # "black"
+chiipii:chiipii         # "terrible"
 
 PATTERN Adjectives 
 Adjective-Stems [<adj>:]
@@ -449,6 +456,8 @@ kehla:kehla         # "really"
 aashtee:aashtee     # "instead, next, then"
 piht:piht           # "maybe"
 peech:peech         # "here"
+taas:taas           # "one time"
+ngwutun:ngwutun     # "once"
 
 PATTERN Adverbs
 Adverb-Stems [<adv>:]
@@ -468,11 +477,16 @@ Coordinating-Conjunctions [<cnjcoo>:]
 LEXICON Emphatic-Stems
 ang:ang             # Emphatic
 há:ha               # Emphatic
-kwaachund:kwaachund # "goodness!"
 
 PATTERN Emphatics
 Emphatic-Stems [<emph>:]
 [há<qst>:ha]
+
+LEXICON Interjection
+kwaachund:kwaachund     # "goodness!"
+
+PATTERN Interjections
+Interjection [<ij>:]
 
 LEXICON Modals
 uch:uch             # "will"; future modal word
