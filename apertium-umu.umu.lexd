@@ -214,16 +214,7 @@ LEXICON Inanimate-N-Infl(2)
 :k{t}{U}> <px2pl>:>um>uwa #Dir/LR
 :k{t}{U}> <px2pl>:>uwa
 :w{t}{U}> <px3pl>:>um>uwaawal #Dir/LR
-:w{t}{U}> <px3pl>:>uwaawal
-
-LEXICON Locative-Infl
-<loc>:>ung
-<loc>:>eeng
-<loc>:>iing
-<loc>:>oong
-
-LEXICON Absence-Infl
-<abs>:>áya
+:w{t}{U}> <px3pl>:>uwaawalmŭtáanheew
 
 LEXICON Intransitive-Inanimate-V-Infl(2)
 
@@ -366,6 +357,7 @@ paxkshíikan:paxkshiikan     # "knife"
 náxk:náxk                   # "hand"
 asún:asun                   # "rock"
 hulŭniixsuwáakan:hulŭniixsuwáakan   # "Munsee"
+matantoowiineng:matantoowiineng     # "hell"
 
 LEXICON Intransitive-Inanimate-V-Stems
 wíinee:wiinee         # "snow"
@@ -375,6 +367,8 @@ wŭlút:wulut            # "be nice, good"
 máxkeew:máxkeew        # "be red"
 lúngteew:lungteew      # "melt"
 kshúteew:kshúteew      # "be hot"
+kuliikwaasuw:kuliikwaasuw # "sewn"
+chahkwéeshuw:chahkweeshuw   # "be short"
 # what about starting consonants that contract with prefixes?
 
 LEXICON Intransitive-Animate-V-Stems
@@ -399,6 +393,8 @@ ndúpuw:ndupuw           # "cook"
 naxkóohŭmeew:naxkóohŭmeew       # "sing"
 sŭluskóonzheew:sŭluskóonzheew   # "have many children"
 tŭmushíikeew:tŭmushíikeew       # "cut the grass"
+saaláakhe:saalaakhe             # "cut logs"
+kaatxákhwe:kaatxakhwe           # "cut cordwood"
 
 LEXICON Transitive-Inanimate-V-Stems
 néem:neem                  # "see"
@@ -410,6 +406,7 @@ péetoow:péetoow             # "bring"
 tawúnum:tawúnum             # "open"
 kwutúmun:kwutumun           # "feel for"
 kŭlústam:kulustam           # "listen"
+kwíilam:kwiilam             # "look for (something)"
 
 LEXICON Transitive-Animate-V-Stems
 néem:neem                  # "see"
@@ -424,6 +421,9 @@ wiinamámeew:wiinamameew     # "hurt, be sore in"
 wunjíimeew:wunjíimeew   # "call, summon"
 wŭlustáweew:wulustaweew     # "believe"
 takwapŭwáleew:takwapuwaleew # "marry"
+leekhámaweew:leekhámaweew   # "write"
+mŭtáanheew:mutaanheew       # "bewitch, influence"
+móxkaweew:moxkaweew         # "find"
 
 LEXICON Adjective-Stems
 waapii:waapii           # "white"
@@ -458,6 +458,10 @@ piht:piht           # "maybe"
 peech:peech         # "here"
 taas:taas           # "one time"
 ngwutun:ngwutun     # "once"
+njihnal:njihnal     # "more"
+mah:mah             # "no, not, negative"
+péhkiik:pehkiik     # "eventually, reluctantly"
+nxoo:nxoo           # "alone"
 
 PATTERN Adverbs
 Adverb-Stems [<adv>:]
