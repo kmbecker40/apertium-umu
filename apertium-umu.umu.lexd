@@ -101,6 +101,8 @@ Modal-Words
 Determiner
 Demonstratives
 Interjections
+Negation
+Imperative
 
 PATTERN Animate-Nouns
 :Animate-N-Infl(1) Animate-N-Stems [<n><aa>:] Animate-N-Infl(2) Absence-Infl?  Locative-Infl?
@@ -120,6 +122,13 @@ PATTERN Transitive-Animate-Verbs
 
 PATTERN Transitive-Inanimate-Verbs
 :Transitive-Inanimate-V-Infl(1) Transitive-Inanimate-V-Stems [<v><tv><nn>:] Transitive-Inanimate-V-Infl(2)
+
+PATTERN Negation
+
+PATTERN Imperative
+Intransitive-Animate-V-Stems [<v><iv><aa><imp>:] VAI-Imperative-Infl
+Transitive-Animate-V-Stems [<v><tv><aa><imp>:] VTA-Imperative-Infl
+
 
 PATTERN Pronouns
 Pronoun-Stems [<prn>:] Pronoun-Infl
@@ -281,6 +290,22 @@ LEXICON Transitive-Animate-V-Infl(2)
 :{k}{u}> <s_12pl><o_3pl>:>aawuna
 :k{u}> <s_2pl><o_3pl>:>aawa
 :w{u}> <s_3pl><o_3pl>:>aawaawal
+
+LEXICON VAI-Imperative-Infl
+<s_2sg>:>{l}{i}{h}
+<s_2pl>:>{o}{o}kw
+<s_12pl>:>{o}{o}tookw
+
+LEXICON VTA-Imperative-Infl
+<s_2sg><o_1sg>:>iil
+<s_2sg><o_3sg>: 
+<s_2sg><o_3pl>:
+<s_2pl><o_1sg>:>iikw
+<s_2pl><o_3sg>:>ooh
+<s_2pl><o_3pl>:>ooh
+<s_12pl><o_1sg>:>iineen
+<s_12pl><o_3sg>:>aatookw
+<s_12pl><o_3pl>:>aatookw
 
 LEXICON Pronoun-Infl
 
