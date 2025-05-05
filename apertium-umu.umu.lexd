@@ -288,10 +288,6 @@ LEXICON Intransitive-Inanimate-V-Infl(2)
 :   <s_pl>:>ool # consonant endings
 
 LEXICON Intransitive-Animate-V-Infl(2)
-
-# Intransitive Animate Verbs!"Stems ending in -xiin drop the final n when an imperative ending is added"
-!n:0 <=> :0* :x :i :i _ :{l} :0*;
-!        :0* :x :i :i _ :0* :{k} :{w};
 :n{u}> <s_1sg>:>{m}
 :k{u}> <s_2sg>:>{m}
 :   <s_3sg>:>{w}     
