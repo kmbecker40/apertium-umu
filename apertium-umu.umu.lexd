@@ -102,7 +102,6 @@ Modal-Words
 Determiner
 Demonstratives
 Interjections
-Negation
 Imperative
 
 PATTERN Animate-Nouns
@@ -124,65 +123,15 @@ PATTERN Transitive-Animate-Verbs
 PATTERN Transitive-Inanimate-Verbs
 :Transitive-Inanimate-V-Infl(1) Transitive-Inanimate-V-Stems [<v><tv><nn>:] Transitive-Inanimate-V-Infl(2)
 
-PATTERN Negation
-
 PATTERN Imperative
 Intransitive-Animate-V-Stems [<v><iv><aa><imp>:] VAI-Imperative-Infl
 Transitive-Animate-V-Stems [<v><tv><aa><imp>:] VTA-Imperative-Infl
 
 
-# Ideas for Negatives Implementation
-# 
-# VII Negative Indpendent Indicative Mode
-#       Vowel ending stem - mah stem-wi     3rd person singular "it __ not"
-#                           mah stem-wiiwal 3rd person plural   "they __ not"
-#       Consonant ending stems - mah stem-oowi   3rd person singular "it __ not"
-#                                mah stem-oowiiwal    3rd person plural  "they __ not"     
-
-# VAI Negative Indpendent Indicative Mode
-#       Vowel ending stems  mah nu-stem-wi     "it __ not"
-#                           mah ku-stem-wi     "you __ not"
-#                           mah    stem-wi     "he/she __ not"
-#                           mah nu-stem-wíhna    "we ___ not (excl)"
-#                           mah ku-stem-wíhna    "we ___ not (incl)"
-#                           mah ku-stem-wíhmwa   "ye ___ not"
-#                           mah    stem-wíiwak   "they ___ not"
-#                           mah    stem-wun      "there is not ___"
-#       Consonant ending stems  mah nu-stem-oowi     "it __ not"
-#                               mah ku-stem-oowi     "you __ not"
-#                               mah    stem-oowi     "he/she __ not"
-#                               mah nu-stem-oowíhna    "we ___ not (excl)"
-#                               mah ku-stem-oowíhna    "we ___ not (incl)"
-#                               mah ku-stem-oowíhmwa   "ye ___ not"
-#                               mah    stem-oowíiwak   "they ___ not"
-#                               mah    stem-oowun      "there is not ___"
-
-# VTA Negative Indpendent Indicative Mode
-#       Singular object stems          mah nu-(stem)-aawi       "I __ him not"
-#                                      mah ku-(stem)-aawi       "you __ him not"
-#                                      mah wu-(stem)-aawiiwal   "he/she __ him not" (obviative)
-#                                      mah nu-stem-aawiiwuna    "we ___ him not (excl)"
-#                                      mah ku-stem-awiiwuna     "we ___ him not (incl)"
-#                                      mah ku-stem-aawiiwa      "ye ___ him not"
-#                                      mah wu-stem-aawiiwaawal  "they ___ him not" (obviative)
-#                                      mah    stem-aawi         "he was not ___"
-#       Plural object stems            mah nu-(stem)-aawiiwak       "I __ them not"
-#                                      mah ku-(stem)-aawiiwak       "you __ them not"
-#                                      mah wu-(stem)-aawiiwal   "he/she __ them not" (obviative)
-#                                      mah nu-stem-aawiiwuna    "we ___ them not (excl)"
-#                                      mah ku-stem-awiiwuna     "we ___ them not (incl)"
-#                                      mah ku-stem-aawiiwa      "ye ___ them not"
-#                                      mah wu-stem-aawiiwaawal  "they ___ them not" (obviative)
-#                                      mah    stem-aawiiwak         "they were not ___"
-
-# QUESTION: How to add separate word ahead of stem (not prefix)
-# QUESTION: Should the negatives of each verb class be their own pattern?
 # QUESTION: Unstable vs stable verb stems (how do we tell them apart and should we bother)? Seems important for twol rules.
 # QUESTION: Can we make a twol rule only apply to verbs? 
 # QUESTION: Verb class VTAO worth adding? --> very little on Munsee Grammar
 # QUESTION: For final project- how many verb phrases is sufficient? 50?
-
-
 
 
 PATTERN Pronouns
@@ -280,13 +229,25 @@ LEXICON Inanimate-N-Infl(2)
 :w{t}{U}> <px3pl>:>um>uwaawal #Dir/LR
 :w{t}{U}> <px3pl>:>uwaawalmŭtáanheew
 
+LEXICON Locative-Infl
+<loc>:>ung
+<loc>:>eeng
+<loc>:>iing
+<loc>:>oong
+
+LEXICON Absence-Infl
+<abs>:>áya
+
 LEXICON Intransitive-Inanimate-V-Infl(2)
 
 # Intransitive Inanimate Verbs
-:    <s_sg>:>w
+:    <s_sg>:>{w} # no w for consonant-ending stems
 :    <s_pl>:>wal
-:   <s_sg>: # consonant endings NEED TWOL RULE
-:   <s_pl>:>ool # consonant endings
+:   <s_sg>:>{W}{A}l # consonant endings take -ool NEED TWOL RULE
+
+# Negative VIIs
+:   <neg><s_sg>:>{o}{o}wi
+:   <neg><s_pl>:>{o}{o}wiiwal  # consonant endings take oo
 
 LEXICON Intransitive-Animate-V-Infl(2)
 :n{u}>   <s_1sg>:>{m}
@@ -297,6 +258,7 @@ LEXICON Intransitive-Animate-V-Infl(2)
 :k{u}>   <s_2pl>:>{o}hmwa
 :        <s_3pl>:>{W}{A}k      # Stem ending in vowels - oo for consonants
 
+# Negative VAIs
 :n{u}>   <neg><s_1sg>:>{o}{o}wi
 :k{u}>   <neg><s_2sg>:>{o}{o}wi
 :        <neg><s_3sg>:>{o}{o}wi    
@@ -304,7 +266,6 @@ LEXICON Intransitive-Animate-V-Infl(2)
 :{k}{u}> <neg><s_12pl>:>{o}{o}wíhna
 :k{u}>   <neg><s_2pl>:>{o}{o}wíhmwa
 :        <neg><s_3pl>:>{o}{o}wíiwak   
-
 
 
 LEXICON Transitive-Inanimate-V-Infl(2)
@@ -343,6 +304,15 @@ LEXICON Transitive-Animate-V-Infl(2)
 :w{u}> <s_3pl><o_3sg>:>aawaawal
 :w{u}> <s_3pl><o_3sg>:>aawal
 
+# Negatives: VTAs w/ Singular Object
+:n{u}> <neg><s_1sg><o_3sg>:>aawi
+:k{u}> <neg><s_2sg><o_3sg>:>aawi 
+:w{u}> <neg><s_3sg><o_3sg>:>aawiiwal
+:{n}{u}> <neg><s_11pl><o_3sg>:>aawiiwuna
+:{k}{u}> <neg><s_12pl><o_3sg>:>aawiiwuna
+:k{u}> <neg><s_2pl><o_3sg>:>aawiiwa
+:w{u}> <neg><s_3pl><o_3sg>:>aawiiwaawal
+
 # Transitive Animate Verbs w/ Plural Object
 :n{u}> <s_1sg><o_3pl>:>aawak
 :k{u}> <s_2sg><o_3pl>:>aawak 
@@ -351,6 +321,18 @@ LEXICON Transitive-Animate-V-Infl(2)
 :{k}{u}> <s_12pl><o_3pl>:>aawuna
 :k{u}> <s_2pl><o_3pl>:>aawa
 :w{u}> <s_3pl><o_3pl>:>aawaawal
+
+# Negatives: VTAs w/ Plural Object
+:n{u}> <neg><s_1sg><o_3pl>:>aawiiwak
+:k{u}> <neg><s_2sg><o_3pl>:>aawiiwak 
+:w{u}> <neg><s_3sg><o_3pl>:>aawiiwal
+:{n}{u}> <neg><s_11pl><o_3pl>:>aawiiwuna
+:{k}{u}> <neg><s_12pl><o_3pl>:>aawiiwuna
+:k{u}> <neg><s_2pl><o_3pl>:>aawiiwa
+:w{u}> <neg><s_3pl><o_3pl>:>aawiiwaawal
+
+
+### IMPERATIVES ###
 
 LEXICON VAI-Imperative-Infl
 <s_2sg>:>{l}{i}{h}
@@ -422,9 +404,7 @@ niipáahum:niipáahum            # "moon"
 
 # ISSUE: WHAT TO DO WITH MANDATORY POSSESSIVES?
 
-LEXICON Inanimate-N-Stems # how to do curly brackets for these??
-paxkshíikan:paxkshiikan     # "plate"
-wííkwahm:wiikwahm           # "house"
+LEXICON Inanimate-N-Stems # how t{n}use"
 mbúy:mbu{y}                         # "water"
 áanay:aana{y}                 # "road"
 síipuw:siipu{w}               # "river"

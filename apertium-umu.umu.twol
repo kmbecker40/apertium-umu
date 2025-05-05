@@ -20,6 +20,8 @@ a à á b c d e è é f g h i ì í ĭ j k l m n o ò ó p r s t u ŭ ù ú v w
 %{m%}:m %{m%}:0
 %{w%}:w %{w%}:0
 %{y%}:y %{y%}:0
+%{W%}:w %{W%}:o 
+%{A%}:a %{A%}:o 
 
 %{'%}:0 %{'%}:́
 
@@ -89,9 +91,10 @@ w:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: m: Vowel: ;
 %{u%}:0 <=> _ :Consonant+ %>: :Vowel ;
 
 
-!"Stems ending in -xiin drop the final n when an imperative ending is added"
-!n:0 <=> :0* :x :i :i _ :{l} :0*;
-!        :0* :x :i :i _ :0* :{k} :{w};
+"Stems ending in -xiin drop the final n when an imperative ending is added"
+n:0 <=> :x :i :i _ %>: %{l%}: :0*;
+        :x :i :i _ %>: %{o%}: %{o%}: k w ;
+
 
 
 
