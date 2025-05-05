@@ -130,6 +130,60 @@ Intransitive-Animate-V-Stems [<v><iv><aa><imp>:] VAI-Imperative-Infl
 Transitive-Animate-V-Stems [<v><tv><aa><imp>:] VTA-Imperative-Infl
 
 
+# Ideas for Negatives Implementation
+# 
+# VII Negative Indpendent Indicative Mode
+#       Vowel ending stem - mah stem-wi     3rd person singular "it __ not"
+#                           mah stem-wiiwal 3rd person plural   "they __ not"
+#       Consonant ending stems - mah stem-oowi   3rd person singular "it __ not"
+#                                mah stem-oowiiwal    3rd person plural  "they __ not"     
+
+# VAI Negative Indpendent Indicative Mode
+#       Vowel ending stems  mah nu-stem-wi     "it __ not"
+#                           mah ku-stem-wi     "you __ not"
+#                           mah    stem-wi     "he/she __ not"
+#                           mah nu-stem-wíhna    "we ___ not (excl)"
+#                           mah ku-stem-wíhna    "we ___ not (incl)"
+#                           mah ku-stem-wíhmwa   "ye ___ not"
+#                           mah    stem-wíiwak   "they ___ not"
+#                           mah    stem-wun      "there is not ___"
+#       Consonant ending stems  mah nu-stem-oowi     "it __ not"
+#                               mah ku-stem-oowi     "you __ not"
+#                               mah    stem-oowi     "he/she __ not"
+#                               mah nu-stem-oowíhna    "we ___ not (excl)"
+#                               mah ku-stem-oowíhna    "we ___ not (incl)"
+#                               mah ku-stem-oowíhmwa   "ye ___ not"
+#                               mah    stem-oowíiwak   "they ___ not"
+#                               mah    stem-oowun      "there is not ___"
+
+# VTA Negative Indpendent Indicative Mode
+#       Singular object stems          mah nu-(stem)-aawi       "I __ him not"
+#                                      mah ku-(stem)-aawi       "you __ him not"
+#                                      mah wu-(stem)-aawiiwal   "he/she __ him not" (obviative)
+#                                      mah nu-stem-aawiiwuna    "we ___ him not (excl)"
+#                                      mah ku-stem-awiiwuna     "we ___ him not (incl)"
+#                                      mah ku-stem-aawiiwa      "ye ___ him not"
+#                                      mah wu-stem-aawiiwaawal  "they ___ him not" (obviative)
+#                                      mah    stem-aawi         "he was not ___"
+#       Plural object stems            mah nu-(stem)-aawiiwak       "I __ them not"
+#                                      mah ku-(stem)-aawiiwak       "you __ them not"
+#                                      mah wu-(stem)-aawiiwal   "he/she __ them not" (obviative)
+#                                      mah nu-stem-aawiiwuna    "we ___ them not (excl)"
+#                                      mah ku-stem-awiiwuna     "we ___ them not (incl)"
+#                                      mah ku-stem-aawiiwa      "ye ___ them not"
+#                                      mah wu-stem-aawiiwaawal  "they ___ them not" (obviative)
+#                                      mah    stem-aawiiwak         "they were not ___"
+
+# QUESTION: How to add separate word ahead of stem (not prefix)
+# QUESTION: Should the negatives of each verb class be their own pattern?
+# QUESTION: Unstable vs stable verb stems (how do we tell them apart and should we bother)? Seems important for twol rules.
+# QUESTION: Can we make a twol rule only apply to verbs? 
+# QUESTION: Verb class VTAO worth adding? --> very little on Munsee Grammar
+# QUESTION: For final project- how many verb phrases is sufficient? 50?
+
+
+
+
 PATTERN Pronouns
 Pronoun-Stems [<prn>:] Pronoun-Infl
 
@@ -235,7 +289,9 @@ LEXICON Intransitive-Inanimate-V-Infl(2)
 
 LEXICON Intransitive-Animate-V-Infl(2)
 
-# Intransitive Animate Verbs
+# Intransitive Animate Verbs!"Stems ending in -xiin drop the final n when an imperative ending is added"
+!n:0 <=> :0* :x :i :i _ :{l} :0*;
+!        :0* :x :i :i _ :0* :{k} :{w};
 :n{u}> <s_1sg>:>{m}
 :k{u}> <s_2sg>:>{m}
 :   <s_3sg>:>{w}     

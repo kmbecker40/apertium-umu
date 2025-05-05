@@ -89,6 +89,17 @@ w:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: m: Vowel: ;
 %{u%}:0 <=> _ :Consonant+ %>: :Vowel ;
 
 
+!"Stems ending in -xiin drop the final n when an imperative ending is added"
+!n:0 <=> :0* :x :i :i _ :{l} :0*;
+!        :0* :x :i :i _ :0* :{k} :{w};
+
+
+
+
+
+
+
+
 
 ! Pair Tests
 !@ {N}:n {t}:0 {U}:ŭ >:0 m:m i:i h:h t:t {u}:0 k:k w:w 
