@@ -73,6 +73,7 @@
 # <abs>    # Absence
 # <meat>   # Meat of
 # <loc>    # Locative
+# <neg>    # Negative
 
 # Other symbols
 # >        # Morpheme boundary
@@ -288,14 +289,22 @@ LEXICON Intransitive-Inanimate-V-Infl(2)
 :   <s_pl>:>ool # consonant endings
 
 LEXICON Intransitive-Animate-V-Infl(2)
-:n{u}> <s_1sg>:>{m}
-:k{u}> <s_2sg>:>{m}
-:   <s_3sg>:>{w}     
+:n{u}>   <s_1sg>:>{m}
+:k{u}>   <s_2sg>:>{m}
+:        <s_3sg>:>{w}     
 :{n}{u}> <s_11pl>:>{o}hna
 :{k}{u}> <s_12pl>:>{o}hna
-:k{u}> <s_2pl>:>{o}hmwa
-:   <s_3pl>:>ook
-:   <s_3pl>:>{w}a>k
+:k{u}>   <s_2pl>:>{o}hmwa
+:        <s_3pl>:>{W}{A}k      # Stem ending in vowels - oo for consonants
+
+:n{u}>   <neg><s_1sg>:>{o}{o}wi
+:k{u}>   <neg><s_2sg>:>{o}{o}wi
+:        <neg><s_3sg>:>{o}{o}wi    
+:{n}{u}> <neg><s_11pl>:>{o}{o}wíhna
+:{k}{u}> <neg><s_12pl>:>{o}{o}wíhna
+:k{u}>   <neg><s_2pl>:>{o}{o}wíhmwa
+:        <neg><s_3pl>:>{o}{o}wíiwak   
+
 
 
 LEXICON Transitive-Inanimate-V-Infl(2)
