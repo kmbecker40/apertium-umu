@@ -510,7 +510,8 @@ LEXICON Adverb-Stems
 laawate:laawate     # "long ago"
 moxa:moxa           # "very"
 nal:nal             # "then"
-shaa:shaa           # "immediately" NEEDS A TWOL RULE
+shaa:~shaa          # "immediately" NEEDS A TWOL RULE  Dir/RL
+shaa:shaa           # "immediately" Dir/LR
 shaa:shaaw          # "immediately" Dir/LR
 alaami:alaami       # "inside" PREPOSITION
 mehch:mehch         # "now"
