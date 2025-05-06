@@ -33,6 +33,9 @@
       <program name="lt-proc -g">
         <file name="umu.autogen.bin"/>
       </program>
+      <program name="lt-proc -p">
+        <file name="umu.autopgen.bin"/>
+      </program>
     </pipeline>
   </mode>
 

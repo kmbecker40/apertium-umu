@@ -6,13 +6,12 @@
   </sdefs>
   <pardefs>
 
-    <pardef n="contrac">
-      <e>
-        <i>ls<b/></i>
-      </e>
-      <e>
-        <i>l<b/></i>
-      </e>
+    <pardef n="vowels">
+      <e> <i>a</i> </e>
+      <e> <i>e</i> </e>
+      <e> <i>i</i> </e>
+      <e> <i>o</i> </e>
+      <e> <i>u</i> </e>
     </pardef>
 
   </pardefs>
@@ -33,6 +32,8 @@
       <par n="contrac"/>
     </e>
     -->
+
+    <e><p> <l><a/>shaa<b/></l> <r>shaaw<b/></r> </p><par n="vowels"/></e>
 
  </section>
 </dictionary>

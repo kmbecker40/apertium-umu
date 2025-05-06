@@ -5,7 +5,7 @@ a à á b c d e è é f g h i ì í ĭ j k l m n o ò ó p r s t u ŭ ù ú v w
 %{a%}:a %{a%}:á %{a%}:à %{a%}:0  
 %{e%}:e %{e%}:é %{e%}:è %{e%}:0
 %{i%}:i %{i%}:í %{i%}:ì %{i%}:ĭ %{i%}:0
-%{o%}:o %{o%}:ó %{o%}:ò %{o%}:0
+%{o%}:o %{o%}:0
 %{u%}:u %{u%}:0
 
 %{U%}:u %{U%}:a %{U%}:à %{U%}:ŭ %{U%}:0
@@ -95,11 +95,9 @@ w:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: m: Vowel: ;
 n:0 <=> :x :i :i _ %>: %{l%}: :0*;
         :x :i :i _ %>: %{o%}: %{o%}: k w ;
 
-
-
-
-
-
+"Realize -oo when stem ends in consonant"
+%{o%}:o <=> :Consonant %>: _ ;
+            :Consonant %>: %{o%}: _ ;
 
 
 
