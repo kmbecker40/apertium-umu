@@ -288,6 +288,8 @@ LEXICON Transitive-Inanimate-V-Infl(2)
 :k{u}> <s_2pl><o_pl>:>{u}>neewa
 :w{u}> <s_3pl><o_pl>:>{u}>neewa
 
+# NEED NEGATIVES
+
 LEXICON Transitive-Animate-V-Infl(2)
 
 # WE HAVE NOT ACCOUNTED FOR FIRST AND SECOND PERSON OBJECTS
@@ -431,7 +433,7 @@ wíinee:wiinee         # "snow"
 páasii:paasii          # "swell"
 wŭlút:wulut            # "be nice, good"
 áhteew:ahteew          # "be there"
-máxkeew:máxkeew        # "be red"
+máxkee:máxkee        # "be red"
 lúngteew:lungteew      # "melt"
 kshúteew:kshúteew      # "be hot"
 kuliikwaasuw:kuliikwaasuw # "sewn"
@@ -453,7 +455,7 @@ uw:uw                 # "say"
 alúmsuw:alumsuw              # "leave, go off"
 lpákw:lpakw              # "cry"
 apii:apii              # "be there"
-máxksuw:máxksuw         # "be red"
+máxksuw:máxksuw         # "be red with cold"
 shungíixiin:shungiixiin     # "lie down"
 níimaa:niimaa          # "bring lunch"
 ndúpuw:ndupuw           # "cook"
@@ -472,9 +474,9 @@ alakweelúndam:alakweelundam     # "be sorry"
 pumúsuw:pumusuw                 # "walk"
 
 LEXICON Transitive-Inanimate-V-Stems
-néem:neem                  # "see"
-míichii:miichii       # "eat"
-katáatam:kataatam            # "want"
+néem:neem                   # "see"
+míichii:miichii             # "eat"
+katáatam:kataatam           # "want"
 pundam:pundam               # "hear"
 kpáham:kpaham               # "shut, close"
 péetoow:péetoow             # "bring"
