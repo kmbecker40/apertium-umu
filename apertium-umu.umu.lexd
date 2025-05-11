@@ -270,6 +270,15 @@ LEXICON Intransitive-Animate-V-Infl(2)
 
 LEXICON Transitive-Inanimate-V-Infl(2)
 
+# Transitive Inanimate Verbs w/ Noun Object
+:n{u}> <s_1sg>:>{m}
+:k{u}> <s_2sg>:>{m}
+:w{u}> <s_3sg>:>{w}    
+:{n}{u}> <s_11pl>:>{ó}hna
+:{k}{u}> <s_12pl>:>{ó}hna
+:k{u}> <s_2pl>:>{ó}hmwa
+:w{u}> <s_3pl>:>{W}{A}k
+
 # Transitive Inanimate Verbs w/ Singular Object
 :n{u}> <s_1sg><o_sg>:>{u}n
 :k{u}> <s_2sg><o_sg>:>{u}n
