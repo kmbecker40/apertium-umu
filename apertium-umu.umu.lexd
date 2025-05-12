@@ -58,6 +58,8 @@
 # <o_1pl>  # First person plural object
 # <o_2pl>  # Second person plural object
 # <o_3pl>  # Third person plural object 
+# <o_sg>  # singular object 
+# <o_pl>  # plural object 
 # <o_3>    # obviative
 
 # Possession
@@ -250,52 +252,52 @@ LEXICON Intransitive-Inanimate-V-Infl(2)
 :   <neg><s_pl>:>{o}{o}wiiwal  # consonant endings take oo
 
 LEXICON Intransitive-Animate-V-Infl(2)
-:n{u}>   <s_1sg>:>{m}
-:k{u}>   <s_2sg>:>{m}
+:{N}{t}{U}>   <s_1sg>:>{m}
+:{k}{t}{U}>   <s_2sg>:>{m}
 :        <s_3sg>:>{w}     
-:{n}{u}> <s_11pl>:>{o}hna
-:{k}{u}> <s_12pl>:>{o}hna
-:k{u}>   <s_2pl>:>{o}hmwa
+:{N}{t}{U}> <s_11pl>:>{o}hna
+:{k}{t}{U}> <s_12pl>:>{o}hna
+:{k}{t}{U}>   <s_2pl>:>{o}hmwa
 :        <s_3pl>:>{W}{A}k      # Stem ending in vowels - oo for consonants
 
 # Negative VAIs
-:n{u}>   <neg><s_1sg>:>{o}{o}wi
-:k{u}>   <neg><s_2sg>:>{o}{o}wi
+:{N}{t}{U}>   <neg><s_1sg>:>{o}{o}wi
+:{k}{t}{U}>   <neg><s_2sg>:>{o}{o}wi
 :        <neg><s_3sg>:>{o}{o}wi    
-:{n}{u}> <neg><s_11pl>:>{o}{o}wíhna
-:{k}{u}> <neg><s_12pl>:>{o}{o}wíhna
-:k{u}>   <neg><s_2pl>:>{o}{o}wíhmwa
+:{N}{t}{U}> <neg><s_11pl>:>{o}{o}wíhna
+:{k}{t}{U}> <neg><s_12pl>:>{o}{o}wíhna
+:{k}{t}{U}>   <neg><s_2pl>:>{o}{o}wíhmwa
 :        <neg><s_3pl>:>{o}{o}wíiwak   
 
 
 LEXICON Transitive-Inanimate-V-Infl(2)
 
 # Transitive Inanimate Verbs w/ Noun Object
-:n{u}> <s_1sg>:>{m}
-:k{u}> <s_2sg>:>{m}
-:w{u}> <s_3sg>:>{w}    
-:{n}{u}> <s_11pl>:>{ó}hna
-:{k}{u}> <s_12pl>:>{ó}hna
-:k{u}> <s_2pl>:>{ó}hmwa
-:w{u}> <s_3pl>:>{W}{A}k
+#:{N}{t}{U}> <s_1sg>:>{m}
+#:{k}{t}{U}> <s_2sg>:>{m}
+#:{w}{t}{U}> <s_3sg>:>{w}    
+#:{N}{t}{U}> <s_11pl>:>{ó}hna
+#:{k}{t}{U}> <s_12pl>:>{ó}hna
+#:{k}{t}{U}> <s_2pl>:>{ó}hmwa
+#:{w}{t}{U}> <s_3pl>:>{W}{A}k
 
 # Transitive Inanimate Verbs w/ Singular Object
-:n{u}> <s_1sg><o_sg>:>{u}n
-:k{u}> <s_2sg><o_sg>:>{u}n
-:w{u}> <s_3sg><o_sg>:>{u}n    
-:{n}{u}> <s_11pl><o_sg>:>{u}>neen
-:{k}{u}> <s_12pl><o_sg>:>{u}>neen
-:k{u}> <s_2pl><o_sg>:>{u}>neewa
-:w{u}> <s_3pl><o_sg>:>{u}>neewa
+:{N}{t}{U}> <s_1sg><o_sg>:>{u}n
+:{k}{t}{U}> <s_2sg><o_sg>:>{u}n
+:{w}{t}{U}> <s_3sg><o_sg>:>{u}n    
+:{N}{t}{U}> <s_11pl><o_sg>:>{u}>neen
+:{k}{t}{U}> <s_12pl><o_sg>:>{u}>neen
+:{k}{t}{U}> <s_2pl><o_sg>:>{u}>neewa
+:{w}{t}{U}> <s_3pl><o_sg>:>{u}>neewa
 
 # Transitive Inanimate Verbs w/ Plural Object
-:n{u}> <s_1sg><o_pl>:>{u}n>al
-:k{u}> <s_2sg><o_pl>:>{u}n>al   
-:w{u}> <s_3sg><o_pl>:>{u}n>al  
-:{n}{u}> <s_11pl><o_pl>:>{u}>neen
-:{k}{u}> <s_12pl><o_pl>:>{u}>neen
-:k{u}> <s_2pl><o_pl>:>{u}>neewa
-:w{u}> <s_3pl><o_pl>:>{u}>neewa
+:{N}{t}{U}> <s_1sg><o_pl>:>{u}n>al
+:{k}{t}{U}> <s_2sg><o_pl>:>{u}n>al   
+:{w}{t}{U}> <s_3sg><o_pl>:>{u}n>al  
+:{N}{t}{U}> <s_11pl><o_pl>:>{u}>neen
+:{k}{t}{U}> <s_12pl><o_pl>:>{u}>neen
+:{k}{t}{U}> <s_2pl><o_pl>:>{u}>neewa
+:{w}{t}{U}> <s_3pl><o_pl>:>{u}>neewa
 
 # NEED NEGATIVES
 
@@ -304,43 +306,43 @@ LEXICON Transitive-Animate-V-Infl(2)
 # WE HAVE NOT ACCOUNTED FOR FIRST AND SECOND PERSON OBJECTS
 
 # Transitive Animate Verbs w/ Singular Object
-:n{u}> <s_1sg><o_3sg>:>aaw
-:n{u}> <s_1sg><o_3sg>:>a
-:k{u}> <s_2sg><o_3sg>:>aaw  
-:k{u}> <s_2sg><o_3sg>:>a
-:w{u}> <s_3sg><o_3sg>:>aawal
-:{n}{u}> <s_11pl><o_3sg>:>aawuna
-:{k}{u}> <s_12pl><o_3sg>:>aawuna
-:k{u}> <s_2pl><o_3sg>:>aawa
-:w{u}> <s_3pl><o_3sg>:>aawaawal
-:w{u}> <s_3pl><o_3sg>:>aawal
+:{N}{t}{U}> <s_1sg><o_3sg>:>aaw
+:{N}{t}{U}> <s_1sg><o_3sg>:>a
+:{k}{t}{U}> <s_2sg><o_3sg>:>aaw  
+:{k}{t}{U}> <s_2sg><o_3sg>:>a
+:{w}{t}{U}> <s_3sg><o_3sg>:>aawal
+:{N}{t}{U}> <s_11pl><o_3sg>:>aawuna
+:{k}{t}{U}> <s_12pl><o_3sg>:>aawuna
+:{k}{t}{U}> <s_2pl><o_3sg>:>aawa
+:{w}{t}{U}> <s_3pl><o_3sg>:>aawaawal
+:{w}{t}{U}> <s_3pl><o_3sg>:>aawal
 
 # Negatives: VTAs w/ Singular Object
-:n{u}> <neg><s_1sg><o_3sg>:>aawi
-:k{u}> <neg><s_2sg><o_3sg>:>aawi 
-:w{u}> <neg><s_3sg><o_3sg>:>aawiiwal
-:{n}{u}> <neg><s_11pl><o_3sg>:>aawiiwuna
-:{k}{u}> <neg><s_12pl><o_3sg>:>aawiiwuna
-:k{u}> <neg><s_2pl><o_3sg>:>aawiiwa
-:w{u}> <neg><s_3pl><o_3sg>:>aawiiwaawal
+:{N}{t}{U}> <neg><s_1sg><o_3sg>:>aawi
+:{k}{t}{U}> <neg><s_2sg><o_3sg>:>aawi 
+:{w}{t}{U}> <neg><s_3sg><o_3sg>:>aawiiwal
+:{N}{t}{U}> <neg><s_11pl><o_3sg>:>aawiiwuna
+:{k}{t}{u}> <neg><s_12pl><o_3sg>:>aawiiwuna
+:{k}{t}{U}> <neg><s_2pl><o_3sg>:>aawiiwa
+:{w}{t}{U}> <neg><s_3pl><o_3sg>:>aawiiwaawal
 
 # Transitive Animate Verbs w/ Plural Object
-:n{u}> <s_1sg><o_3pl>:>aawak
-:k{u}> <s_2sg><o_3pl>:>aawak 
-:w{u}> <s_3sg><o_3pl>:>aawal
-:{n}{u}> <s_11pl><o_3pl>:>aawuna
-:{k}{u}> <s_12pl><o_3pl>:>aawuna
-:k{u}> <s_2pl><o_3pl>:>aawa
-:w{u}> <s_3pl><o_3pl>:>aawaawal
+:{N}{t}{U}> <s_1sg><o_3pl>:>aawak
+:{k}{t}{U}> <s_2sg><o_3pl>:>aawak 
+:{w}{t}{U}> <s_3sg><o_3pl>:>aawal
+:{N}{t}{U}> <s_11pl><o_3pl>:>aawuna
+:{k}{t}{U}> <s_12pl><o_3pl>:>aawuna
+:{k}{t}{U}> <s_2pl><o_3pl>:>aawa
+:{w}{t}{U}> <s_3pl><o_3pl>:>aawaawal
 
 # Negatives: VTAs w/ Plural Object
-:n{u}> <neg><s_1sg><o_3pl>:>aawiiwak
-:k{u}> <neg><s_2sg><o_3pl>:>aawiiwak 
-:w{u}> <neg><s_3sg><o_3pl>:>aawiiwal
-:{n}{u}> <neg><s_11pl><o_3pl>:>aawiiwuna
-:{k}{u}> <neg><s_12pl><o_3pl>:>aawiiwuna
-:k{u}> <neg><s_2pl><o_3pl>:>aawiiwa
-:w{u}> <neg><s_3pl><o_3pl>:>aawiiwaawal
+:{N}{t}{U}> <neg><s_1sg><o_3pl>:>aawiiwak
+:{k}{t}{U}> <neg><s_2sg><o_3pl>:>aawiiwak 
+:{w}{t}{U}> <neg><s_3sg><o_3pl>:>aawiiwal
+:{N}{t}{U}> <neg><s_11pl><o_3pl>:>aawiiwuna
+:{k}{t}{U}> <neg><s_12pl><o_3pl>:>aawiiwuna
+:{k}{t}{U}> <neg><s_2pl><o_3pl>:>aawiiwa
+:{w}{t}{U}> <neg><s_3pl><o_3pl>:>aawiiwaawal
 
 
 ### IMPERATIVES ###
@@ -450,8 +452,8 @@ chahkwéeshuw:chahkweeshuw   # "be short"
 # what about starting consonants that contract with prefixes?
 
 LEXICON Intransitive-Animate-V-Stems
-kawíi:kawii              # "sleep"
-alóhkee:alohkee           # "work"
+kawíi:ka{'}wi{'}i              # "sleep"
+alóhkee:alo{'}hkee           # "work"
 mataawsu:mataawsu         # "lead a wicked life, sin"
 shiinzuw:shiinzuw          # "be named"
 kulooneew:kulooneew         # "lie"
@@ -485,7 +487,7 @@ pumúsuw:pumusuw                 # "walk"
 LEXICON Transitive-Inanimate-V-Stems
 néem:neem                   # "see"
 míichii:miichii             # "eat"
-katáatam:kataatam           # "want"
+katáatam:kata{'}atam        # "want"
 pundam:pundam               # "hear"
 kpáham:kpaham               # "shut, close"
 péetoow:péetoow             # "bring"
@@ -502,6 +504,7 @@ ktáam:ktaam                 # "eat up"
 mŭnéew:muneew               # "drink"
 msháatam:mshaatam           # "remember"
 wulàmalúsuw:wulàmalúsuw     # "feel well"
+lŭnúm:lŭnu{'}m              # "do"
 
 LEXICON Transitive-Animate-V-Stems
 néem:neem                  # "see"
