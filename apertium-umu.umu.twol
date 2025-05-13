@@ -9,6 +9,7 @@ a à á b c d e è é f g h i ì í ĭ j k l m n o ò ó p r s t u ŭ ù ú v w
 %{u%}:u %{u%}:0
 
 %{U%}:u %{U%}:a %{U%}:à %{U%}:ŭ %{U%}:0
+%{I%}:u %{I%}:i %{I%}:ú %{I%}:0
 %{t%}:t %{t%}:d %{t%}:0
 %{P%}:p %{P%}:b
 
@@ -48,11 +49,14 @@ Rules
 "N is realized as m when the possessive prefix nu precedes pa"
 %{N%}:m <=> _ :0* p: Vowel: ;
 
-"P is realized as b when the possessive prefix nu precedes pa"
-p:b <=> %{N%}: :0* _ Vowel: ;
+!"P is realized as b when the possessive prefix nu precedes pa"
+!p:b <=> %{N%}: :0* _ Vowel: ;
 
 "k is realized as g when the subject prefix nu precedes ka"
-k:g <=> %{N%}: %{t%}: %{U%}: :0* _ Vowel: ;
+Cx:Cy <=> %{N%}: %{t%}: %{U%}: :0* _ ( h: ) Vowel: ;
+        where Cx in ( p k t s )
+              Cy in ( b g d z )
+        matched ;
 
 "a is realized as à when the possessive prefix nu precedes pa"
 %{'%}:̀  <=> [%{N%}: | k: | w: ] %{t%}: %{U%}: %>: p: a: _ ;
@@ -61,9 +65,9 @@ k:g <=> %{N%}: %{t%}: %{U%}: :0* _ Vowel: ;
 
 ! Additional rule to make (ku)-(pa) contract to (kpà-) and (wu)-(pa) contract to (pà-)
 "u is not realized when the possessive prefix ku or wu precedes pa"
-%{U%}:0 <=> w: ( %{t%}: ) _ %>: [ p: | m: | k: ] Vowel: ;
-        [ k: | %{k%}: ] %{t%}: _ %>: [ p: | m: | k: ] Vowel: ;
-        %{N%}: %{t%}: _ %>: [ p: | m: | k: ] Vowel: ;
+%{U%}:0 <=> [ w: | %{w%}: ] ( %{t%}: ) _ %>: [ p: | m: | k: | s: ] ( h: ) Vowel: ;
+        [ k: | %{k%}: ] %{t%}: _ %>: [ p: | k: | s: ] ( h: ) Vowel: ;
+        %{N%}: %{t%}: _ %>: [ p: | k: | s: ] ( h: ) Vowel: ;
         _ %>: Vowel: ;
 
 
@@ -85,6 +89,11 @@ k:g <=> %{N%}: %{t%}: %{U%}: :0* _ Vowel: ;
 "w not realized when (wu) + (mi)"
 w:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: m: Vowel: ;
         except
+             _ %{t%}: %{U%}: %>: a: h: ;  
+
+"%{w%} not realized when (wu) + (mi)"
+%{w%}:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: m: Vowel: ;
+        except
              _ %{t%}: %{U%}: %>: a: h: ;   
 
 "u goes to ŭ when (ku) or (nu) + (mi)"
@@ -97,6 +106,7 @@ w:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: m: Vowel: ;
 
 "u is not realized if there is any number of consonants followed by a morpheme boundary followed by a vowel"
 %{u%}:0 <=> _ :Consonant+ %>: :Vowel ;
+            :Vowel %>: _ ;
 
 "Stems ending in -xiin drop the final n when an imperative ending is added"
 n:0 <=> :x :i :i _ %>: %{l%}: :0*;

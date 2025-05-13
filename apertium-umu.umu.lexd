@@ -92,6 +92,7 @@ Inanimate-Nouns
 Intransitive-Animate-Verbs
 Intransitive-Inanimate-Verbs
 Transitive-Animate-Verbs
+Transitive-Inanimate-Verbs
 Number
 Punctuation
 Adjectives
@@ -252,9 +253,9 @@ LEXICON Intransitive-Inanimate-V-Infl(2)
 :   <neg><s_pl>:>{o}{o}wiiwal  # consonant endings take oo
 
 LEXICON Intransitive-Animate-V-Infl(2)
-:{N}{t}{U}>   <s_1sg>:>m
+:{N}{t}{U}>   <s_1sg>:>{m}
 :{N}{t}{U}>   <s_1sg>:  # Dir/LR
-:{k}{t}{U}>   <s_2sg>:>m
+:{k}{t}{U}>   <s_2sg>:>{m}
 :{k}{t}{U}>   <s_2sg>:> # Dir/LR
 :        <s_3sg>:>{w}     
 :{N}{t}{U}> <s_11pl>:>{o}hna
@@ -275,13 +276,15 @@ LEXICON Intransitive-Animate-V-Infl(2)
 LEXICON Transitive-Inanimate-V-Infl(2)
 
 # Transitive Inanimate Verbs w/ Noun Object
-#:{N}{t}{U}> <s_1sg>:>{m}
-#:{k}{t}{U}> <s_2sg>:>{m}
-#:{w}{t}{U}> <s_3sg>:>{w}    
-#:{N}{t}{U}> <s_11pl>:>{ó}hna
-#:{k}{t}{U}> <s_12pl>:>{ó}hna
-#:{k}{t}{U}> <s_2pl>:>{ó}hmwa
-#:{w}{t}{U}> <s_3pl>:>{W}{A}k
+:{N}{t}{U}> <s_1sg>:>{m}
+:{N}{t}{U}> <s_1sg>:        # Dir/LR
+:{k}{t}{U}> <s_2sg>:>{m}
+:{k}{t}{U}> <s_2sg>:        # Dir/LR
+   :        <s_3sg>:>{w}    
+:{N}{t}{U}> <s_11pl>:>{ó}hna
+:{k}{t}{U}> <s_12pl>:>{ó}hna
+:{k}{t}{U}> <s_2pl>:>{ó}hmwa
+:           <s_3pl>:>{W}{A}k
 
 # Transitive Inanimate Verbs w/ Singular Object
 :{N}{t}{U}> <s_1sg><o_sg>:>{u}n
@@ -455,7 +458,7 @@ chahkwéeshuw:chahkweeshuw   # "be short"
 
 LEXICON Intransitive-Animate-V-Stems
 kawíi:ka{'}wi{'}i              # "sleep"
-alóhkee:alo{'}hkee           # "work"
+alóhkee:alo{'}hk{e}e           # "work"
 mataawsu:mataawsu         # "lead a wicked life, sin"
 shiinzuw:shiinzuw          # "be named"
 kulooneew:kulooneew         # "lie"
@@ -467,9 +470,9 @@ liitéeheew:liiteeheew       # "think"
 uw:uw                 # "say"
 alúmsuw:alumsuw              # "leave, go off"
 lpákw:lpakw              # "cry"
-apii:apii              # "be there"
+apii:ap{I}{I}             # "be there"
 máxksuw:máxksuw         # "be red with cold"
-shungíixiin:shungiixiin     # "lie down"
+shungíixiin:shungi{'}ixiin     # "lie down"
 níimaa:niimaa          # "bring lunch"
 ndúpuw:ndupuw           # "cook"
 naxkóohŭmeew:naxkóohŭmeew       # "sing"
@@ -479,7 +482,7 @@ saaláakhe:saalaakhe             # "cut logs"
 kaatxákhwe:kaatxakhwe           # "cut cordwood"
 piinjiipáhtoo:piinjiipáhtoo   # "hurry inside"
 kúndkeew:kúndkeew               # "dance"
-pŭmáashŭwiiw:pumaashuwiiw       # "swim"
+pŭmáashŭwihl:pumaashuwihl       # "swim"
 kxánuw:kxanuw                   # "have"
 wihkwíhleew:wihkwihleew         # "run out"
 píilsuw:piilsuw                 # "be clean"
@@ -487,8 +490,8 @@ alakweelúndam:alakweelundam     # "be sorry"
 pumúsuw:pumusuw                 # "walk"
 
 LEXICON Transitive-Inanimate-V-Stems
-néem:neem                   # "see"
-míichii:miichii             # "eat"
+néem:ne{'}em                   # "see"
+míichii:mi{'}ich{I}{'}{I}             # "eat"
 katáatam:kata{'}atam        # "want"
 pundam:pundam               # "hear"
 kpáham:kpaham               # "shut, close"
@@ -509,8 +512,7 @@ wulàmalúsuw:wulàmalúsuw     # "feel well"
 lŭnúm:lŭnu{'}m              # "do"
 
 LEXICON Transitive-Animate-V-Stems
-néem:neem                  # "see"
-míichii:miichii       # "eat"
+néem:ne{'}em                  # "see"
 katáaleew:kataalee{w}          # "want someone"
 kumootkeew:kumootkeew   # "steal"
 ahwaaleew:ahwaaleew     # "love"
