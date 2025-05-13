@@ -258,9 +258,9 @@ LEXICON Intransitive-Animate-V-Infl(2)
 :{k}{t}{U}>   <s_2sg>:>{m}
 :{k}{t}{U}>   <s_2sg>:> # Dir/LR
 :        <s_3sg>:>{w}     
-:{N}{t}{U}> <s_11pl>:>{o}hna
-:{k}{t}{U}> <s_12pl>:>{o}hna
-:{k}{t}{U}>   <s_2pl>:>{o}hmwa
+:{N}{t}{U}> <s_11pl>:>{ó}hna
+:{k}{t}{U}> <s_12pl>:>{ó}hna
+:{k}{t}{U}>   <s_2pl>:>{ó}hmwa
 :        <s_3pl>:>{W}{A}k      # Stem ending in vowels - oo for consonants
 
 # Negative VAIs
@@ -279,20 +279,34 @@ LEXICON Transitive-Inanimate-V-Infl(2)
 :{N}{t}{U}> <s_1sg>:>{m}
 :{N}{t}{U}> <s_1sg>:        # Dir/LR
 :{k}{t}{U}> <s_2sg>:>{m}
+:{k}{t}u> <s_2sg>:>{m}  # Dir/LR
+:{k}{t}ŭ> <s_2sg>:>{m}  # Dir/LR
 :{k}{t}{U}> <s_2sg>:        # Dir/LR
+:{k}{t}u> <s_2sg>:        # Dir/LR
+:{k}{t}ŭ> <s_2sg>:        # Dir/LR
    :        <s_3sg>:>{w}    
 :{N}{t}{U}> <s_11pl>:>{ó}hna
-:{k}{t}{U}> <s_12pl>:>{ó}hna
+:{k}{t}{U}> <s_12pl>:>{ó}hna    
+:{k}{t}u> <s_12pl>:>{ó}hna   # Dir/LR
+:{k}{t}ŭ> <s_12pl>:>{ó}hna   # Dir/LR
 :{k}{t}{U}> <s_2pl>:>{ó}hmwa
+:{k}{t}u> <s_2pl>:>{ó}hmwa   # Dir/LR
+:{k}{t}ŭ> <s_2pl>:>{ó}hmwa   # Dir/LR
 :           <s_3pl>:>{W}{A}k
 
 # Transitive Inanimate Verbs w/ Singular Object
 :{N}{t}{U}> <s_1sg><o_sg>:>{u}n
 :{k}{t}{U}> <s_2sg><o_sg>:>{u}n
+:{k}{t}u> <s_2sg><o_sg>:>{u}n   # Dir/LR
+:{k}{t}ŭ> <s_2sg><o_sg>:>{u}n   # Dir/LR
 :{w}{t}{U}> <s_3sg><o_sg>:>{u}n    
 :{N}{t}{U}> <s_11pl><o_sg>:>{u}>neen
 :{k}{t}{U}> <s_12pl><o_sg>:>{u}>neen
+:{k}{t}u> <s_12pl><o_sg>:>{u}>neen  # Dir/LR
+:{k}{t}ŭ> <s_12pl><o_sg>:>{u}>neen  # Dir/LR
 :{k}{t}{U}> <s_2pl><o_sg>:>{u}>neewa
+:{k}{t}u> <s_2pl><o_sg>:>{u}>neewa  # Dir/LR
+:{k}{t}ŭ> <s_2pl><o_sg>:>{u}>neewa  # Dir/LR
 :{w}{t}{U}> <s_3pl><o_sg>:>{u}>neewa
 
 # Transitive Inanimate Verbs w/ Plural Object
@@ -449,7 +463,7 @@ wíinee:wiinee         # "snow"
 páasii:paasii          # "swell"
 wŭlút:wulut            # "be nice, good"
 áhteew:ahteew          # "be there"
-máxkee:máxkee        # "be red"
+máxkee:ma{'}xke{'}e        # "be red"
 lúngteew:lungteew      # "melt"
 kshúteew:kshúteew      # "be hot"
 kuliikwaasuw:kuliikwaasuw # "sewn"
@@ -484,7 +498,6 @@ piinjiipáhtoo:piinjiipáhtoo   # "hurry inside"
 kúndkeew:kúndkeew               # "dance"
 pŭmáashŭwihl:pumaashuwihl       # "swim"
 kxánuw:kxanuw                   # "have"
-wihkwíhleew:wihkwihleew         # "run out"
 píilsuw:piilsuw                 # "be clean"
 alakweelúndam:alakweelundam     # "be sorry"
 pumúsuw:pumusuw                 # "walk"
@@ -492,10 +505,10 @@ pumúsuw:pumusuw                 # "walk"
 LEXICON Transitive-Inanimate-V-Stems
 néem:ne{'}em                   # "see"
 míichii:mi{'}ich{I}{'}{I}             # "eat"
-katáatam:kata{'}atam        # "want"
+katáatam:k{ʍ}ata{'}atam        # "want"
 pundam:pundam               # "hear"
-kpáham:kpaham               # "shut, close"
-péetoow:péetoow             # "bring"
+kpáham:k{ù}p{a}{'}ha{'}m               # "shut, close"
+péetoo:pe{'}et{O}o              # "bring"
 tawúnum:tawúnum             # "open"
 kwutúmun:kwutumun           # "feel for"
 kŭlústam:kulustam           # "listen"
@@ -510,6 +523,7 @@ mŭnéew:muneew               # "drink"
 msháatam:mshaatam           # "remember"
 wulàmalúsuw:wulàmalúsuw     # "feel well"
 lŭnúm:lŭnu{'}m              # "do"
+wihkwíhlee:wihkwihl{AE}{AE}     # "run out"
 
 LEXICON Transitive-Animate-V-Stems
 néem:ne{'}em                  # "see"

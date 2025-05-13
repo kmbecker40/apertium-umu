@@ -7,6 +7,10 @@ a à á b c d e è é f g h i ì í ĭ j k l m n o ò ó p r s t u ŭ ù ú v w
 %{i%}:i %{i%}:í %{i%}:ì %{i%}:ĭ %{i%}:0
 %{o%}:o %{o%}:0
 %{u%}:u %{u%}:0
+%{ó%}:ó %{ó%}:0 %{ó%}:́
+%{O%}:o %{O%}:0
+%{AE%}:a %{AE%}:e
+%{ù%}:ù %{ù%}:0
 
 %{U%}:u %{U%}:a %{U%}:à %{U%}:ŭ %{U%}:0
 %{I%}:u %{I%}:i %{I%}:ú %{I%}:0
@@ -23,6 +27,8 @@ a à á b c d e è é f g h i ì í ĭ j k l m n o ò ó p r s t u ŭ ù ú v w
 %{y%}:y %{y%}:0
 %{W%}:w %{W%}:o 
 %{A%}:a %{A%}:o 
+%{ʍ%}:w %{ʍ%}:0
+
 
 %{'%}:0 %{'%}:́
 
@@ -53,7 +59,7 @@ Rules
 !p:b <=> %{N%}: :0* _ Vowel: ;
 
 "k is realized as g when the subject prefix nu precedes ka"
-Cx:Cy <=> %{N%}: %{t%}: %{U%}: :0* _ ( h: ) Vowel: ;
+Cx:Cy <=> %{N%}: %{t%}: %{U%}: :0* _ ( h: | %{ʍ%}: | [ %{ù%}: p: ] ) Vowel: ;
         where Cx in ( p k t s )
               Cy in ( b g d z )
         matched ;
@@ -65,17 +71,20 @@ Cx:Cy <=> %{N%}: %{t%}: %{U%}: :0* _ ( h: ) Vowel: ;
 
 ! Additional rule to make (ku)-(pa) contract to (kpà-) and (wu)-(pa) contract to (pà-)
 "u is not realized when the possessive prefix ku or wu precedes pa"
-%{U%}:0 <=> [ w: | %{w%}: ] ( %{t%}: ) _ %>: [ p: | m: | k: | s: ] ( h: ) Vowel: ;
-        [ k: | %{k%}: ] %{t%}: _ %>: [ p: | k: | s: ] ( h: ) Vowel: ;
-        %{N%}: %{t%}: _ %>: [ p: | k: | s: ] ( h: ) Vowel: ;
+%{U%}:0 <=> [ w: | %{w%}: ] ( %{t%}: ) _ %>: [ p: | m: | k: | s: ] ( h: | %{ʍ%}: | [ %{ù%}: p: ]  ) Vowel: ;
+        [ k: | %{k%}: ] %{t%}: _ %>: [ p: | k: | s: ] ( h: | %{ʍ%}: | [ %{ù%}: p: ] ) Vowel: ;
+        %{N%}: %{t%}: _ %>: [ p: | k: | s: ] ( h: | %{ʍ%}: | [ %{ù%}: p: ] ) Vowel: ;
         _ %>: Vowel: ;
+                ! except 
+                       ! [ k: | %{k%}: ] %{t%}: _ %>: p:  e: %{'%}:̀  ;
 
 
 "t realized when followed by -ah"
 !%{t%}:0 <=> _ %{U%}: %>: \Vowel: ;
 %{t%}:Cy <=> Cx: _ %{U%}: %>: a: [ h: | l: ] ;
-                where Cx in ( %{N%} %{k%}  k  w )
-                      Cy in ( d       t   t  t ) 
+             Cx: _ %{U%}: %>: l: ŭ: ;   ! verb lŭnúm
+                where Cx in ( %{N%} %{k%}  k  w %{w%} )
+                      Cy in ( d       t   t  t    t ) 
                 matched ;
 
 
@@ -84,7 +93,7 @@ Cx:Cy <=> %{N%}: %{t%}: %{U%}: :0* _ ( h: ) Vowel: ;
 !%{N%}:n <=> _ %{t%}: %{U%}: %>: m: Vowel: ;
 
 "k realized as 0 when ku precedes stem that starts with k"
-%{k%}:0 <=> _ %{t%}: %{U%}: %>: k: Vowel: ;
+%{k%}:0 <=> _ %{t%}: %{U%}: %>: k: ( [ %{ʍ%}: | %{ù%}: p: ] ) Vowel: ;
 
 "w not realized when (wu) + (mi)"
 w:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: m: Vowel: ;
@@ -92,7 +101,8 @@ w:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: m: Vowel: ;
              _ %{t%}: %{U%}: %>: a: h: ;  
 
 "%{w%} not realized when (wu) + (mi)"
-%{w%}:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: m: Vowel: ;
+%{w%}:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: [ m: | p: | w: ] Vowel: ;
+            _ ( %{t%}: ) [ u: | %{U%}: ] %>: k: %{ʍ%}: ;
         except
              _ %{t%}: %{U%}: %>: a: h: ;   
 
@@ -116,7 +126,8 @@ n:0 <=> :x :i :i _ %>: %{l%}: :0*;
 %{o%}:o <=> :Consonant %>: _ ;
             :Consonant %>: %{o%}: _ ;
 
-
+"ʍ realized as w when w prefix"
+%{ʍ%}:w <=> %{w%}: :* _ ;
 
 
 
