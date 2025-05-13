@@ -252,8 +252,10 @@ LEXICON Intransitive-Inanimate-V-Infl(2)
 :   <neg><s_pl>:>{o}{o}wiiwal  # consonant endings take oo
 
 LEXICON Intransitive-Animate-V-Infl(2)
-:{N}{t}{U}>   <s_1sg>:>{m}
-:{k}{t}{U}>   <s_2sg>:>{m}
+:{N}{t}{U}>   <s_1sg>:>m
+:{N}{t}{U}>   <s_1sg>:  # Dir/LR
+:{k}{t}{U}>   <s_2sg>:>m
+:{k}{t}{U}>   <s_2sg>:> # Dir/LR
 :        <s_3sg>:>{w}     
 :{N}{t}{U}> <s_11pl>:>{o}hna
 :{k}{t}{U}> <s_12pl>:>{o}hna
