@@ -245,8 +245,7 @@ LEXICON Intransitive-Inanimate-V-Infl(2)
 
 # Intransitive Inanimate Verbs
 :    <s_sg>:>{w} # no w for consonant-ending stems
-:    <s_pl>:>wal
-:   <s_sg>:>{W}{A}l # consonant endings take -ool NEED TWOL RULE
+:   <s_pl>:>{W}{A}l # consonant endings take -ool NEED TWOL RULE
 
 # Negative VIIs
 :   <neg><s_sg>:>{o}{o}wi
