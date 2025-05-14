@@ -61,11 +61,11 @@ If you are in the source directory after running make, the following
 commands should work:
 
 ```console
-$ echo "TODO: test sentence" | apertium -d . umu-morph
-TODO: test analysis result
+$ echo "wíineew" | apertium -d . umu-morph
+^wíineew/wíinee<v><iv><nn><s_sg>$^./.<sent>$
 
-$ echo "TODO: test sentence" | apertium -d . umu-tagger
-TODO: test tagger result
+$ echo "mbéetoom asún" | apertium -d . umu-tagger
+^mbéetoom/péetoo<v><tv><nn><s_1sg>$ ^asún/asún<n><nn><sg>$^./.<sent>$
 ```
 
 Files and data
@@ -84,6 +84,7 @@ Files and data
 For more information
 -------------------------------------------------------------------------------
 
+* https://wikis.swarthmore.edu/ling073/Munsee/Final_Project - Wiki Page
 * https://wiki.apertium.org/wiki/Installation
 * https://wiki.apertium.org/wiki/apertium-umu
 
