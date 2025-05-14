@@ -10,10 +10,12 @@ a à á b c d e è é f g h i ì í ĭ j k l m n o ò ó p r s t u ŭ ù ú v w
 %{ó%}:ó %{ó%}:0 %{ó%}:́
 %{O%}:o %{O%}:0
 %{AE%}:a %{AE%}:e
-%{ù%}:ù %{ù%}:0
+%{ù%}:ù %{ù%}:u %{ù%}:0
+%{ŭ%}:ŭ %{ŭ%}:u
+%{ú%}:ú %{ú%}:u
 
 %{U%}:u %{U%}:a %{U%}:à %{U%}:ŭ %{U%}:0
-%{I%}:u %{I%}:i %{I%}:ú %{I%}:0
+%{I%}:u %{I%}:i %{I%}:ú %{I%}:w %{I%}:0
 %{t%}:t %{t%}:d %{t%}:0
 %{P%}:p %{P%}:b
 
@@ -28,7 +30,7 @@ a à á b c d e è é f g h i ì í ĭ j k l m n o ò ó p r s t u ŭ ù ú v w
 %{W%}:w %{W%}:o 
 %{A%}:a %{A%}:o 
 %{ʍ%}:w %{ʍ%}:0
-
+%{Z%}:w %{Z%}:0 ! for w endings
 
 %{'%}:0 %{'%}:́
 
@@ -55,11 +57,14 @@ Rules
 "N is realized as m when the possessive prefix nu precedes pa"
 %{N%}:m <=> _ :0* p: Vowel: ;
 
+"N is realized as 0 when the possessive prefix nu precedes pa"
+%{N%}:0 <=>  _ %{t%}: %{U%}: %>: n: Vowel: ;
+
 !"P is realized as b when the possessive prefix nu precedes pa"
 !p:b <=> %{N%}: :0* _ Vowel: ;
 
 "k is realized as g when the subject prefix nu precedes ka"
-Cx:Cy <=> %{N%}: %{t%}: %{U%}: :0* _ ( h: | %{ʍ%}: | [ %{ù%}: p: ] ) Vowel: ;
+Cx:Cy <=> %{N%}: %{t%}: %{U%}: :0* _ ( h: | %{ʍ%}: | [ %{ù%}: p: ] ) [ %{ù%}: | Vowel: ] ;
         where Cx in ( p k t s )
               Cy in ( b g d z )
         matched ;
@@ -72,11 +77,13 @@ Cx:Cy <=> %{N%}: %{t%}: %{U%}: :0* _ ( h: | %{ʍ%}: | [ %{ù%}: p: ] ) Vowel: ;
 ! Additional rule to make (ku)-(pa) contract to (kpà-) and (wu)-(pa) contract to (pà-)
 "u is not realized when the possessive prefix ku or wu precedes pa"
 %{U%}:0 <=> [ w: | %{w%}: ] ( %{t%}: ) _ %>: [ p: | m: | k: | s: ] ( h: | %{ʍ%}: | [ %{ù%}: p: ]  ) Vowel: ;
-        [ k: | %{k%}: ] %{t%}: _ %>: [ p: | k: | s: ] ( h: | %{ʍ%}: | [ %{ù%}: p: ] ) Vowel: ;
-        %{N%}: %{t%}: _ %>: [ p: | k: | s: ] ( h: | %{ʍ%}: | [ %{ù%}: p: ] ) Vowel: ;
+        [ k: | %{k%}: ] %{t%}: _ %>: [ p: | k: | s: | n: ] ( h: | %{ʍ%}: | [ %{ù%}: p: ] ) Vowel: ;
+        %{N%}: %{t%}: _ %>: [ p: | k: | s: | n: ] ( h: | %{ʍ%}: | [ %{ù%}: p: ] ) Vowel: ;
         _ %>: Vowel: ;
-                ! except 
-                       ! [ k: | %{k%}: ] %{t%}: _ %>: p:  e: %{'%}:̀  ;
+        _ %>: k: %{ʍ%}: %{ù%}: ; ! for kwuphamun
+                except 
+                       %{w%}: %{t%}: _ %>: m: u: ; ! for verb drink
+
 
 
 "t realized when followed by -ah"
@@ -93,7 +100,7 @@ Cx:Cy <=> %{N%}: %{t%}: %{U%}: :0* _ ( h: | %{ʍ%}: | [ %{ù%}: p: ] ) Vowel: ;
 !%{N%}:n <=> _ %{t%}: %{U%}: %>: m: Vowel: ;
 
 "k realized as 0 when ku precedes stem that starts with k"
-%{k%}:0 <=> _ %{t%}: %{U%}: %>: k: ( [ %{ʍ%}: | %{ù%}: p: ] ) Vowel: ;
+%{k%}:0 <=> _ %{t%}: %{U%}: %>: k: ( [ %{ʍ%}: | %{ù%}: p: ] ) [ %{ù%}: | Vowel: ] ;
 
 "w not realized when (wu) + (mi)"
 w:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: m: Vowel: ;
@@ -104,7 +111,8 @@ w:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: m: Vowel: ;
 %{w%}:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: [ m: | p: | w: ] Vowel: ;
             _ ( %{t%}: ) [ u: | %{U%}: ] %>: k: %{ʍ%}: ;
         except
-             _ %{t%}: %{U%}: %>: a: h: ;   
+             _ %{t%}: %{U%}: %>: a: h: ;  
+             _ %{t%}: %{U%}: %>: m: u: ; ! for verb 'drink'
 
 "u goes to ŭ when (ku) or (nu) + (mi)"
 %{U%}:ŭ <=> k: %{t%}: _ %>: m: Vowel: ;
@@ -117,6 +125,8 @@ w:0 <=> _ ( %{t%}: ) [ u: | %{U%}: ] %>: m: Vowel: ;
 "u is not realized if there is any number of consonants followed by a morpheme boundary followed by a vowel"
 %{u%}:0 <=> _ :Consonant+ %>: :Vowel ;
             :Vowel %>: _ ;
+           except
+               :0* m: %>: _ n: %>: :Vowel ; ! for ngataatamunal etc.
 
 "Stems ending in -xiin drop the final n when an imperative ending is added"
 n:0 <=> :x :i :i _ %>: %{l%}: :0*;
@@ -128,7 +138,7 @@ n:0 <=> :x :i :i _ %>: %{l%}: :0*;
 
 "ʍ realized as w when w prefix"
 %{ʍ%}:w <=> %{w%}: :* _ ;
-
+            k: _ {ù}: p: :0* ;     
 
 
 ! Pair Tests

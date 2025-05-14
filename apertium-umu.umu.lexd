@@ -244,7 +244,7 @@ LEXICON Absence-Infl
 LEXICON Intransitive-Inanimate-V-Infl(2)
 
 # Intransitive Inanimate Verbs
-:    <s_sg>:>{w} # no w for consonant-ending stems
+:    <s_sg>:>{Z} # no w for consonant-ending stems
 :   <s_pl>:>{W}{A}l # consonant endings take -ool NEED TWOL RULE
 
 # Negative VIIs
@@ -256,7 +256,7 @@ LEXICON Intransitive-Animate-V-Infl(2)
 :{N}{t}{U}>   <s_1sg>:  # Dir/LR
 :{k}{t}{U}>   <s_2sg>:>{m}
 :{k}{t}{U}>   <s_2sg>:> # Dir/LR
-:        <s_3sg>:>{w}     
+:        <s_3sg>:>{Z}     
 :{N}{t}{U}> <s_11pl>:>{ó}hna
 :{k}{t}{U}> <s_12pl>:>{ó}hna
 :{k}{t}{U}>   <s_2pl>:>{ó}hmwa
@@ -283,7 +283,7 @@ LEXICON Transitive-Inanimate-V-Infl(2)
 :{k}{t}{U}> <s_2sg>:        # Dir/LR
 :{k}{t}u> <s_2sg>:        # Dir/LR
 :{k}{t}ŭ> <s_2sg>:        # Dir/LR
-   :        <s_3sg>:>{w}    
+   :        <s_3sg>:>{Z}    
 :{N}{t}{U}> <s_11pl>:>{ó}hna
 :{k}{t}{U}> <s_12pl>:>{ó}hna    
 :{k}{t}u> <s_12pl>:>{ó}hna   # Dir/LR
@@ -309,13 +309,13 @@ LEXICON Transitive-Inanimate-V-Infl(2)
 :{w}{t}{U}> <s_3pl><o_sg>:>{u}>neewa
 
 # Transitive Inanimate Verbs w/ Plural Object
-:{N}{t}{U}> <s_1sg><o_pl>:>{u}n>al
-:{k}{t}{U}> <s_2sg><o_pl>:>{u}n>al   
-:{w}{t}{U}> <s_3sg><o_pl>:>{u}n>al  
-:{N}{t}{U}> <s_11pl><o_pl>:>{u}>neen
-:{k}{t}{U}> <s_12pl><o_pl>:>{u}>neen
-:{k}{t}{U}> <s_2pl><o_pl>:>{u}>neewa
-:{w}{t}{U}> <s_3pl><o_pl>:>{u}>neewa
+:{N}{t}{U}> <s_1sg><o_pl>:>{u}{'}n>al
+:{k}{t}{U}> <s_2sg><o_pl>:>{u}{'}n>al   
+:{w}{t}{U}> <s_3sg><o_pl>:>{u}{'}n>al  
+:{N}{t}{U}> <s_11pl><o_pl>:>{u}{'}>neen
+:{k}{t}{U}> <s_12pl><o_pl>:>{u}{'}>neen
+:{k}{t}{U}> <s_2pl><o_pl>:>{u}{'}>ne{'}ewa
+:{w}{t}{U}> <s_3pl><o_pl>:>{u}{'}>ne{'}ewa
 
 # NEED NEGATIVES
 
@@ -428,7 +428,7 @@ ngúk:nguk                      # "my mother" (OBLIGATORY POSSESSIVE)
 meexalapóotiis:meexalapóotiis  # "spider"
 néenaxkw:néenaxkw              # "ball"
 máxkw:maxkw                    # "bear"
-óhpun:ohpun                    # "potato"
+óhpun:o{'}hpun                    # "potato"
 mwáakaneew:mwaakaneew          # "dog"
 kíishooxkw:kíishooxkw          # "sun"
 niipáahum:niipáahum            # "moon"
@@ -456,11 +456,12 @@ asún:asun                   # "rock"
 hulŭniixsuwáakan:hulŭniixsuwáakan   # "Munsee"
 matantoowiineng:matantoowiineng     # "hell"
 pépul:pepul                 # "pepper"
+puyool:puyool              # "violin"
 
 LEXICON Intransitive-Inanimate-V-Stems
 wíinee:wiinee         # "snow"
 páasii:paasii          # "swell"
-wŭlút:wulut            # "be nice, good"
+wŭlút:w{ŭ}lu{'}t            # "be nice, good"
 áhteew:ahteew          # "be there"
 máxkee:ma{'}xke{'}e        # "be red"
 lúngteew:lungteew      # "melt"
@@ -486,17 +487,16 @@ lpákw:lpakw              # "cry"
 apii:ap{I}{I}             # "be there"
 máxksuw:máxksuw         # "be red with cold"
 shungíixiin:shungi{'}ixiin     # "lie down"
-níimaa:niimaa          # "bring lunch"
+níimaa:ni{'}im{a}{'}a          # "bring lunch"
 ndúpuw:ndupuw           # "cook"
 naxkóohŭmeew:naxkóohŭmeew       # "sing"
-sŭluskóonzheew:sŭluskóonzheew   # "have many children"
-tŭmushíikeew:tŭmushíikeew       # "cut the grass"
+sŭluskóonzheew:sŭlusko{'}onzheew   # "have many children"
+tŭmushíikee:tŭmu{'}shi{'}ikee       # "cut the grass"
 saaláakhe:saalaakhe             # "cut logs"
 kaatxákhwe:kaatxakhwe           # "cut cordwood"
 piinjiipáhtoo:piinjiipáhtoo   # "hurry inside"
-kúndkeew:kúndkeew               # "dance"
+kúndkee:ku{'}ndkee               # "dance"
 pŭmáashŭwihl:pumaashuwihl       # "swim"
-kxánuw:kxanuw                   # "have"
 píilsuw:piilsuw                 # "be clean"
 alakweelúndam:alakweelundam     # "be sorry"
 pumúsuw:pumusuw                 # "walk"
@@ -506,7 +506,7 @@ néem:ne{'}em                   # "see"
 míichii:mi{'}ich{I}{'}{I}             # "eat"
 katáatam:k{ʍ}ata{'}atam        # "want"
 pundam:pundam               # "hear"
-kpáham:k{ù}p{a}{'}ha{'}m               # "shut, close"
+kpáham:k{ʍ}{ù}p{a}{'}ha{'}m               # "shut, close"
 péetoo:pe{'}et{O}o              # "bring"
 tawúnum:tawúnum             # "open"
 kwutúmun:kwutumun           # "feel for"
@@ -518,14 +518,15 @@ lóngwaam:longwaam           # "dream about something"
 mŭláam:mulaam               # "smell something"
 wund:wund                   # "get from somewhere"
 ktáam:ktaam                 # "eat up"
-mŭnéew:muneew               # "drink"
+mŭnée:mu{'}ne{'}e               # "drink"
 msháatam:mshaatam           # "remember"
 wulàmalúsuw:wulàmalúsuw     # "feel well"
 lŭnúm:lŭnu{'}m              # "do"
 wihkwíhlee:wihkwihl{AE}{AE}     # "run out"
+kxánuw:{K}xa{'}n{I}{I}                   # "have"
 
 LEXICON Transitive-Animate-V-Stems
-néem:ne{'}em                  # "see"
+néewaa:ne{'}ew{AE}{AE}                  # "see"
 katáaleew:kataalee{w}          # "want someone"
 kumootkeew:kumootkeew   # "steal"
 ahwaaleew:ahwaaleew     # "love"
